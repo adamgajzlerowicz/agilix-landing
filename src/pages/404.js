@@ -59,15 +59,17 @@ const NotFoundPage = () => {
                 <img src={imgIcon} alt="" className="img-fluid" />
               </ContentIcon>
               <div>
-                <Title variant="hero">404 Error!</Title>
+                <Title variant="hero">Błąd 404</Title>
                 <Text>
-                  The page you are looking for is not available or doesn’t
-                  <br className="d-none d-md-block" /> belong to this website!
+                  Strona której szukasz
+                  <br className="d-none d-md-block" /> nie istnieje
                 </Text>
               </div>
               <div className="mt-5">
                 <Link to="/">
-                  <ButtonStyled>Go back to home</ButtonStyled>
+                  <ButtonStyled>
+                    Powrót
+                  </ButtonStyled>
                 </Link>
               </div>
             </div>

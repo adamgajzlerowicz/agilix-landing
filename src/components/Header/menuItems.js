@@ -38,9 +38,6 @@ export const menuItems = [
         name: "contact",
         label: "Contact",
         items: [
-          { name: "contact-1", label: "Contact 01" },
-          { name: "contact-2", label: "Contact 02" },
-          { name: "contact-3", label: "Contact 03" },
         ],
       },
       {
@@ -71,7 +68,6 @@ export const menuItems = [
           { name: "coming-soon-2", label: "Coming Soon 02" },
           { name: "404", label: "404 Page" },
           { name: "thank-you", label: "Thank You" },
-          { name: "terms-conditions", label: "Terms & Conditions" },
         ],
       },
       {
@@ -83,6 +79,10 @@ export const menuItems = [
         ],
       },
     ],
+  },
+  {
+    name: "polityka-prywatnosci",
+    label: "Polityka prywatności"
   },
   {
     name: "kontakt",
