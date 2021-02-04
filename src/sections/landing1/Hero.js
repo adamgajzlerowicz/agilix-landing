@@ -112,7 +112,7 @@ const Hero = () => {
                     <i className="icon icon-check-2"></i>
                   </Box>
                   <Text color="light" fontSize={2} lineHeight="1.25">
-                    You have successfully logged in
+                      Zalogowano pomyślnie!
                   </Text>
                 </TopCard>
 
@@ -140,7 +140,7 @@ const Hero = () => {
                     <i className="icon icon-check-2"></i>
                   </Box>
                   <Text color="dark" fontSize={2} lineHeight="1.25">
-                    Appointment with the doctor was successful. Move to next!
+                      Masz zaproszenie na zajęcia.
                   </Text>
                 </BottomCard>
               </div>
@@ -157,22 +157,10 @@ const Hero = () => {
                       Aplikacja dla Ciebie i Twojego najlepszego przyjaciela
                   </Title>
                   <Text mb={4}>
-                    Create custom landing pages with Omega that convert more
-                    visitors than any website. With lots of unique blocks, you
-                    can easily build a page without coding.
+                      Zapisz się na zajęcia z posłuszeństwa, znajdź trenera Agility, Frisbee czy Flyball, zapisz się na psie przedszkole, lub przyjdź na seminarium!
                   </Text>
                   <div className="d-flex flex-column align-items-start">
-                    <Button mb={3}>Get Started</Button>
-                    <a
-                      href="/"
-                      className="text-decoration-none"
-                      onClick={openVideoModal}
-                    >
-                      <Box color="secondary">
-                        <i className="icon icon-triangle-right-17-2"></i> Watch
-                        the intro video
-                      </Box>
-                    </a>
+                    <Button mb={3}>Pobierz teraz</Button>
                   </div>
                 </Box>
               </div>

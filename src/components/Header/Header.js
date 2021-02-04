@@ -218,7 +218,7 @@ const Header = ({ isDark = false }) => {
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
-              <Logo white={isDark} />
+              <Logo />
             </div>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">
@@ -364,7 +364,7 @@ const Header = ({ isDark = false }) => {
                   height: 45px !important;
                 `}
               >
-                Get Started
+                Pobierz
               </Button>
             </div>
             <ToggleButton
