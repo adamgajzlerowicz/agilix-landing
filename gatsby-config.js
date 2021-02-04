@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Omega Gatsby`,
+    title: `Agilix`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
