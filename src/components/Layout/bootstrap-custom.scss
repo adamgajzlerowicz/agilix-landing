@@ -1,4 +1,5 @@
 // Override default variables before the import
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 $primary: #f04037;
 $secondary: #5454d4;
@@ -10,7 +11,7 @@ $black: $text;
 $body-color: $text;
 $headings-color: $text;
 $body-bg: $bg;
-$font-family-base: "CircularStd", sans-serif;
+$font-family-base: 'Titillium Web', sans-serif;
 $headings-font-family: $font-family-base;
 
 // Import Bootstrap and its default variables
