@@ -82,14 +82,14 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Save time on development.</Title>
+                <Title>Dostęp do spersonalizowanej agendy bezpośrednio w Twojej kieszni</Title>
                 <Text mb={4}>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
+                    Zapisywanie się na zajęcia przez email, smsy czy arkusze excel to historia.
+                    W aplikacji możesz sprawdzić dostępne terminy i umawiać się na zajęcia.
+                    Wszyskie Twoje zajęcia zą teraz w jednym miejscu!
                 </Text>
 
-                <Button mt={3}>Get Started</Button>
+                <Button mt={3}>Pobierz teraz</Button>
               </Box>
             </div>
           </Col>

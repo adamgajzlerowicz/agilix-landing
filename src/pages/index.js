@@ -14,8 +14,6 @@ const IndexPage = () => {
         <Hero />
         <Feature />
         <Content1 />
-        <Content2 />
-        <Testimonial />
         <CTA />
       </PageWrapper>
     </>

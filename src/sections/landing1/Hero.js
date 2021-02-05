@@ -112,7 +112,7 @@ const Hero = () => {
                     <i className="icon icon-check-2"></i>
                   </Box>
                   <Text color="light" fontSize={2} lineHeight="1.25">
-                      Zalogowano pomyślnie!
+                       Pomyślnie zalogowano!
                   </Text>
                 </TopCard>
 

@@ -84,10 +84,10 @@ const Feature = () => (
               <Title color="light">Otwórz się na nowe aktywności ze swoim pupilem!</Title>
               <Text color="light" opacity={0.7} mb={4}>
                   Jeżeli szukasz inspiracji na nowy rodzaj zajęć, chcesz poćwiczyc u kogoś innego lub po prostu
-                  dużo podróżujesz i chcesz ćwiczyc w innym mieście, dzięki tej aplikacji otworzysz swoje skrzydła.
+                  dużo podróżujesz i chcesz ćwiczyc w innym mieście, dzięki tej aplikacji rozwiniesz swoje skrzydła.
               </Text>
 
-              <Button variant="outline">Pobierz</Button>
+              <Button variant="outline">Pobierz teraz</Button>
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
@@ -95,7 +95,7 @@ const Feature = () => (
               <Col md="6">
                 <FeatureCard
                   color="primary"
-                  iconName="icon-layout-11"
+                  iconName="icon-energy-2"
                   title="Dostęp do spersonalizowanej agendy"
                 >
                   Trzymaj rospiskę wszystkich swoich zajęć w jednym miejscu.
@@ -104,8 +104,8 @@ const Feature = () => (
 
               <Col md="6">
                 <FeatureCard
-                    color="warning"
-                    iconName="icon-sidebar-2"
+                    color="ash"
+                    iconName="icon-chat-round"
                     title="Zaproszenia do wydarzeń"
                 >
                   Otrzymuj bezpośrednie zaproszenia do wydarzeń i treningów.
@@ -114,8 +114,8 @@ const Feature = () => (
 
               <Col md="6">
                 <FeatureCard
-                    color="secondary"
-                    iconName="icon-bookmark-2-2"
+                    color="warning"
+                    iconName="icon-trophy"
                     title="Niczego nie przegap"
                 >
                   W przeddzień zajęć otrzymasz przypomnienie o zbliżającym się zdarzeniu bezpośrednio na swój telefon.
@@ -124,8 +124,8 @@ const Feature = () => (
 
               <Col md="6">
                 <FeatureCard
-                  color="ash"
-                  iconName="icon-chat-45-2"
+                  color="warning"
+                  iconName="icon-camera-flash"
                   title="Eksporuj nowe możliwości"
                 >
                   W aplikacji możesz znaleźć nowe kluby w swoim lub odległym mieście i przyłączyć sie do nich.
