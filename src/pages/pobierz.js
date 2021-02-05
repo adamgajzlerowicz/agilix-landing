@@ -19,32 +19,19 @@ const ContentIcon = styled.div`
   margin-bottom: 48px;
 `;
 
-const ButtonStyled = styled.button`
-  min-width: 250px;
-  min-height: 60px;
-  border-radius: 10px;
-  border: ${({ theme }) => `1px solid ${theme.colors.primary}`};
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: 21px;
-  font-weight: 500;
-  letter-spacing: -0.66px;
-  display: inline-flex;
-  align-items: center;
+
+const ButtonWrapper = styled.div`
+  display: flex;
   justify-content: center;
-  background: transparent;
-  box-shadow: none;
-  outline: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: 0.4s;
-  &:hover,
-  &:focus {
-    background: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.light};
-    box-shadow: none;
-    outline: none;
-  }
-`;
+  align-items: center;
+`
+
+const ButtonContainer = styled.div`
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+`
 
 const GetIt = () => {
   return (
@@ -58,19 +45,25 @@ const GetIt = () => {
                   Pobierz Agilix na swój telefon
                 </Text>
 
-                <Box pt={40} md={1} sm={2}>
-                    <Span>
-                        <a href='https://apps.apple.com/us/app/agilix/id1546768901'>
-                          <img height={59} alt='pobierz z Google Play' src={itunes}/>
-                        </a>
-                    </Span>
+                    <ButtonWrapper>
+                        <ButtonContainer>
+                            <Box pt={40} md={2} sm={1}>
 
-                    <Span>
-                        <a  href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
-                          <img height={57} alt='pobierz z Google Play' src={play}/>
-                        </a>
-                    </Span>
-                </Box>
+                            <Span>
+                            <a href='https://apps.apple.com/us/app/agilix/id1546768901'>
+                              <img height={59} alt='pobierz z Google Play' src={itunes}/>
+                            </a>
+                        </Span>
+
+                        <Span>
+                            <a  href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
+                              <img height={57} alt='pobierz z Google Play' src={play}/>
+                            </a>
+                        </Span>
+                            </Box>
+
+                        </ButtonContainer>
+                    </ButtonWrapper>
 
           </div>
         </Section>
