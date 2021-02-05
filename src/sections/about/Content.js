@@ -20,9 +20,7 @@ const Content = () => (
       <Container>
         <Row className="justify-content-center pb-4">
           <Col lg="6">
-            <Title variant="hero">
-              Our mission is to make your life easier.
-            </Title>
+            <Title variant="hero">Nasza misja</Title>
           </Col>
           <Col lg="6" className="pl-lg-5">
             <Text>

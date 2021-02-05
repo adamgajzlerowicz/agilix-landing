@@ -1,16 +1,16 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/common/Hero";
 import Content from "../sections/about/Content";
+import CTA from "../sections/landing/CTA";
 import Team from "../sections/about/Team";
-import CTA from "../sections/about/CTA";
 
 const About = () => {
   return (
     <>
       <PageWrapper>
         <Content />
+        <Team />
         <CTA />
       </PageWrapper>
     </>

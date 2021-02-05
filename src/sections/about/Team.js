@@ -48,49 +48,27 @@ const TeamCard = ({ userImg, title, children, ...rest }) => (
 
 const Team = () => (
   <>
-    {/* <!-- Team section --> */}
     <Section className="position-relative pt-5">
       <Container>
         <Row className="justify-content-center">
           <Col lg="6" className="text-center pb-3">
             <div className="">
-              <Title>Meet the team</Title>
+              <Title>Kim jesteśmy</Title>
               <Text>
-                Create custom landing pages with Omega that converts more
-                visitors than any website.{" "}
+                  Jesteśmy miłośnikami zwierząt z misją!
               </Text>
             </div>
           </Col>
         </Row>
         <Row className="align-items-center justify-content-center">
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU1} title="Louise Elliott">
-              Founder and CEO
+            <TeamCard userImg={imgU2} title="Adam">
+                CEO, CTO
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU2} title="Trevor Fleming">
-              CTO
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU3} title="Raymond Baker">
-              Software Engineer
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU4} title="George Torres">
-              UX Designer
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU5} title="Daisy Ferguson">
-              Content Writer
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU6} title="Todd Summers">
-              Digital Marketer
+            <TeamCard userImg={imgU1} title="Natalia">
+              Trener Agility, specjalista PR
             </TeamCard>
           </Col>
         </Row>
