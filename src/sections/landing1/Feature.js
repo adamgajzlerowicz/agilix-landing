@@ -81,14 +81,13 @@ const Feature = () => (
         <Row className="align-items-center">
           <Col lg="6" className="pl-lg-5 order-lg-2">
             <div className="feature-content section-title">
-              <Title color="light">Build a perfect landing page.</Title>
+              <Title color="light">Otwórz się na nowe aktywności ze swoim pupilem!</Title>
               <Text color="light" opacity={0.7} mb={4}>
-                Create custom landing pages with Omega that converts more
-                visitors than any website. With lots of unique blocks, you can
-                easily build a page without coding.
+                  Jeżeli szukasz inspiracji na nowy rodzaj zajęć, chcesz poćwiczyc u kogoś innego lub po prostu
+                  dużo podróżujesz i chcesz ćwiczyc w innym mieście, dzięki tej aplikacji otworzysz swoje skrzydła.
               </Text>
 
-              <Button variant="outline">Check all features</Button>
+              <Button variant="outline">Pobierz</Button>
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
@@ -97,40 +96,39 @@ const Feature = () => (
                 <FeatureCard
                   color="primary"
                   iconName="icon-layout-11"
-                  title="Multiple Layouts"
+                  title="Dostęp do spersonalizowanej agendy"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  Trzymaj rospiskę wszystkich swoich zajęć w jednym miejscu.
                 </FeatureCard>
               </Col>
+
               <Col md="6">
                 <FeatureCard
-                  color="warning"
-                  iconName="icon-sidebar-2"
-                  title="Fully Responsive"
+                    color="warning"
+                    iconName="icon-sidebar-2"
+                    title="Zaproszenia do wydarzeń"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  Otrzymuj bezpośrednie zaproszenia do wydarzeń i treningów.
                 </FeatureCard>
               </Col>
+
               <Col md="6">
                 <FeatureCard
-                  color="secondary"
-                  iconName="icon-bookmark-2-2"
-                  title="Well Documented"
+                    color="secondary"
+                    iconName="icon-bookmark-2-2"
+                    title="Niczego nie przegap"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  W przeddzień zajęć otrzymasz przypomnienie o zbliżającym się zdarzeniu bezpośrednio na swój telefon.
                 </FeatureCard>
               </Col>
+
               <Col md="6">
                 <FeatureCard
                   color="ash"
                   iconName="icon-chat-45-2"
-                  title="Great Support"
+                  title="Eksporuj nowe możliwości"
                 >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
+                  W aplikacji możesz znaleźć nowe kluby w swoim lub odległym mieście i przyłączyć sie do nich.
                 </FeatureCard>
               </Col>
             </Row>
