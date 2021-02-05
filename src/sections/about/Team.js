@@ -6,10 +6,6 @@ import { Title, Section, Box, Text } from "../../components/Core";
 
 import imgU1 from "../../assets/image/jpeg/about-team-1.jpg";
 import imgU2 from "../../assets/image/jpeg/about-team-3.jpg";
-import imgU3 from "../../assets/image/jpeg/about-team-4.jpg";
-import imgU4 from "../../assets/image/jpeg/about-team-5.jpg";
-import imgU5 from "../../assets/image/jpeg/about-team-6.jpg";
-import imgU6 from "../../assets/image/jpeg/about-team-2.jpg";
 
 const CardImage = styled.div`
   max-width: 160px;

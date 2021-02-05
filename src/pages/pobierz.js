@@ -7,6 +7,7 @@ import PageWrapper from "../components/PageWrapper";
 
 import imgIcon from "../assets/image/png/thumbs-shape.png";
 import { Title, Text } from "../components/Core";
+import itunes from '../assets/image/svg/itunes.svg'
 
 const ContentIcon = styled.div`
   width: 118px;
@@ -46,7 +47,7 @@ const ButtonStyled = styled.button`
   }
 `;
 
-const NotFoundPage = () => {
+const GetIt = () => {
   return (
     <>
       <PageWrapper footerDark>
@@ -54,20 +55,19 @@ const NotFoundPage = () => {
           <div className="pt-5"></div>
           <Container>
             <div className="text-center">
-              <ContentIcon>
-                <img src={imgIcon} alt="" className="img-fluid" />
-              </ContentIcon>
               <div>
-                <Title variant="hero">Thank You</Title>
+                <Title >Przekonaj się jakie to proste</Title>
+                <a href='https://apps.apple.com/us/app/agilix/id1546768902'>
+                  <img width={150} alt='pobierz z Google Play' src={itunes}/>
+                </a>
+
+                <a  href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
+                  <img width={200} alt='pobierz z Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/pl_badge_web_generic.png'/>
+                </a>
+
                 <Text>
-                  The page you are looking for is not available or doesn’t
-                  <br className="d-none d-md-block" /> belong to this website!
+                    Pobierz aplikację na swój telefon
                 </Text>
-              </div>
-              <div className="mt-5">
-                <Link to="/">
-                  <ButtonStyled>Go back to home</ButtonStyled>
-                </Link>
               </div>
             </div>
           </Container>
@@ -77,4 +77,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default GetIt;
