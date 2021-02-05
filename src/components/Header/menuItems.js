@@ -9,14 +9,6 @@ export const menuItems = [
     items: [
       { name: "about", label: "About" },
       {
-        name: "career",
-        label: "Career",
-        items: [
-          { name: "career", label: "Career List" },
-          { name: "career-details", label: "Career Details" },
-        ],
-      },
-      {
         name: "case-study",
         label: "Case Study",
         items: [
@@ -29,27 +21,6 @@ export const menuItems = [
         label: "Blog",
         items: [
           { name: "blog-regular", label: "Blog Regular" },
-          { name: "blog-left-sidebar", label: "Blog Left Sidebar" },
-          { name: "blog-right-sidebar", label: "Blog Right Sidebar" },
-          { name: "blog-details", label: "Blog Details" },
-        ],
-      },
-      {
-        name: "contact",
-        label: "Contact",
-        items: [
-        ],
-      },
-      {
-        name: "account",
-        label: "Account",
-        items: [
-          { name: "signin", label: "Signin" },
-          { name: "signin-bg", label: "Signin BG" },
-          { name: "signup", label: "Signup" },
-          { name: "signup-bg", label: "Signup BG" },
-          { name: "reset-pass", label: "Reset Password" },
-          { name: "reset-pass-bg", label: "Reset Password BG" },
         ],
       },
       {
@@ -83,9 +54,5 @@ export const menuItems = [
   {
     name: "polityka-prywatnosci",
     label: "Polityka prywatności"
-  },
-  {
-    name: "kontakt",
-    label: "Kontakt",
   },
 ];

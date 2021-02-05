@@ -95,19 +95,13 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
+                          <a href="/pobierz-aplikacje" target="_blank">
                             Pobierz aplikację
                           </a>
                         </li>
-                      </UlStyled>
-                    </div>
-                  </Col>
-                  <Col xs="6" lg="3">
-                    <div className="mb-5 mb-lg-4">
-                      <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
-                              Blog
+                          <a href="/aktualnosci" target="_blank">
+                            Aktualności
                           </a>
                         </li>
 
@@ -118,10 +112,22 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
+                          <a href="nasza-misja" target="_blank">
                             Nasza misja
                           </a>
                         </li>
+                        <li>
+                          <a href="polityka-prywatności" target="_blank">
+                            Polityka prywatności
+                          </a>
+                        </li>
+                      </UlStyled>
+                    </div>
+                  </Col>
+                  <Col xs="6" lg="3">
+                    <div className="mb-5 mb-lg-4">
+                      <UlStyled color={isDark ? "lightShade" : "darkShade"}>
+
                       </UlStyled>
                     </div>
                   </Col>
@@ -129,11 +135,7 @@ const Footer = ({ isDark = true }) => {
                   <Col xs="6" lg="3">
                     <div className="mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
-                        <li>
-                          <a href="/#" target="_blank">
-                              Polityka prywatności
-                          </a>
-                        </li>
+
                       </UlStyled>
                     </div>
                   </Col>

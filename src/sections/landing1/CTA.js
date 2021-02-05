@@ -46,7 +46,7 @@ const CTA = () => (
             <Box mb={5} className="text-center">
               <Title color="light">Napisz do nas</Title>
               <Text color="light" opacity={0.7}>
-                  Masz sugestie? Chcesz dodać funkcjonalność? Chcesz nawiazać wspłpracę? Zapraszamy do kontaktu!
+                  Masz sugestie? Chcesz nawiazać wspłpracę? Brakuje funkcjonalnościv? Zapraszamy do kontaktu!
               </Text>
             </Box>
             <form>

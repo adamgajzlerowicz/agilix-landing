@@ -3,7 +3,7 @@ import { breakpoints } from "./breakpoints";
 
 const defaultColors = {
   primary: "#334D8A",
-  secondary: "#5454d4",
+  secondary: "#000000",
   white: "#ffffff",
   dark: "#19191b",
   black: "#000000",
