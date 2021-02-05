@@ -4,8 +4,8 @@ export const menuItems = [
     label: "Start",
   },
   {
-    name: "pobierz",
-    label: "Pobierz",
+    name: "nasza-misja",
+    label: "Nasza misja",
     items: [
       { name: "about", label: "About" },
       {
