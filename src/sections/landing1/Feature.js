@@ -126,7 +126,7 @@ const Feature = () => (
                 <FeatureCard
                   color="warning"
                   iconName="icon-camera-flash"
-                  title="Eksporuj nowe możliwości"
+                  title="Eksploruj nowe możliwości"
                 >
                   W aplikacji możesz znaleźć nowe kluby w swoim lub odległym mieście i przyłączyć sie do nich.
                 </FeatureCard>

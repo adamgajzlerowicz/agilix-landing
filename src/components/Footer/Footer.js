@@ -62,6 +62,7 @@ const CopyRightArea = styled.div`
       }
     }
   }
+  
 `;
 
 const Footer = ({ isDark = true }) => {

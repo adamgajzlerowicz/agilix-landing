@@ -82,13 +82,11 @@ const Content = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Dostęp do spersonalizowanej agendy bezpośrednio w Twojej kieszni</Title>
+                <Title>Jesteś trenerem?</Title>
                 <Text mb={4}>
-                    Zapisywanie się na zajęcia przez email, smsy czy arkusze excel to historia.
-                    W aplikacji możesz sprawdzić dostępne terminy i umawiać się na zajęcia.
-                    Wszyskie Twoje zajęcia zą teraz w jednym miejscu!
+                    Załóż swój klub, zarządzaj jego członkami, akceptuj prośby o przyłączenie się do klubu, dodawaj
+                    treningi indywidualne lub treningi dostępne dla każdego.
                 </Text>
-
                 <Button mt={3}>Pobierz teraz</Button>
               </Box>
             </div>

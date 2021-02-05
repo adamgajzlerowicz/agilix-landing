@@ -44,23 +44,21 @@ const CTA = () => (
         <Row className="justify-content-center">
           <Col lg="7" xl="6">
             <Box mb={5} className="text-center">
-              <Title color="light">Get started</Title>
+              <Title color="light">Napisz do nas</Title>
               <Text color="light" opacity={0.7}>
-                Create custom landing pages with Omega that converts more
-                visitors than any website. With lots of unique blocks, you can
-                easily build a page without coding.
+                  Masz sugestie? Chcesz dodać funkcjonalność? Chcesz nawiazać wspłpracę? Zapraszamy do kontaktu!
               </Text>
             </Box>
             <form>
               <Box mb={3}>
-                <Input type="text" placeholder="Your name" />
+                <Input type="text" placeholder="Imię" />
               </Box>
               <Box mb={3}>
-                <Input type="email" placeholder="Your email" />
+                <Input type="email" placeholder="Email" />
               </Box>
 
               <Button width="100%" type="submit" borderRadius={10}>
-                Get Started
+                  Wyślij wiadomość
               </Button>
             </form>
           </Col>
