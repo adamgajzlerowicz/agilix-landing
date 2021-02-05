@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Container } from "react-bootstrap";
+import {Col, Container} from "react-bootstrap";
 import styled from "styled-components";
 import Section from "../components/Section";
 import PageWrapper from "../components/PageWrapper";
 
-import imgIcon from "../assets/image/png/thumbs-shape.png";
-import { Title, Text } from "../components/Core";
+import {Title, Text, Button, Box, Span} from "../components/Core";
 import itunes from '../assets/image/svg/itunes.svg'
+import play from '../assets/image/png/google-play.png'
 
 const ContentIcon = styled.div`
   width: 118px;
@@ -51,27 +50,31 @@ const GetIt = () => {
   return (
     <>
       <PageWrapper footerDark>
-        <Section>
-          <div className="pt-5"></div>
-          <Container>
-            <div className="text-center">
-              <div>
-                <Title >Przekonaj się jakie to proste</Title>
-                <a href='https://apps.apple.com/us/app/agilix/id1546768902'>
-                  <img width={150} alt='pobierz z Google Play' src={itunes}/>
-                </a>
+        <Section py={[5, null, null, "190px"]}>
+            <div className="text-center" >
+                <Title mt={100}>Przekonaj się jakie to proste</Title>
 
-                <a  href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
-                  <img width={200} alt='pobierz z Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/pl_badge_web_generic.png'/>
-                </a>
-
-                <Text>
-                    Pobierz aplikację na swój telefon
+                <Text mt={100}>
+                  Pobierz Agilix na swój telefon
                 </Text>
-              </div>
-            </div>
-          </Container>
+
+                <Box pt={40} md={1} sm={2}>
+                    <Span>
+                        <a href='https://apps.apple.com/us/app/agilix/id1546768901'>
+                          <img height={59} alt='pobierz z Google Play' src={itunes}/>
+                        </a>
+                    </Span>
+
+                    <Span>
+                        <a  href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
+                          <img height={57} alt='pobierz z Google Play' src={play}/>
+                        </a>
+                    </Span>
+                </Box>
+
+          </div>
         </Section>
+
       </PageWrapper>
     </>
   );

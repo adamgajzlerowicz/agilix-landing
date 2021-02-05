@@ -7,7 +7,6 @@ import { Title, Section, Text, Badge } from "../../components/Core";
 import styled from "styled-components";
 
 const Card = styled(Link)`
-  justify-content: flex-start;
   min-height: 100%;
   box-shadow: 0 2px 4px rgba(14, 86, 124, 0.17);
   background-color: #ffffff;
