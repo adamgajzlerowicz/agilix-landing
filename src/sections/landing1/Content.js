@@ -22,7 +22,7 @@ const ShapeCard = styled(Box)`
   }
 `;
 
-const Content1 = () => (
+const Content = () => (
   <>
     {/* <!-- Content section 1 --> */}
     <Section>
@@ -99,4 +99,4 @@ const Content1 = () => (
   </>
 );
 
-export default Content1;
+export default Content;
