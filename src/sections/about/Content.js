@@ -18,6 +18,8 @@ const Content = () => (
   <>
     <Section>
       <Container>
+        <div className="pt-5"></div>
+
         <Row className="justify-content-center pb-4">
           <Col lg="6">
             <Title variant="hero">Nasza misja</Title>

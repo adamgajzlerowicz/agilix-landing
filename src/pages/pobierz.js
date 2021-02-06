@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Container, Row, Col} from "react-bootstrap";
 import Section from "../components/Section";
 import PageWrapper from "../components/PageWrapper";
 
@@ -7,28 +8,9 @@ import {Title, Text, Join, Box, Span} from "../components/Core";
 import itunes from '../assets/image/svg/itunes.svg'
 import play from '../assets/image/png/google-play.png'
 
-const ContentIcon = styled.div`
-  width: 118px;
-  height: 118px;
-  background-color: ${({theme}) => theme.colors.secondary};
-  border-radius: 500px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 48px;
-`;
-
-
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-`
-
-const ButtonContainer = styled.div`
-  display: flex;
-  width: 500px;
-  justify-content: space-evenly;
   align-items: center;
 `
 
@@ -49,22 +31,26 @@ const GetIt = () => {
                         </Text>
 
                         <ButtonWrapper>
-                                <Box pt={50} md={2} sm={1} pb={100}>
-                                    <Join mb={25} mr={10} ml={10}>
-                                        <Span>
-                                            <a href='https://apps.apple.com/us/app/agilix/id1546768902'>
-                                                <img height={58} alt='pobierz z Google Play' src={itunes}/>
-                                            </a>
-                                        </Span>
-                                    </Join>
-                                    <Join mr={10} ml={10}>
-                                        <Span>
-                                            <a href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
-                                                <img height={57} alt='pobierz z Google Play' src={play}/>
-                                            </a>
-                                        </Span>
-                                    </Join>
+                            <Container style={{ maxWidth: 500}}>
+                                <Box pt={50} pb={100}>
+                                    <Row>
+                                        <Col md={6} xs={12}>
+                                            <Box mb={25} mr={10} ml={10}>
+                                                    <a href='https://apps.apple.com/us/app/agilix/id1546768902'>
+                                                        <img height={58} alt='pobierz z Google Play' src={itunes}/>
+                                                    </a>
+                                            </Box>
+                                        </Col>
+                                        <Col md={6} xs={12}>
+                                            <Box mr={10} ml={10}>
+                                                    <a href='https://play.google.com/store/apps/details?id=com.hackerman.agilix'>
+                                                        <img height={57} alt='pobierz z Google Play' src={play}/>
+                                                    </a>
+                                            </Box>
+                                        </Col>
+                                    </Row>
                                 </Box>
+                            </Container>
                         </ButtonWrapper>
 
                     </div>

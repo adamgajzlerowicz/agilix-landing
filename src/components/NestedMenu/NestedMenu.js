@@ -4,6 +4,7 @@ import { ListGroup, Collapse } from "react-bootstrap";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { Link } from "gatsby";
 import GlobalContext from "../../context/GlobalContext";
+import {Button} from "../Core";
 
 const NestedMenuContainer = styled.div`
   a {
@@ -167,6 +168,14 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
             {...menuItem}
           />
         ))}
+
+        <MenuItem
+            key={`pobierz`}
+            depthStep={20}
+            depth={0}
+            label={'Pobierz teraz'}
+            name={'pobierz'}
+        />
       </ListGroup>
     </NestedMenuContainer>
   );

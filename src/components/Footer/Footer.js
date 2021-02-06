@@ -124,21 +124,6 @@ const Footer = ({ isDark = true }) => {
                       </UlStyled>
                     </div>
                   </Col>
-                  <Col xs="6" lg="3">
-                    <div className="mb-5 mb-lg-4">
-                      <UlStyled color={isDark ? "lightShade" : "darkShade"}>
-
-                      </UlStyled>
-                    </div>
-                  </Col>
-
-                  <Col xs="6" lg="3">
-                    <div className="mb-lg-4">
-                      <UlStyled color={isDark ? "lightShade" : "darkShade"}>
-
-                      </UlStyled>
-                    </div>
-                  </Col>
                 </Row>
               </Col>
             </Row>
