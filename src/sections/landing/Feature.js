@@ -7,6 +7,7 @@ import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import imgL1FeatureOval from "../../assets/image/png/l1-feature-oval.png";
 import imgL1FeatureCurve from "../../assets/image/svg/l1-curve-feature.svg";
+import {Link} from "gatsby";
 
 const ShapeTopRight = styled(Box)`
   position: absolute;
@@ -87,7 +88,7 @@ const Feature = () => (
                   dużo podróżujesz i chcesz ćwiczyc w innym mieście, dzięki tej aplikacji rozwiniesz swoje skrzydła.
               </Text>
 
-              <Button variant="outline">Pobierz teraz</Button>
+              <Link to={'pobierz'}><Button variant="outline">Pobierz teraz</Button></Link>
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">

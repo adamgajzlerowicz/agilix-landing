@@ -9,6 +9,7 @@ import GlobalContext from "../../context/GlobalContext";
 import { device } from "../../utils";
 import svgHeroShape from "../../assets/image/svg/hero-shape-svg.svg";
 import imgL1HeroPhone from "../../assets/image/png/landing1-hero-phone.png";
+import {Link} from "gatsby";
 
 const ShapeTopLeft = styled.div`
   position: absolute;
@@ -160,7 +161,7 @@ const Hero = () => {
                       Zapisz się na zajęcia z posłuszeństwa, znajdź trenera Agility, Frisbee czy Flyball, zapisz się na psie przedszkole, lub przyjdź na seminarium!
                   </Text>
                   <div className="d-flex flex-column align-items-start">
-                    <Button mb={3}>Pobierz teraz</Button>
+                    <Link to={'pobierz'}><Button mb={3}>Pobierz teraz</Button></Link>
                   </div>
                 </Box>
               </div>

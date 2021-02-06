@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 import imgContentMobile from "../../assets/image/png/content-img1--mobile.webp";
+import Link from "gatsby-link";
 
 const ShapeCard = styled(Box)`
   width: 305px;
@@ -87,7 +88,9 @@ const Content = () => (
                     Załóż swój klub, zarządzaj jego członkami, akceptuj prośby o przyłączenie się do klubu, dodawaj
                     treningi indywidualne lub treningi dostępne dla każdego.
                 </Text>
-                <Button mt={3}>Pobierz teraz</Button>
+                <Link to={'pobierz'}>
+                  <Button mt={3}>Pobierz teraz</Button>
+                </Link>
               </Box>
             </div>
           </Col>
