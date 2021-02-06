@@ -27,4 +27,8 @@ const Box = styled.div`
   ${shadow};
 `;
 
+ export const Join = styled(Box)`
+  display: inline; 
+ `
+
 export default Box;
