@@ -11,4 +11,8 @@ export const menuItems = [
     name: "polityka-prywatnosci",
     label: "Polityka prywatności"
   },
+  {
+    name: "kontakt",
+    label: "Kontakt"
+  },
 ];
