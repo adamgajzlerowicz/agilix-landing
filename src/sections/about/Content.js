@@ -4,14 +4,13 @@ import {Col, Container, Row} from "react-bootstrap";
 
 import {Box, Section, Text, Title} from "../../components/Core";
 
-import imgContent1 from "../../assets/image/jpeg/easy-image-2-1.jpg";
-import imgContent2 from "../../assets/image/jpeg/easy-image-2-2.jpg";
+import Mongo from "../../assets/image/mongo.jpg";
 
 const ContentImg = styled(Box)`
   box-shadow: ${({ theme }) => `0 42px 54px ${theme.colors.shadow}`};
   border-radius: 10px;
   overflow: hidden;
-  max-height: 515px;
+  //max-height: 515px;
 `;
 
 const Content = () => (
@@ -21,7 +20,7 @@ const Content = () => (
         <div className="pt-5"></div>
 
         <Row className="justify-content-center pb-4">
-          <Col lg="6">
+          <Col lg="12">
             <Title variant="hero">Nasza misja</Title>
           </Col>
           <Col lg="6" className="pl-lg-5">
@@ -50,16 +49,11 @@ const Content = () => (
               </Text>
 
           </Col>
-        </Row>
-        <Row className="mt-5">
-          <Col lg="4" sm="5" className="mb-4 ">
+        {/*</Row>*/}
+        {/*<Row className="mt-5">*/}
+          <Col lg="6">
             <ContentImg>
-              <img src={imgContent1} alt="" className="img-fluid" />
-            </ContentImg>
-          </Col>
-          <Col lg="8" sm="7" className="mb-4">
-            <ContentImg>
-              <img src={imgContent2} alt="" className="img-fluid" />
+              <img src={Mongo} alt="mongo" className="img-fluid" />
             </ContentImg>
           </Col>
         </Row>
