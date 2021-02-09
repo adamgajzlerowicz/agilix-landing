@@ -95,7 +95,7 @@ const PostCard = ({
     <CardText>
       {preTitle && (
         <Text fontSize={2} lineHeight={1.75} mb="14px">
-          Jan 14, 2020
+          {preTitle}
         </Text>
       )}
 

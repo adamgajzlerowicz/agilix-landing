@@ -14,8 +14,9 @@ const BlogList = () => (
               preTitle="6 Luty 2021"
               title="Powstała strona internetowa."
             >
-              Throwing consider dwelling bachelor joy her proposal laughter.
-              Raptures returned disposed one entirely her men ham.
+                Pierwszy projekt strony internetowej jest już dostępny.
+                <br />
+              Będą tutaj sie powiawiać aktualności zwiazane z życiem aplikacji oraz nowostworzone funkcjonalności.
             </PostCard>
           </Col>
 
