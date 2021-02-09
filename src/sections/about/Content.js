@@ -25,10 +25,10 @@ const Content = () => (
           </Col>
           <Col lg="6" className="pl-lg-5">
             <Text>
-                Doskonale wiem jak trudno jest znaleźć osoby od której można nauczyć się poprawnej opieki nad psem.
-                Po tym jak Mongo opuścił schronisko i przyłączył się do mojej rodziny, otrzymałem kontakt do behawiorysty
+                Doskonale wiem jak trudno jest znaleźć osoby, od której można nauczyć się poprawnej opieki nad psem.
+                Po tym jak Mongo opuścił schronisko i przyłączył się do mojej rodziny, otrzymałem kontakt do behawiorysty,
                 który dał nam pierwsze wskazówki dotyczące zajmowania się nim. Kiedy współpraca zakończyła się, było mi bardzo trudno
-                znaleźć miejsce gdzie moglibyśmy kontynuować naukę lub uczyć sie nowych rzeczy.
+                trudno znaleźć miejsce gdzie moglibyśmy kontynuować naukę lub uczyć sie nowych rzeczy.
             </Text>
 
             <Text>
@@ -39,18 +39,13 @@ const Content = () => (
             </Text>
 
               <Text>
-              </Text>
-
-              <Text>
                   Nasza misja polega na zwiększeniu przezroczystości rynku związanego z psimi zaktywnościami. Tak właśnie powstał Agilix.
                   Aplikacja na telefon, dzięki której można znaleźć trenerów i nowe typy zajęć.
                   Nie ważne, czy ma się psa przez całe swoje życie, czy tylko od wczoraj.
                   Każdy powinien mieć szansę na spędzanie czasu ze swoim pupilem.
               </Text>
-
           </Col>
-        {/*</Row>*/}
-        {/*<Row className="mt-5">*/}
+
           <Col lg="6">
             <ContentImg>
               <img src={Mongo} alt="mongo" className="img-fluid" />
