@@ -26,7 +26,7 @@ const Content = () => (
           <Col lg="6" className="pl-lg-5">
             <Text>
                 Doskonale wiem jak trudno jest znaleźć osoby, od której można nauczyć się poprawnej opieki nad psem.
-                Po tym jak Mongo opuścił schronisko i przyłączył się do mojej rodziny, otrzymałem kontakt do behawiorysty,
+                Po tym jak Mongo opuścił schronisko i przyłączył się do naszej rodziny, otrzymałem kontakt do behawiorysty,
                 który dał nam pierwsze wskazówki dotyczące zajmowania się nim. Kiedy współpraca zakończyła się, było mi bardzo trudno
                 trudno znaleźć miejsce gdzie moglibyśmy kontynuować naukę lub uczyć sie nowych rzeczy.
             </Text>
