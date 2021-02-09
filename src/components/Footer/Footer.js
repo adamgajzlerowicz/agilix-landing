@@ -86,12 +86,12 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/pobierz" target="_blank">
+                          <a href="/pobierz">
                             Pobierz aplikację
                           </a>
                         </li>
                         <li>
-                          <a href="/aktualnosci" target="_blank">
+                          <a href="/aktualnosci">
                             Aktualności
                           </a>
                         </li>
@@ -103,12 +103,12 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="nasza-misja" target="_blank">
+                          <a href="nasza-misja">
                             Nasza misja
                           </a>
                         </li>
                         <li>
-                          <a href="polityka-prywatności" target="_blank">
+                          <a href="polityka-prywatności">
                             Polityka prywatności
                           </a>
                         </li>

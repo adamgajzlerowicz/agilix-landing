@@ -99,11 +99,9 @@ const PostCard = ({
         </Text>
       )}
 
-      <Link to="/">
         <TitleStyled variant="card" mb="14px">
           {title}
         </TitleStyled>
-      </Link>
       <Text fontSize={2} lineHeight={1.75} mb="16px">
         {children}
       </Text>
