@@ -4,7 +4,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import Section from "../components/Section";
 import PageWrapper from "../components/PageWrapper";
 
-import {Title, Text, Join, Box, Span} from "../components/Core";
+import {Title, Text, Box } from "../components/Core";
 import itunes from '../assets/image/svg/itunes.svg'
 import play from '../assets/image/png/google-play.png'
 

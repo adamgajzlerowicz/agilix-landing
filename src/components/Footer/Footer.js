@@ -1,15 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-import { Title, Box } from "../Core";
+import {Box } from "../Core";
 import Logo from "../Logo";
-
-const TitleStyled = styled(Title)`
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin-bottom: 22px;
-`;
 
 const UlStyled = styled.ul`
   margin: 0;
@@ -21,7 +14,7 @@ const UlStyled = styled.ul`
       color: ${({ theme, color }) => theme.colors[color]} !important;
       &:hover {
         text-decoration: none;
-        color: ${({ theme, color }) => theme.colors.secondary} !important;
+        color: ${({ theme}) => theme.colors.secondary} !important;
       }
     }
   }

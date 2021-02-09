@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text, Box, List } from "../components/Core";
+import { Section, Title } from "../components/Core";
 
 const PolitykaPrywatnosci = () => {
   return (

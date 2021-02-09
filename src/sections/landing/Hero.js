@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
-
-import GlobalContext from "../../context/GlobalContext";
 
 import { device } from "../../utils";
 import svgHeroShape from "../../assets/image/svg/hero-shape-svg.svg";
@@ -60,16 +58,8 @@ const ImgRight = styled.img`
 `;
 
 const Hero = () => {
-  const gContext = useContext(GlobalContext);
-
-  const openVideoModal = (e) => {
-    e.preventDefault();
-    gContext.toggleVideoModal();
-  };
-
   return (
     <>
-      {/* <!-- Hero Area --> */}
       <Section className="position-relative">
         <div className="pt-5"></div>
         <ShapeTopLeft>
