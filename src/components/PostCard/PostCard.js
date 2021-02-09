@@ -70,7 +70,7 @@ const PostCard = ({
   >
     {horizontal ? (
       <ImageContainerHorizontal>
-        <div to="/" className="w-100 h-100 d-flex">
+        <div className="w-100 h-100 d-flex">
           <img src={img} alt="" className="w-100 img-fluid" />
           {imgBrand && (
             <BrandImage>
@@ -81,7 +81,7 @@ const PostCard = ({
       </ImageContainerHorizontal>
     ) : (
       <Box className="position-relative">
-        <div to="/" className="w-100 h-100 d-flex">
+        <div  className="w-100 h-100 d-flex">
           <img src={img} alt="" className="w-100 img-fluid" />
           {imgBrand && (
             <BrandImage>
