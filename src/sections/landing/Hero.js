@@ -8,7 +8,7 @@ import GlobalContext from "../../context/GlobalContext";
 
 import { device } from "../../utils";
 import svgHeroShape from "../../assets/image/svg/hero-shape-svg.svg";
-import imgL1HeroPhone from "../../assets/image/png/landing1-hero-phone.png";
+import imgL1HeroPhone from "../../assets/image/png/shoot1.png";
 import {Link} from "gatsby";
 
 const ShapeTopLeft = styled.div`
@@ -22,13 +22,13 @@ const TopCard = styled(Box)`
   width: 305px;
   box-shadow: ${({ theme }) => `0 32px 34px ${theme.colors.shadow}`};
   position: absolute;
-  top: 14%;
+  top: 50%;
   left: 0;
   @media ${device.md} {
     left: -13%;
   }
   @media ${device.lg} {
-    left: 2%;
+    left: 65%;
   }
 `;
 

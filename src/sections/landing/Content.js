@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
+import Link from "gatsby-link";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
-import imgContentMobile from "../../assets/image/png/content-img1--mobile.webp";
-import Link from "gatsby-link";
+import Shoot from "../../assets/image/png/shoot2.png";
 
 const ShapeCard = styled(Box)`
   width: 305px;
   box-shadow: 0 32px 34px rgba(28, 27, 32, 0.2);
   position: absolute;
-  top: 52%;
+  top: 70%;
   left: 0%;
   transform: scale(0.85);
   @media ${device.sm} {
@@ -25,7 +25,6 @@ const ShapeCard = styled(Box)`
 
 const Content = () => (
   <>
-    {/* <!-- Content section 1 --> */}
     <Section>
       <Container>
         <Row className="align-items-center">
@@ -37,7 +36,7 @@ const Content = () => (
                 data-aos-duration="750"
                 data-aos-once="true"
               >
-                <img src={imgContentMobile} alt="" className="img-fluid" />
+                <img src={Shoot} alt="" className="img-fluid" />
               </div>
 
               <ShapeCard
@@ -67,10 +66,10 @@ const Content = () => (
 
                 <Box pr="40px">
                   <Text fontSize={1} lineHeight="24px" opacity={0.7} mb={0}>
-                    Next meeting on 30 mins
+
                   </Text>
                   <Title variant="card" fontWeight={300} mb={0}>
-                    Project Discussion with John
+                      Zajęcia na dziś są dostępne
                   </Title>
                 </Box>
               </ShapeCard>
@@ -85,7 +84,7 @@ const Content = () => (
               <Box>
                 <Title>Jesteś trenerem?</Title>
                 <Text mb={4}>
-                    Załóż swój klub, zarządzaj jego członkami, akceptuj prośby o przyłączenie się do klubu, dodawaj
+                    Załóż swój klub, zarządzaj jego członkami, akceptuj prośby o dołączenie, dodawaj
                     treningi indywidualne lub treningi dostępne dla każdego.
                 </Text>
                 <Link to={'pobierz'}>
