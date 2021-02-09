@@ -86,7 +86,7 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/pobierz-aplikacje" target="_blank">
+                          <a href="/pobierz" target="_blank">
                             Pobierz aplikację
                           </a>
                         </li>
