@@ -16,7 +16,7 @@ const BlogList = () => (
             >
                 Pierwszy projekt strony internetowej jest już dostępny.
                 <br />
-              Będą tutaj sie powiawiać aktualności zwiazane z życiem aplikacji oraz nowostworzone funkcjonalności.
+              Będą tutaj sie powiawiać aktualności zwiazane z życiem aplikacji oraz nowo stworzone funkcjonalności.
             </PostCard>
           </Col>
 
