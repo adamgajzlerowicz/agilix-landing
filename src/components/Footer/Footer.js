@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import {Box } from "../Core";
 import Logo from "../Logo";
+import {Link} from "gatsby";
 
 const UlStyled = styled.ul`
   margin: 0;
@@ -86,14 +87,14 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/pobierz">
+                          <Link to="pobierz">
                             Pobierz aplikację
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/aktualnosci">
+                          <Link to="aktualnosci">
                             Aktualności
-                          </a>
+                          </Link>
                         </li>
 
                       </UlStyled>
@@ -103,14 +104,14 @@ const Footer = ({ isDark = true }) => {
                     <div className="mb-5 mb-lg-4">
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="nasza-misja">
+                          <Link to="nasza-misja">
                             Nasza misja
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="polityka-prywatności">
+                          <Link to="polityka-prywatnosci">
                             Polityka prywatności
-                          </a>
+                          </Link>
                         </li>
                       </UlStyled>
                     </div>
