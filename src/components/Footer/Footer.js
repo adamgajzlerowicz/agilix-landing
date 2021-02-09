@@ -24,8 +24,7 @@ const WhiteLogo = styled.div`
   background-color: white;
   border-radius: 20px;
   width: 70px;
-  
-`
+`;
 
 const CopyRightArea = styled.div`
   border-top: ${({ dark, theme }) =>
@@ -58,7 +57,7 @@ const CopyRightArea = styled.div`
       }
       &:hover {
         text-decoration: none;
-        color: ${({ theme, color }) => theme.colors.secondary} !important;
+        color: ${({ theme }) => theme.colors.secondary} !important;
       }
     }
   }
@@ -68,7 +67,6 @@ const CopyRightArea = styled.div`
 const Footer = ({ isDark = true }) => {
   return (
     <>
-      {/* <!-- Footer section --> */}
       <Box bg={isDark ? "dark" : "light"}>
         <Container>
           <Box
