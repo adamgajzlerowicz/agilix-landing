@@ -84,10 +84,11 @@ function CTA() {
                                         if (result.sendContactEmail) {
                                             setStatus('success')
                                         } else {
+                                            setStatus('failed')
                                             console.log('wystapil blad');
                                         }
                                     }).catch(error => {
-                                        console.log('wystapil blad', error);
+                                        setStatus('failed')
                                     }).finally(() => setSubmitting(false))
                                 }}>
                                 {({
@@ -107,8 +108,8 @@ function CTA() {
                                                     Dziękujemy za kontakt!
                                                 </Text>
                                                 <Text color="light">
-                                                Wiadomość została wysłana.
-                                            </Text></Box> :
+                                                    Wiadomość została wysłana.
+                                                </Text></Box> :
                                             <form onSubmit={handleSubmit}>
                                                 <Box mb={5} className="text-center">
                                                     <Title color="light">Napisz do nas</Title>
@@ -133,7 +134,7 @@ function CTA() {
                                                 </Box>
                                                 <Box mb={3}>
                                                     <Input
-                                                        type="email"
+                                                        type="text"
                                                         placeholder="Email"
                                                         name="sender"
                                                         value={values.sender}
@@ -154,16 +155,19 @@ function CTA() {
                                                     disabled={isSubmitting}>
                                                     Wyślij wiadomość
                                                 </Button>}
+                                                {status === 'failed' &&
+                                                <Text variant='small' color="warning" className="text-center">Wysyłanie nie powiodło się</Text>}
+
                                             </form>)
                                 }}
-                            </Formik>
+                                    </Formik>
 
-                        </Col>
-                    </Row>
-                </Container>
-            </Section>
-        </>
-    );
-};
+                                    </Col>
+                                    </Row>
+                                    </Container>
+                                    </Section>
+                                    </>
+                                    );
+                                };
 
 export default CTA
