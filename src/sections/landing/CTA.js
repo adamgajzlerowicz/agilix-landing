@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {Container, Row, Col} from "react-bootstrap";
+import {Formik} from 'formik';
 
 import {
     Title,
@@ -40,14 +41,7 @@ const mutation = gql`
 `
 
 
-const CTA = () => {
-    const [formData, setFormData] = React.useState({
-        content: '',
-        sender: ''
-    })
-
-    const [loading, setLoading] = React.useState(null)
-
+function CTA() {
     return (
         <>
             <Section bg="dark" className="position-relative">
@@ -64,58 +58,106 @@ const CTA = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col lg="7" xl="6">
+                            <Formik
+                                initialValues={{
+                                    content: '',
+                                    sender: ''
+                                }}
+                                validate={values => {
+                                    const errors = {};
+                                    if (!values.sender) {
+                                        errors.sender = 'Pole jest wymagane';
+                                    } else if (
+                                        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.sender)
+                                    ) {
+                                        errors.sender = 'Wpisz poprawny adres email';
+                                    }
 
-                            {loading === false ? <Box mb={5} mt={5} className="text-center"> <Text color="light" >
-                                    Wiadomość została wysłana!
-                                </Text></Box> :
-                                <form>
-                                    <Box mb={5} className="text-center">
-                                        <Title color="light">Napisz do nas</Title>
-                                        <Text color="light" opacity={0.7}>
-                                            Masz sugestie? Chcesz nawiazać wspłpracę? Brakuje funkcjonalności?
-                                            Zapraszamy do
-                                            kontaktu!
-                                        </Text>
-                                    </Box>
-                                    <Box mb={3}>
-                                        <Input type="text" required placeholder="Wiadomość" value={formData.content}
-                                               onChange={data => {
-                                                   setFormData({...formData, content: data.target.value})
-                                               }}/>
-                                    </Box>
-                                    <Box mb={3}>
-                                        <Input type="email" required placeholder="Email" value={formData.sender}
-                                               onChange={data => {
-                                                   setFormData({...formData, sender: data.target.value})
-                                               }}/>
-                                    </Box>
-                                    {loading === true && <Box mb={5} mt={5} className="text-center"> <Loading /></Box>}
+                                    if (!values.content) {
+                                        errors.content = 'Pole jest wymagane';
+                                    }
 
-                                    {loading === null &&
-                                    <Button width="100%" type="submit" borderRadius={10} onClick={(e) => {
-                                        e.preventDefault()
-
-                                        if (formData.content && formData.sender) {
-                                            setLoading(true)
-                                            graphQLClient.request(mutation, formData).then(result => {
-                                                if (result.sendContactEmail) {
-                                                } else {
-                                                    console.log('wystapil blad');
-                                                }
-                                                setLoading(false)
-                                            }).catch(error => {
-                                                setLoading(false)
-                                                console.log('wystapil blad', error);
-                                            })
+                                    return errors;
+                                }}
+                                onSubmit={(values, {setSubmitting, setStatus}) => {
+                                    graphQLClient.request(mutation, values).then(result => {
+                                        if (result.sendContactEmail) {
+                                            setStatus('success')
+                                        } else {
+                                            console.log('wystapil blad');
                                         }
-                                    }}
-                                            disabled={typeof loading === 'boolean'}>
-                                        {loading === null && 'Wyślij wiadomość'}
-                                        {loading === true && <Loading/>}
+                                    }).catch(error => {
+                                        console.log('wystapil blad', error);
+                                    }).finally(() => setSubmitting(false))
+                                }}>
+                                {({
+                                      values,
+                                      errors,
+                                      touched,
+                                      handleChange,
+                                      handleBlur,
+                                      handleSubmit,
+                                      isSubmitting,
+                                      status
+                                  }) => {
+                                    return (
+                                        status === 'success' ?
+                                            <Box mb={5} mt={5} className="text-center">
+                                                <Text color="light">
+                                                    Dziękujemy za kontakt!
+                                                </Text>
+                                                <Text color="light">
+                                                Wiadomość została wysłana.
+                                            </Text></Box> :
+                                            <form onSubmit={handleSubmit}>
+                                                <Box mb={5} className="text-center">
+                                                    <Title color="light">Napisz do nas</Title>
+                                                    <Text color="light" opacity={0.7}>
+                                                        Masz sugestie? Chcesz nawiazać wspłpracę? Brakuje
+                                                        funkcjonalności?
+                                                        Zapraszamy do
+                                                        kontaktu!
+                                                    </Text>
+                                                </Box>
+                                                <Box mb={3}>
+                                                    <Input
+                                                        type="text"
+                                                        name='content'
+                                                        placeholder="Wiadomość"
+                                                        value={values.content}
+                                                        onChange={handleChange}
+                                                        onBlur={handleBlur}
+                                                    />
+                                                    {errors.content && touched.content &&
+                                                    <Text variant='small' color="warning">{errors.content}</Text>}
+                                                </Box>
+                                                <Box mb={3}>
+                                                    <Input
+                                                        type="email"
+                                                        placeholder="Email"
+                                                        name="sender"
+                                                        value={values.sender}
+                                                        onChange={handleChange}
+                                                        onBlur={handleBlur}
+                                                    />
+                                                    {errors.sender && touched.sender &&
+                                                    <Text variant='small' color="warning">{errors.sender}</Text>}
+                                                </Box>
+                                                {isSubmitting === true &&
+                                                <Box mb={5} mt={5} className="text-center"> <Loading/></Box>}
 
-                                    </Button>}
-                                </form>
-                            }
+                                                {isSubmitting === false &&
+                                                <Button
+                                                    width="100%"
+                                                    type="submit"
+                                                    borderRadius={10}
+                                                    disabled={isSubmitting}>
+                                                    Wyślij wiadomość
+                                                </Button>}
+                                            </form>)
+                                }}
+                            </Formik>
+
                         </Col>
                     </Row>
                 </Container>
@@ -124,4 +166,4 @@ const CTA = () => {
     );
 };
 
-export default CTA;
+export default CTA
