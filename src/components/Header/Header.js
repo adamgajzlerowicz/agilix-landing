@@ -369,7 +369,7 @@ const Header = ({isDark = false}) => {
                             </div>
                         </div>
                         <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
-                            <Link to={'pobierz'}>
+                            <Link to={'/pobierz'}>
                                 <Button
                                     size="sm"
                                     css={`

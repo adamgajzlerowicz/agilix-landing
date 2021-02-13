@@ -10,9 +10,8 @@ const Kontakt = () => {
   return (
     <>
       <PageWrapper footerDark>
-        <Hero title="Kontakt">
-        </Hero>
-          <CTA />
+        <Hero title="Kontakt" />
+        <CTA />
       </PageWrapper>
     </>
   );
