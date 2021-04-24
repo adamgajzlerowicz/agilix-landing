@@ -12,16 +12,16 @@ const BlogList = () => (
                     <Col lg="4" className="mb-5">
                         <PostCard
                             preTitle="23 Kwiecień 2021"
-                            title="Nowa notyfikacja i usprawniena"
+                            title="Nowa wersja wydana - zawiera nową notyfikację!"
                         >
-                            Upływający czas pozwolił na weryfikacje używalności aplikacji.
-                            <br/>
-                            <ul>
-                                <li>Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwłane - zostaniesz informację tym wprost na telefon!</li>
-                                <li>Ekran do zapraszania na treningi został ulepszony. Sortowanie uczestników uwzględnia duże litery natomiast dodawanie
-                                    uczestników nie powoduje przesortowania listy.</li>
-                                <li>Nowy ekran - jeżeli nie ma połączenia z internetem przy otwarciu aplikacji, wyskoczy komunikat proszący o ponowienie połączenia</li>
-                            </ul>
+                            Upływający czas pozwolił na zbadanie jak aplikacja jest używana:
+                            <hr/>
+                                Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwłane - zostaniesz powiadomienie wprost na telefon.
+                            <hr/>
+                                Ekran do zapraszania na treningi został ulepszony. Sortowanie uczestników uwzględnia duże litery natomiast dodawanie
+                                    uczestników nie powoduje przesortowania listy.
+                            <hr />
+                                Nowy ekran - jeżeli nie ma połączenia z internetem przy otwarciu aplikacji, wyskoczy komunikat proszący o ponowienie połączenia
                         </PostCard>
                     </Col>
 
