@@ -15,7 +15,7 @@ const BlogRegular = () => {
           <Container>
             <Row className="justify-content-center text-center">
               <Col lg="8">
-                <Title variant="hero">Aktualnosci</Title>
+                <Title variant="hero">Aktualności</Title>
                 <Text>
                     Nowości dotyczące aplikacji.
                 </Text>

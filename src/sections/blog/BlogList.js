@@ -16,7 +16,7 @@ const BlogList = () => (
                         >
                             Upływający czas pozwolił na zbadanie jak aplikacja jest używana:
                             <hr/>
-                                Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwłane - zostaniesz powiadomienie wprost na telefon.
+                                Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwołane - dostaniesz powiadomienie wprost na telefon.
                             <hr/>
                                 Ekran do zapraszania na treningi został ulepszony. Sortowanie uczestników uwzględnia duże litery natomiast dodawanie
                                     uczestników nie powoduje przesortowania listy.
