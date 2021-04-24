@@ -11,12 +11,28 @@ const BlogList = () => (
                 <Row className="align-items-center justify-content-center">
                     <Col lg="4" className="mb-5">
                         <PostCard
+                            preTitle="23 Kwiecień 2021"
+                            title="Nowa notyfikacja i usprawniena"
+                        >
+                            Upływający czas pozwolił na weryfikacje używalności aplikacji.
+                            <br/>
+                            <ul>
+                                <li>Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwłane - zostaniesz informację tym wprost na telefon!</li>
+                                <li>Ekran do zapraszania na treningi został ulepszony. Sortowanie uczestników uwzględnia duże litery natomiast dodawanie
+                                    uczestników nie powoduje przesortowania listy.</li>
+                                <li>Nowy ekran - jeżeli nie ma połączenia z internetem przy otwarciu aplikacji, wyskoczy komunikat proszący o ponowienie połączenia</li>
+                            </ul>
+                        </PostCard>
+                    </Col>
+
+                    <Col lg="4" className="mb-5">
+                        <PostCard
                             preTitle="13 Luty 2021"
                             title="Formularz kontaktowy został ukończony"
                         >
                             Z upływem czasu strona jest rozwijana i dodawane są nowe funkcjojnalności.
                             <br/>
-                            Od dziś, formularz kontaktowy jest sprawny.
+                            Od dziś, formularz kontaktowy jest w pełni sprawny.
                         </PostCard>
                     </Col>
 
