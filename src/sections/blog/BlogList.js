@@ -9,7 +9,7 @@ const BlogList = () => (
         <Section className="position-relative">
             <Container>
                 <Row className="align-items-center justify-content-center">
-                    <Col lg="4" className="mb-5">
+                    <Col xs="12" className="mb-5">
                         <PostCard
                             preTitle="23 Kwiecień 2021"
                             title="Nowa wersja wydana - zawiera nową notyfikację!"
@@ -25,7 +25,7 @@ const BlogList = () => (
                         </PostCard>
                     </Col>
 
-                    <Col lg="4" className="mb-5">
+                    <Col xs="12" className="mb-5">
                         <PostCard
                             preTitle="13 Luty 2021"
                             title="Formularz kontaktowy został ukończony"
@@ -36,7 +36,7 @@ const BlogList = () => (
                         </PostCard>
                     </Col>
 
-                    <Col lg="4" className="mb-5">
+                    <Col xs="12" className="mb-5">
                         <PostCard
                             preTitle="6 Luty 2021"
                             title="Powstała strona internetowa."
