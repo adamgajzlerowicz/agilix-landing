@@ -12,13 +12,14 @@ const BlogList = () => (
                     <Col xs="12" className="mb-5">
                         <PostCard
                             preTitle="23 Kwiecień 2021"
-                            title="Nowa wersja wydana - zawiera nowe notyfikację!"
+                            title="Nowa wersja wydana - zawiera nowe notyfikacje!"
                         >
                             Upływający czas pozwolił na zbadanie jak aplikacja jest używana:
                             <hr/>
                                 Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwołane - dostaniesz powiadomienie wprost na telefon.
                             <hr/>
-                                Kolejna notyfikacja da Ci znać o nowo dodanych wydarzeniach w Twoim klubie.
+                                Kolejna notyfikacja da Ci znać o nowo dodanych wydarzeniach. Jeżeli danego
+                                dnia klub dodał trening na który możesz się zapisać - dowiesz się o tym i nie przegapisz zajęć w swoim klubie.
                             <hr/>
                             Ekran do zapraszania na treningi został ulepszony. Sortowanie uczestników uwzględnia duże litery natomiast dodawanie
                                     uczestników nie powoduje przesortowania listy.
