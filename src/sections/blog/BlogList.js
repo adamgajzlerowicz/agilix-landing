@@ -3,73 +3,47 @@ import {Container, Row, Col} from "react-bootstrap";
 
 import {Section} from "../../components/Core";
 import PostCard from "../../components/PostCard";
+import { news } from "../../aktualnosci";
 
-const BlogList = () => (
-    <>
-        <Section className="position-relative">
-            <Container>
-                <Row className="align-items-center justify-content-center">
-                    <Col xs="12" className="mb-5">
-                        <PostCard
-                            preTitle="23 Kwiecień 2021"
-                            title="Nowa wersja wydana - zawiera nowe notyfikacje!"
-                        >
-                            Upływający czas pozwolił na zbadanie jak aplikacja jest używana:
-                            <hr/>
-                                Od dziś dostępna jest nowa notyfikacja. Jeżeli wydarzenie zostanie odwołane - dostaniesz powiadomienie wprost na telefon.
-                            <hr/>
-                                Kolejna notyfikacja da Ci znać o nowo dodanych wydarzeniach. Jeżeli danego
-                                dnia klub dodał trening na który możesz się zapisać - dowiesz się o tym i nie przegapisz zajęć w swoim klubie.
-                            <hr/>
-                            Ekran do zapraszania na treningi został ulepszony. Sortowanie uczestników uwzględnia duże litery natomiast dodawanie
-                                    uczestników nie powoduje przesortowania listy.
-                            <hr />
-                                Nowy ekran - jeżeli nie ma połączenia z internetem przy otwarciu aplikacji, wyskoczy komunikat proszący o ponowienie połączenia
-                        </PostCard>
-                    </Col>
-
-                    <Col xs="12" className="mb-5">
-                        <PostCard
-                            preTitle="13 Luty 2021"
-                            title="Formularz kontaktowy został ukończony"
-                        >
-                            Z upływem czasu strona jest rozwijana i dodawane są nowe funkcjojnalności.
-                            <br/>
-                            Od dziś, formularz kontaktowy jest w pełni sprawny.
-                        </PostCard>
-                    </Col>
-
-                    <Col xs="12" className="mb-5">
-                        <PostCard
-                            preTitle="6 Luty 2021"
-                            title="Powstała strona internetowa."
-                        >
-                            Pierwszy projekt strony internetowej jest już dostępny.
-                            <br/>
-                            Będą tutaj sie powiawiać aktualności zwiazane z życiem aplikacji oraz nowo stworzone
-                            funkcjonalności.
-                        </PostCard>
-                    </Col>
-
-                </Row>
-                {/*<Box className="d-flex justify-content-center" mt={4}>*/}
-                {/*  <Pagination>*/}
-                {/*    <PageItem>*/}
-                {/*      <FaAngleLeft />*/}
-                {/*    </PageItem>*/}
-                {/*    <PageItem>1</PageItem>*/}
-                {/*    <PageItem>2</PageItem>*/}
-                {/*    <PageItem>3</PageItem>*/}
-                {/*    <PageItem>...</PageItem>*/}
-                {/*    <PageItem>9</PageItem>*/}
-                {/*    <PageItem>*/}
-                {/*      <FaAngleRight />*/}
-                {/*    </PageItem>*/}
-                {/*  </Pagination>*/}
-                {/*</Box>*/}
-            </Container>
-        </Section>
-    </>
-);
+const BlogList = ({ slug }) => {
+    return (
+        <>
+            <Section className="position-relative">
+                <Container>
+                    {Object.entries(news).filter(([key]) => slug ? key === slug : true).map(([key, value]) => {
+                        return <>
+                            <Row className="align-items-center justify-content-center">
+                                <Col xs="12" className="mb-5">
+                                    <PostCard
+                                        preTitle={value.date}
+                                        title={value.title}
+                                        titleLink={'/aktualnosci/' + key}
+                                    >
+                                        {value.content}
+                                    </PostCard>
+                                </Col>
+                            </Row>
+                        </>
+                    })}
+                    {/*<Box className="d-flex justify-content-center" mt={4}>*/}
+                    {/*  <Pagination>*/}
+                    {/*    <PageItem>*/}
+                    {/*      <FaAngleLeft />*/}
+                    {/*    </PageItem>*/}
+                    {/*    <PageItem>1</PageItem>*/}
+                    {/*    <PageItem>2</PageItem>*/}
+                    {/*    <PageItem>3</PageItem>*/}
+                    {/*    <PageItem>...</PageItem>*/}
+                    {/*    <PageItem>9</PageItem>*/}
+                    {/*    <PageItem>*/}
+                    {/*      <FaAngleRight />*/}
+                    {/*    </PageItem>*/}
+                    {/*  </Pagination>*/}
+                    {/*</Box>*/}
+                </Container>
+            </Section>
+        </>
+    );
+};
 
 export default BlogList;

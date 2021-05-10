@@ -62,6 +62,7 @@ const PostCard = ({
   title,
   children,
   readMore,
+  titleLink,
   ...rest
 }) => (
   <Card
@@ -99,9 +100,18 @@ const PostCard = ({
         </Text>
       )}
 
-        <TitleStyled variant="card" mb="14px">
-          {title}
-        </TitleStyled>
+      {titleLink
+          ?
+          <Link to={titleLink}>
+            <TitleStyled variant="card" mb="14px">
+              {title}
+            </TitleStyled>
+          </Link>
+          :
+          <TitleStyled variant="card" mb="14px">
+            {title}
+          </TitleStyled>
+      }
       <Text fontSize={2} lineHeight={1.75} mb="16px">
         {children}
       </Text>
