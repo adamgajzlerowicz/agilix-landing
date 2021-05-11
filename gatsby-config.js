@@ -35,5 +35,11 @@ module.exports = {
         // cookieDomain: "example.com",
       },
     },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        https: true,
+      },
+    }
   ],
 };
