@@ -39,6 +39,7 @@ module.exports = {
       resolve: 'gatsby-plugin-htaccess',
       options: {
         https: true,
+        host: 'agilix.dog',
       },
     }
   ],
