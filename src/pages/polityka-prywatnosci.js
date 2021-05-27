@@ -14,7 +14,7 @@ const PolitykaPrywatnosci = () => {
             <Row className="justify-content-center">
               <Col lg="9" xl="8">
                 <Title variant="hero" className="text-center">
-                  Polityka Prywatności
+                  Polityka Prywatności aplikacji Agilix
                 </Title>
 
                 <p>Poniższa Polityka Prywatności określa <strong>zasady zapisywania i uzyskiwania dostępu do danych na Urządzeniach
@@ -72,27 +72,16 @@ const PolitykaPrywatnosci = () => {
                     / nadpisuje "dane osobowe" uniemożliwiając identyfikację, lub powiązanie danego rekordu z konkretnym użytkownikiem
                     lub osobą fizyczną.</p></li>
                 </ul>
-                <h2 >§2 Inspektor Ochrony Danych</h2>
+                <h2>§2 Inspektor Ochrony Danych</h2>
                 <p>Na podstawie Art. 37 RODO, Administrator nie powołał Inspektora Ochrony Danych.</p>
                 <p>W sprawach dotyczących przetwarzania danych, w tym danych osobowych, należy kontaktować się bezpośrednio z
                   Administratorem.</p>
-                <h2 >§3 Rodzaje Plików Cookies</h2>
+                <h2>§3 Rodzaje Plików Cookies</h2>
                 <ul>
                   <li><p><strong>Cookies wewnętrzne</strong> - pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez system
                     teleinformatyczny Serwisu</p></li>
-                  <li><p><strong>Cookies zewnętrzne</strong> - pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez systemy
-                    teleinformatyczne Serwisów zewnętrznych. Skrypty Serwisów zewnętrznych, które mogą umieszczać pliki Cookies na
-                    Urządzeniach Użytkownika zostały świadomie umieszczone w Serwisie poprzez skrypty i usługi udostępnione i
-                    zainstalowane w Serwisie </p></li>
-                  <li><p><strong>Cookies sesyjne</strong> - pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez Serwis
-                    lub Serwisy zewnętrzne podczas jednej sesji danego Urządzenia. Po
-                    zakończeniu sesji pliki są usuwane z Urządzenia Użytkownika.</p></li>
-                  <li><p><strong>Cookies trwałe</strong> - pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez Serwis
-                    <span id="sz2">lub Serwisy zewnętrzne</span> do momentu ich ręcznego usunięcia. Pliki nie
-                    są usuwane automatycznie po zakończeniu sesji Urządzenia chyba że konfiguracja Urządzenia Użytkownika jest
-                    ustawiona na tryb usuwanie plików Cookie po zakończeniu sesji Urządzenia.</p></li>
                 </ul>
-                <h2 >§4 Bezpieczeństwo składowania danych</h2>
+                <h2>§4 Bezpieczeństwo składowania danych</h2>
                 <ul>
                   <li><p><strong>Mechanizmy składowania i odczytu plików Cookie</strong> - Mechanizmy składowania, odczytu i wymiany
                     danych pomiędzy Plikami Cookies zapisywanymi na Urządzeniu Użytkownika a Serwisem są realizowane poprzez wbudowane
@@ -103,40 +92,12 @@ const PolitykaPrywatnosci = () => {
                   <li><p><strong>Cookie wewnętrzne</strong> - zastosowane przez Administratora pliki Cookie są bezpieczne dla Urządzeń
                     Użytkowników i nie zawierają skryptów, treści lub informacji mogących zagrażać bezpieczeństwu danych osobowych lub
                     bezpieczeństwu Urządzenia z którego korzysta Użytkownik.</p></li>
-                  <li><p><strong>Cookie zewnętrzne</strong> - Administrator dokonuje wszelkich możliwych działań w celu weryfikacji i
-                    doboru partnerów serwisu w kontekście bezpieczeństwa Użytkowników. Administrator do współpracy dobiera znanych,
-                    dużych partnerów o globalnym zaufaniu społecznym. Nie posiada on jednak pełnej kontroli nad zawartością plików
-                    Cookie pochodzących od zewnętrznych partnerów. Za bezpieczeństwo plików Cookie, ich zawartość oraz zgodne z
-                    licencją wykorzystanie przez zainstalowane w serwisie Skrypty, pochodzących z Serwisów zewnętrznych, Administrator
-                    nie ponosi odpowiedzialności na tyle na ile pozwala na to prawo. Lista partnerów zamieszczona jest w dalszej
-                    części Polityki Prywatności.</p></li>
                   <li>
                     <p><strong>Kontrola plików Cookie</strong>
                       <ul>
                         <li>
                           <p>Użytkownik może w dowolnym momencie, samodzielnie zmienić ustawienia dotyczące zapisywania, usuwania oraz
-                            dostępu do danych zapisanych plików Cookies przez każdą witrynę internetową</p></li>
-                        <li><p>
-                          <ul>
-                            <li><a rel="nofollow external"
-                                   href="https://support.google.com/accounts/answer/61416?co=GENIE.Platform%3DDesktop&#038;hl=pl">Zarządzanie
-                              plikami cookies w przeglądarce <strong>Chrome</strong></a></li>
-                            <li><a rel="nofollow external" href="https://help.opera.com/pl/latest/web-preferences/">Zarządzanie plikami
-                              cookies w przeglądarce <strong>Opera</strong></a></li>
-                            <li><a rel="nofollow external" href="https://support.mozilla.org/pl/kb/blokowanie-ciasteczek">Zarządzanie
-                              plikami cookies w przeglądarce <strong>FireFox</strong></a></li>
-                            <li><a rel="nofollow external"
-                                   href="https://support.microsoft.com/pl-pl/help/4027947/microsoft-edge-delete-cookies">Zarządzanie plikami
-                              cookies w przeglądarce <strong>Edge</strong></a></li>
-                            <li><a rel="nofollow external" href="https://support.apple.com/pl-pl/guide/safari/sfri11471/mac">Zarządzanie
-                              plikami cookies w przeglądarce <strong>Safari</strong></a></li>
-                            <li><a rel="nofollow external"
-                                   href="https://windows.microsoft.com/pl-pl/internet-explorer/delete-manage-cookies#ie=ie-11">Zarządzanie
-                              plikami cookies w przeglądarce <strong>Internet Explorer 11</strong></a></li>
-                          </ul>
-                        </p></li>
-                        <li><p>Użytkownik może w dowolnym momencie usunąć wszelkie zapisane do tej pory pliki Cookie korzystając z narzędzi
-                          Urządzenia Użytkownika, za pośrednictwem którego Użytkownik korzysta z usług Serwisu.</p></li>
+                            dostępu do danych zapisanych plików Cookies przez każdą witrynę internetową lub aplikacje mobilną</p></li>
                       </ul>
                     </p></li>
                   <li><p><strong>Zagrożenia po stronie Użytkownika </strong> - Administrator stosuje wszelkie możliwe środki techniczne
@@ -160,9 +121,6 @@ const PolitykaPrywatnosci = () => {
                   <li>Usprawnienie i ułatwienie dostępu do Serwisu</li>
                   <li>Personalizacja Serwisu dla Użytkowników</li>
                   <li>Umożliwienie Logowania do serwisu</li>
-                  <li>Marketing, Remarketing w serwisach zewnętrznych</li>
-                  <li>Usługi serwowania reklam</li>
-                  <li>Usługi afiliacyjne</li>
                   <li>Prowadzenie statystyk (użytkowników, ilości odwiedzin, rodzajów urządzeń, łącze itp.)</li>
                   <li>Serwowanie usług multimedialnych</li>
                   <li>Świadczenie usług społecznościowych</li>
@@ -173,7 +131,6 @@ const PolitykaPrywatnosci = () => {
                   <li>Realizacji usług elektronicznych:
                     <ul>
                       <li>Usługi rejestracji i utrzymania konta Użytkownika w Serwisie i funkcjonalności z nim związanych</li>
-                      <li>Usługi Newslettera (w tym przesyłania za zgodą treści reklamowych)</li>
                       <li>Usługi komentowania / polubienia wpisów w Serwisie bez konieczności rejestrowania się</li>
                       <li>Usługi udostępniania informacji o treści umieszczonych w Serwisie w serwisach społecznościowych lub innych
                         witrynach.
@@ -186,39 +143,11 @@ const PolitykaPrywatnosci = () => {
                 <p>Dane o Użytkownikach gromadzone anonimowo i automatycznie są przetwarzane w jednym z następujących celów:</p>
                 <ul>
                   <li>Prowadzenie statystyk</li>
-                  <li>Remarketing</li>
-                  <li>Serwowanie reklam dostosowanych do preferencji Użytkowników</li>
-                  <li>Obsługi programów afiliacyjnych</li>
                   <li>Zapewnienia prawnie uzasadnionego interesu Administratora</li>
                 </ul>
                 <h2 >§7 Pliki Cookies Serwisów zewnętrznych</h2>
-                <p id="zewinfo">Administrator w Serwisie wykorzystuje skrypty javascript i komponenty webowe partnerów, którzy mogą
-                  umieszczać własne pliki cookies na Urządzeniu Użytkownika. Pamiętaj, że w ustawieniach swojej przeglądarki możesz
-                  sam decydować o dozwolonych plikach cookies jakie mogą być używane przez poszczególne witryny internetowe. Poniżej
-                  znajduje się lista partnerów lub ich usług zaimplementowanych w Serwisie, mogących umieszczać pliki cookies: </p>
                 <ul id="zewnetrzne">
-                  <li><strong>Usługi multimedialne:</strong>
-                    <ul>
-                      <li><a rel="nofollow external" href="https://www.youtube.com/t/terms">YouTube</a></li>
-                    </ul>
-                  </li>
-                  <li><strong>Usługi społecznościowe / łączone:</strong><br/>(Rejestracja, Logowanie, udostępnianie treści,
-                    komunikacja, itp.)<br/>
-                    <ul>
-                      <li><a rel="nofollow external" href="https://twitter.com/en/tos?wcmmode=disabled#intlTerms">Twitter</a></li>
-                      <li><a rel="nofollow external" href="https://www.facebook.com/legal/terms">Facebook</a></li>
-                      <li><a rel="nofollow external" href="https://policies.google.com/privacy?hl=pl">Google+</a></li>
-                    </ul>
-                  </li>
-                  <li><strong>Usługi Newslettera:</strong>
-                    <ul>
-                      <li><a rel="nofollow external" href="https://mailchimp.com/legal/privacy/">MailChimp</a></li>
-                    </ul>
-                  </li>
-                  <li><strong>Prowadzenie statystyk:</strong>
-                    <ul>
-                      <li><a rel="nofollow external" href="https://policies.google.com/privacy?hl=pl">Google Analytics</a></li>
-                    </ul>
+                  <li><strong>Cokies usług zewnętrznych nie są przechowywane</strong>
                   </li>
                 </ul>
                 <p>Usługi świadczone przez podmioty trzecie są poza kontrolą Administratora. Podmioty te mogą w każdej chwili zmienić
@@ -228,66 +157,30 @@ const PolitykaPrywatnosci = () => {
                 <p>Serwis gromadzi dane o Użytkownikach. Cześć danych jest gromadzona automatycznie i anonimowo, a część danych to
                   dane osobowe podane dobrowolnie przez Użytkowników w trakcie zapisywania się do poszczególnych usług oferowanych
                   przez Serwis.</p>
-                <p><strong>Anonimowe dane gromadzone automatycznie:</strong></p>
-                <ul>
-                  <li>Adres IP</li>
-                  <li>Typ przeglądarki</li>
-                  <li>Rozdzielczość ekranu</li>
-                  <li>Przybliżona lokalizacja</li>
-                  <li>Otwierane podstrony serwisu</li>
-                  <li>Czas spędzony na odpowiedniej podstronie serwisu</li>
-                  <li>Rodzaj systemu operacyjnego</li>
-                  <li>Adres poprzedniej podstrony</li>
-                  <li>Adres strony odsyłającej</li>
-                  <li>Język przeglądarki</li>
-                  <li>Prędkość łącza internetowego</li>
-                  <li>Dostawca usług internetowych</li>
-                </ul>
                 <p><strong>Dane gromadzone podczas rejestracji:</strong></p>
                 <ul>
                   <li>Imię / nazwisko / pseudonim</li>
                   <li>Login</li>
                   <li>Adres e-mail</li>
-                  <li>Adres IP (zbierane automatycznie)</li>
                 </ul>
-                <p><strong>Dane gromadzone podczas zapisu do usługi Newsletter</strong></p>
+
+                <p><strong>Dane gromadzone podczas użytkowania aplikacji:</strong></p>
                 <ul>
-                  <li>Imię / nazwisko / pseudonim</li>
-                  <li>Adres e-mail</li>
-                  <li>Adres IP (zbierane automatycznie)</li>
+                  <li>Uczestnictwo w zajeciach</li>
+                  <li>Dane piesków</li>
                 </ul>
-                <p><strong>Dane gromadzone podczas dodawania komentarza</strong></p>
-                <ul>
-                  <li>Imię i nazwisko / pseudonim</li>
-                  <li>Adres e-mail</li>
-                  <li>Adres www</li>
-                  <li>Adres IP (zbierane automatycznie)</li>
-                </ul>
-                <p>Część danych (bez danych identyfikujących) może być przechowywana w plikach cookies. Cześć danych (bez danych
-                  identyfikujących) może być przekazywana do dostawcy usług statystycznych.</p>
+                <p><strong>Przesyłane zdjęcia. </strong> W ciągu użytkowania aplikacji, użytkownik może dobrowolnie wysyłać do serwisu zdjęcia.
+                  Zdjęcia te będą dostępne dla pozostałych użytkowniów serwisu, oraz publicznie.</p>
+
+                <p>Część danych (bez danych identyfikujących) może być przechowywana w plikach cookies.</p>
                 <h2 >§9 Dostęp do danych osobowych przez podmioty trzecie</h2>
                 <p>Co do zasady jedynym odbiorcą danych osobowych podawanych przez Użytkowników jest Administrator. Dane gromadzone w
                   ramach świadczonych usług nie są przekazywane ani odsprzedawane podmiotom trzecim.</p>
                 <p>Dostęp do danych (najczęściej na podstawie Umowy powierzenia przetwarzania danych) mogą posiadać podmioty,
                   odpowiedzialne za utrzymania infrastruktury i usług niezbędnych do prowadzenia serwisu tj.:</p>
                 <ul>
-                  <li>Firmy hostingowe, świadczące usługi hostingu lub usług pokrewnych dla Administratora</li>
-                  <li>Firmy, za pośrednictwem których świadczona jest usługa Newslettera</li>
+                  <li>Apple oraz Play store w trakcie kiedy dokonują dystrybucji aplikacji na telefony.</li>
                 </ul>
-                <p><strong>Powierzenie przetwarzania danych osobowych - Newsletter</strong></p>
-                <p>Administrator w celu świadczenia usługi Newsletter, korzysta z usług podmiotu trzeciego - serwisu <strong><a
-                    rel="nofollow external" href="https://mailchimp.com/legal/privacy/">MailChimp</a>, </strong>. Dane wprowadzone w
-                  formularzu zapisu do newslettera są przekazywane, przechowywane i przetwarzane w serwisie zewnętrznym tego
-                  usługodawcy.</p>
-                <p>Informujemy, że wskazany partner może modyfikować wskazaną politykę prywatności bez zgody Administratora.</p><br/>
-                <p><strong>Powierzenie przetwarzania danych osobowych - Usługi Hostingu, VPS lub Serwerów Dedykowanych</strong></p>
-                <p>Administrator w celu prowadzenia serwisu korzysta z usług zewnętrznego dostawcy hostingu, VPS lub Serwerów
-                  Dedykowanych - <strong>
-                   OVH sp. z o.o.. Wszelkie
-                  dane gromadzone i przetwarzane w serwisie są przechowywane i przetwarzane w infrastrukturze usługodawcy
-                  zlokalizowanej w Polsce. Istnieje możliwość dostępu do danych wskutek prac serwisowych realizowanych przez personel
-                    usługodawcy. Dostęp do tych danych reguluje umowa zawarta pomiędzy Administratorem a Usługodawcą.</strong>
-                </p>
                 <br/>
                 <h2 >§10 Sposób przetwarzania danych osobowych</h2>
                 <p><strong>Dane osobowe podane dobrowolnie przez Użytkowników:</strong></p>
@@ -352,9 +245,7 @@ const PolitykaPrywatnosci = () => {
                     przypadku kont użytkowników, usunięcie danych polega na anonimizacji danych umożliwiających identyfikację
                     Użytkownika. Administrator zastrzega sobie prawo wstrzymania realizacji żądania usunięcia danych w celu ochrony
                     prawnie uzasadnionego interesu Administratora (np. w gdy Użytkownik dopuścił się naruszenia Regulaminu czy dane
-                    zostały pozyskane wskutek prowadzonej korespondencji).<br/>W przypadku usługi Newsletter, Użytkownik ma możliwość
-                    samodzielnego usunięcia swoich danych osobowych korzystając z odnośnika umieszczonego w każdej przesyłanej
-                    wiadomości e-mail.</p></li>
+                    zostały pozyskane wskutek prowadzonej korespondencji).</p></li>
                   <li><p><strong>Prawo do ograniczenia przetwarzania danych osobowych</strong><br/>Użytkownikom przysługuje prawo
                     ograniczenia przetwarzania danych osobowych w przypadkach wskazanych w art. 18 RODO, m.in. kwestionowania
                     prawidłowość danych osobowych, realizowane na żądanie złożone do Administratora</p></li>

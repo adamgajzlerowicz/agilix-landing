@@ -128,7 +128,7 @@ const Footer = ({ isDark = true }) => {
               <Col sm="6" className="text-sm-right text-center">
                 <ul className="social-icons">
                   <li>
-                    <a href="/#" target="_blank">
+                    <a href="https://www.facebook.com/agilix" target="_blank">
                       <i className="icon icon-logo-facebook"></i>
                     </a>
                   </li>

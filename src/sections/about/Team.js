@@ -59,7 +59,7 @@ const Team = () => (
         <Row className="align-items-center justify-content-center">
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
             <TeamCard userImg={imgU2} title="Adam">
-                CEO, CTO
+                Zawodnik Agility, programista
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
