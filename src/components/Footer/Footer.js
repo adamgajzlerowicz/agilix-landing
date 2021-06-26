@@ -62,7 +62,7 @@ const CopyRightArea = styled.div`
       }
     }
   }
-  
+
 `;
 
 const Footer = ({ isDark = true }) => {
@@ -111,6 +111,11 @@ const Footer = ({ isDark = true }) => {
                         <li>
                           <Link to="/polityka-prywatnosci">
                             Polityka prywatności
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="https://app.agilix.dog/invite">
+                            Aplikacja
                           </Link>
                         </li>
                       </UlStyled>
