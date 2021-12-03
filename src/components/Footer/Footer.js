@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import {Box } from "../Core";
-import Logo from "../Logo";
 import {Link} from "gatsby";
 
 const UlStyled = styled.ul`
@@ -78,7 +77,6 @@ const Footer = ({ isDark = true }) => {
             <Row className="justify-content-center">
               <Col lg="2" md="4">
                 <WhiteLogo>
-                  <Logo white={isDark} />
                 </WhiteLogo>
               </Col>
               <Col lg="10" md="8" className="mt-5 mt-lg-0">

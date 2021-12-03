@@ -19,7 +19,7 @@ import GlobalContext from "../../context/GlobalContext";
 
 import GlobalStyle from "../../utils/globalStyle";
 
-import imgFavicon from "../../assets/favicon.ico";
+import imgFavicon from "../../assets/agilix-new.svg";
 
 import "../../assets/fonts/icon-font/fonts/avasta.ttf";
 import "../../assets/fonts/icon-font/css/style.css";

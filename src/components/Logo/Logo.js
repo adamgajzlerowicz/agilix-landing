@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import logo from "../../assets/image/png/agilix.png";
+import logo from "../../assets/agilix-logo-vertical.svg";
 
 const Logo = ({ white, height, className = "", ...rest }) => {
   return (
