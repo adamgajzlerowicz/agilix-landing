@@ -6,6 +6,7 @@ import { Title, Section, Box, Text } from "../../components/Core";
 
 import imgU1 from "../../assets/image/jpeg/natalia.png";
 import imgU2 from "../../assets/image/jpeg/adam.jpeg";
+import agnieszka from "../../assets/image/jpeg/agnieszka.png";
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -57,14 +58,19 @@ const Team = () => (
           </Col>
         </Row>
         <Row className="align-items-center justify-content-center">
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
+          <Col sm="12" md="4">
             <TeamCard userImg={imgU2} title="Adam">
-                Zawodnik Agility, programista
+                Trener Agility, programista
             </TeamCard>
           </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
+          <Col sm="12"  md="4" >
             <TeamCard userImg={imgU1} title="Natalia">
-              Trener Agility, specjalista PR
+              Trenerka Agility, specjalista PR
+            </TeamCard>
+          </Col>
+          <Col sm="12" md="4" >
+            <TeamCard userImg={agnieszka} title="Agnieszka">
+              Miłośniczka piesków i papużek, grafika i ilustracje
             </TeamCard>
           </Col>
         </Row>
