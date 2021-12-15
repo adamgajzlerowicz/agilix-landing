@@ -70,7 +70,7 @@ const Team = () => (
           </Col>
           <Col sm="12" md="4" >
             <TeamCard userImg={agnieszka} title="Agnieszka">
-              Miłośniczka piesków i papużek, ilustrator i specjalista UX
+              Zawodnik agility i trener papużek, ilustrator i specjalista UX
             </TeamCard>
           </Col>
         </Row>
