@@ -177,10 +177,7 @@ const PolitykaPrywatnosci = () => {
                 <p>Co do zasady jedynym odbiorcą danych osobowych podawanych przez Użytkowników jest Administrator. Dane gromadzone w
                   ramach świadczonych usług nie są przekazywane ani odsprzedawane podmiotom trzecim.</p>
                 <p>Dostęp do danych (najczęściej na podstawie Umowy powierzenia przetwarzania danych) mogą posiadać podmioty,
-                  odpowiedzialne za utrzymania infrastruktury i usług niezbędnych do prowadzenia serwisu tj.:</p>
-                <ul>
-                  <li>Apple oraz Play store w trakcie kiedy dokonują dystrybucji aplikacji na telefony.</li>
-                </ul>
+                  odpowiedzialne za utrzymania infrastruktury i usług niezbędnych do prowadzenia serwisu tj.: Apple oraz Play store w trakcie kiedy dokonują dystrybucji aplikacji na telefony.</p>
                 <br/>
                 <h2 >§10 Sposób przetwarzania danych osobowych</h2>
                 <p><strong>Dane osobowe podane dobrowolnie przez Użytkowników:</strong></p>
@@ -194,11 +191,11 @@ const PolitykaPrywatnosci = () => {
                 </ul>
                 <p><strong>Dane anonimowe (bez danych osobowych) gromadzone automatycznie:</strong></p>
                 <ul>
-                  <li>Dane anonimiwe (bez danych osobowych) będą przekazywane poza Unię Europejską.</li>
-                  <li>Dane anonimiwe (bez danych osobowych) nie będą wykorzystywane do zautomatyzowanego podejmowania decyzji
+                  <li>Dane anonimowe (bez danych osobowych) będą przekazywane poza Unię Europejską.</li>
+                  <li>Dane anonimowe (bez danych osobowych) nie będą wykorzystywane do zautomatyzowanego podejmowania decyzji
                     (profilowania).
                   </li>
-                  <li>Dane anonimiwe (bez danych osobowych) nie będą odsprzedawane podmiotom trzecim.</li>
+                  <li>Dane anonimowe (bez danych osobowych) nie będą odsprzedawane podmiotom trzecim.</li>
                 </ul>
                 <h2 >§11 Podstawy prawne przetwarzania danych osobowych</h2>
                 <p>Serwis gromadzi i przetwarza dane Użytkowników na podstawie:</p>
@@ -236,12 +233,12 @@ const PolitykaPrywatnosci = () => {
                 <p>Serwis gromadzi i przetwarza dane Użytkowników na podstawie:</p>
                 <ul>
                   <li><p><strong>Prawo dostępu do danych osobowych</strong><br/>Użytkownikom przysługuje prawo uzyskania dostępu do
-                    swoich danych osobowych, realizowane na żądanie złożone do Administratora</p></li>
+                    swoich danych osobowych, realizowane na żądanie złożone do Administratora.</p></li>
                   <li><p><strong>Prawo do sprostowania danych osobowych</strong><br/>Użytkownikom przysługuje prawo żądania od
                     Administratora niezwłocznego sprostowania danych osobowych, które są nieprawidłowe lub / oraz uzupełnienia
                     niekompletnych danych osobowych, realizowane na żądanie złożone do Administratora</p></li>
                   <li><p><strong>Prawo do usunięcia danych osobowych</strong><br/>Użytkownikom przysługuje prawo żądania od
-                    Administratora niezwłocznego usunięcia danych osobowych, realizowane na żądanie złożone do AdministratoraW
+                    Administratora niezwłocznego usunięcia danych osobowych, realizowane na żądanie złożone do Administratora. W
                     przypadku kont użytkowników, usunięcie danych polega na anonimizacji danych umożliwiających identyfikację
                     Użytkownika. Administrator zastrzega sobie prawo wstrzymania realizacji żądania usunięcia danych w celu ochrony
                     prawnie uzasadnionego interesu Administratora (np. w gdy Użytkownik dopuścił się naruszenia Regulaminu czy dane
@@ -259,10 +256,7 @@ const PolitykaPrywatnosci = () => {
                     nadzorczego zajmującego się ochroną danych osobowych.</p></li>
                 </ul>
                 <h2 >§14 Kontakt do Administratora</h2>
-                <p>Z Administratorem można skontaktować się w jeden z poniższych sposobów</p>
-                <ul>
-                  <li><p><strong>Adres poczty elektronicznej</strong> nelf86@gmail.com</p></li>
-                </ul>
+                <p>Z Administratorem można skontaktować się używając adresu poczty elektronicznej nelf86@gmail.com.</p>
                 <h2 >§15 Wymagania Serwisu</h2>
                 <ul>
                   <li><p>Ograniczenie zapisu i dostępu do plików Cookie na Urządzeniu Użytkownika może spowodować nieprawidłowe
