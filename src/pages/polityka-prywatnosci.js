@@ -226,6 +226,7 @@ const PolitykaPrywatnosci = () => {
                   danych przez Administratora. W takiej sytuacji Administrator będzie przechowywał wskazane dane, od czasu żądania ich
                   usunięcia przez Użytkownika, nie dłużej niż przez okres 3 lat w przypadku naruszenia lub podejrzenia naruszenia
                   zapisów regulaminu serwisu przez Użytkownika</p>
+                <p>Użytkownicy będą otrzymywali notyfikacje z Serwisu na telefon.</p>
                 <p><strong>Dane anonimowe (bez danych osobowych) gromadzone automatycznie:</strong></p>
                 <p>Anonimowe dane statystyczne, niestanowiące danych osobowych, są przechowywane przez Administratora w celu
                   prowadzenia statystyk serwisu przez czas nieoznaczony</p>
