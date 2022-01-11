@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{IDOG:function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),r=n.n(t),l=n("9sjD"),c=n("GPKm");a.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(c.a,{footerDark:!0},r.a.createElement("div",{style:{marginTop:150}},r.a.createElement(l.a,null))))}}}]);
+//# sourceMappingURL=component---src-pages-kontakt-js-10ae39e8bb215af5cf69.js.map
