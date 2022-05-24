@@ -7,49 +7,12 @@ module.exports = {
     siteUrl: `https://agilix.dog`
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-FXF0SF8MKS",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // Setting this parameter is optional
-        // anonymize: true,
-        // Setting this parameter is also optional
-        // respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        // exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        // pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Enables Google Optimize Experiment ID
-        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // Set Variation ID. 0 for original 1,2,3....
-        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Defers execution of google analytics script after page load
-        // defer: false,
-        // Any additional optional fields
-        // sampleRate: 5,
-        // siteSpeedSampleRate: 10,
-        cookieDomain: "agilix.dog",
-        // defaults to false
-        enableWebVitalsTracking: true,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "GTM-5C56HZ6", // Google Analytics / GA
+          "G-0003FLN5B7",
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
@@ -71,6 +34,12 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-plugin-htaccess',
       options: {
