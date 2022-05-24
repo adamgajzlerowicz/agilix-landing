@@ -2,19 +2,17 @@ import React from "react";
 import Hero from "../sections/landing/Hero";
 import Feature from "../sections/landing/Feature";
 import Content from "../sections/landing/Content";
-import CTA from "../sections/landing/CTA";
+import Cta from "../sections/landing/Cta";
 import PageWrapper from "../components/PageWrapper";
 
-const IndexPage = () => {
+const Index = () => {
   return (
-    <>
       <PageWrapper footerDark>
         <Hero />
         <Feature />
         <Content />
-        <CTA />
+        <Cta />
       </PageWrapper>
-    </>
   );
 };
-export default IndexPage;
+export default Index;

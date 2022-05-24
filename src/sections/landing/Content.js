@@ -29,9 +29,9 @@ const Content = () => (
       <Container>
         <Row className="align-items-center">
           <Col md="12" lg="6" className="order-lg-2">
-            <div className="position-relative pl-lg-5">
+            <div className="position-relative ps-lg-5">
               <div
-                className="pl-lg-4 text-center text-lg-right"
+                className="ps-lg-4 text-center text-lg-right"
                 data-aos="fade-down"
                 data-aos-duration="750"
                 data-aos-once="true"

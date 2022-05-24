@@ -1,6 +1,7 @@
 // Override default variables before the import
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
+$min-contrast-ratio: 2.5;
 $primary: #f04037;
 $secondary: #5454d4;
 $bg: #ffffff;
@@ -14,13 +15,15 @@ $body-bg: $bg;
 $font-family-base: 'Titillium Web', sans-serif;
 $headings-font-family: $font-family-base;
 
-// Import Bootstrap and its default variables
-@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  padding: 0.5rem calc(1rem + 4px);
+}
 
 .has-offcanvas {
   width: 100%;
   height: 100%;
-  // overflow: hidden !important;
 }
 
 // Fix for flush list group

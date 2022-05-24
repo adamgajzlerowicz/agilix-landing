@@ -53,7 +53,7 @@ const RolesCard = ({
   <Card className="card-job top-only" to="/#" {...rest}>
     <div className="d-flex justify-content-between align-items-center mb-4">
       <Location>
-        <i className="icon icon-pin-3 mr-1"></i> {location}
+        <i className="icon icon-pin-3 me-1"></i> {location}
       </Location>
       <BadgeStyled bg={color}>{type}</BadgeStyled>
     </div>

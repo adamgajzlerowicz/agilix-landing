@@ -52,7 +52,7 @@ const Content = () => {
                 Watch how we work here.
               </Title>
             </Col>
-            <Col lg="6" className="pl-lg-5 d-flex align-items-end">
+            <Col lg="6" className="ps-lg-5 d-flex align-items-end">
               <Text>
                 These companies release their own versions of the operating
                 systems with minor changes, and yet always with the same bottom

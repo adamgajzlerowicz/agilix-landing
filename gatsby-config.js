@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `Agilix`,
-    description: 'Baza dla wszsystkich miłośników aktywnego spędzania czasu z psami',
+    description: 'Baza dla wszystkich miłośników aktywnego spędzania czasu z psami',
     author: `Adam Gajzlerowicz`,
     siteUrl: `https://agilix.dog`
   },

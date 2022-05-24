@@ -1,5 +1,5 @@
 import React from "react";
-import CTA from "../sections/landing/CTA";
+import Cta from "../sections/landing/Cta";
 
 
 import PageWrapper from "../components/PageWrapper";
@@ -9,7 +9,7 @@ const Kontakt = () => {
     <>
       <PageWrapper footerDark>
           <div style={{marginTop: 150}}>
-              <CTA />
+              <Cta />
           </div>
       </PageWrapper>
     </>

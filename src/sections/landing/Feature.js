@@ -80,7 +80,7 @@ const Feature = () => (
       </ShapeBottmRight>
       <Container>
         <Row className="align-items-center">
-          <Col lg="6" className="pl-lg-5 order-lg-2">
+          <Col lg="6" className="ps-lg-5 order-lg-2">
             <div className="feature-content section-title">
               <Title color="light">Otwórz się na nowe aktywności ze swoim pupilem!</Title>
               <Text color="light" opacity={0.7} mb={4}>

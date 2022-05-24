@@ -119,7 +119,7 @@ const Testimonial = () => (
                 className="d-inline-flex align-items-center"
               >
                 <Span color="secondary">
-                  <i className="fas fa-comment-alt mr-2"></i>
+                  <i className="fas fa-comment-alt me-2"></i>
                   <span>See all testimonials</span>
                 </Span>
               </A>

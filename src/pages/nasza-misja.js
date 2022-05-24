@@ -2,7 +2,7 @@ import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
 import Content from "../sections/about/Content";
-import CTA from "../sections/landing/CTA";
+import Cta from "../sections/landing/Cta";
 import Team from "../sections/about/Team";
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
       <PageWrapper>
         <Content />
         <Team />
-        <CTA />
+        <Cta />
       </PageWrapper>
     </>
   );

@@ -23,7 +23,7 @@ const Content = () => (
                     <Col lg="12">
                         <Title variant="hero">Nasza misja</Title>
                     </Col>
-                    <Col lg="6" className="pl-lg-5">
+                    <Col lg="6" className="ps-lg-5">
                         <Text>
                             Dnia 6 marca 2017 roku adoptowałem Mongo - półrocznego psiaka ze schroniska. Od razu
                             otrzymałem kontakt do behawiorysty,

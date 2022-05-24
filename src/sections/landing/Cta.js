@@ -41,7 +41,7 @@ const mutation = gql`
 `
 
 
-function CTA() {
+function Cta() {
     return (
         <>
             <Section bg="dark" className="position-relative">
@@ -170,4 +170,4 @@ function CTA() {
                                     );
                                 };
 
-export default CTA
+export default Cta
