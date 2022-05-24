@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkagilix=self.webpackChunkagilix||[]).push([[628],{7395:function(e,t,n){n.r(t);var l=n(7294),a=n(7629),r=n(9956);t.default=function(){return l.createElement(l.Fragment,null,l.createElement(r.Z,{footerDark:!0},l.createElement("div",{style:{marginTop:150}},l.createElement(a.Z,null))))}}}]);
+//# sourceMappingURL=component---src-pages-kontakt-js-0fa9110d6ffbd99c6b36.js.map
