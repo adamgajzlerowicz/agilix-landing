@@ -14,6 +14,7 @@ module.exports = {
         trackingIds: [
           "G-0003FLN5B7",
           "GA-3585733083",
+          "UA-196721675-1"
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
