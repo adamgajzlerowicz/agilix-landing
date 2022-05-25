@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import { ListGroup, Collapse } from "react-bootstrap";
-import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { Link } from "gatsby";
 import GlobalContext from "../../context/GlobalContext";
 
@@ -90,21 +89,6 @@ const MenuItem = ({
   const gContext = useContext(GlobalContext);
 
   return (
-    <>
-      {hasSubItems ? (
-        <ListGroup.Item
-          {...rest}
-          css={`
-            padding-left: ${depth * depthStep}px !important;
-            cursor: pointer;
-          `}
-          onClick={() => setOpen(!open)}
-          className="d-flex align-items-center justify-content-between"
-        >
-          <span>{label}</span>
-          <span>{open ? <FaAngleDown /> : <FaAngleRight />}</span>
-        </ListGroup.Item>
-      ) : (
         <ListGroup.Item
           {...rest}
           css={`
@@ -135,23 +119,6 @@ const MenuItem = ({
             </Link>
           )}
         </ListGroup.Item>
-      )}
-
-      {hasSubItems ? (
-        <Collapse in={open}>
-          <ListGroup>
-            {items.map((subItem) => (
-              <MenuItem
-                key={subItem.name}
-                depth={depth + 1}
-                depthStep={depthStep}
-                {...subItem}
-              />
-            ))}
-          </ListGroup>
-        </Collapse>
-      ) : null}
-    </>
   );
 };
 

@@ -132,16 +132,25 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y59MQBN1QS"></script>
+          <script>{`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Y59MQBN1QS');
+          `}</script>
           <title>Agilix</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
           <div className="load-circle">
-            <span className="one"></span>
+            <span className="one"/>
           </div>
         </Loader>
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
           <Header isDark={gContext.headerDark} />
+
           {children}
 
           <Footer isDark={gContext.footerDark} />
