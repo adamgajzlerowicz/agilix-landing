@@ -5,14 +5,14 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 export const Seo = ({ title }) => {
   const { pathname } = useLocation()
-  const { site } = useStaticQuery(query)
+  const { site, logo } = useStaticQuery(query)
 
   const { title: defaultTitle, titleTemplate, description, url, image } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
     description: description,
-    image: `${url}${image}`,
+    image: logo.childImageSharp.fixed.src,
     url: `${url}${pathname}`,
   }
 
@@ -35,6 +35,13 @@ export const Seo = ({ title }) => {
 
 const query = graphql`
   query SEO {
+    logo: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fixed(width: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
         title

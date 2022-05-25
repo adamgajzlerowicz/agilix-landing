@@ -97,7 +97,7 @@ const Footer = ({ isDark = true }) => (
                         <Link to="/polityka-prywatnosci">Polityka prywatności</Link>
                       </li>
                       <li>
-                        <Link to="https://app.agilix.dog/invite">Aplikacja</Link>
+                        <Link to="/pobierz">Aplikacja</Link>
                       </li>
                     </UlStyled>
                   </div>
