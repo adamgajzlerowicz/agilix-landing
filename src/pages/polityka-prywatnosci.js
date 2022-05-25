@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import PageWrapper from '../components/PageWrapper'
 import { Section, Title } from '../components/Core'
-import { Helmet } from 'react-helmet'
 import { Seo } from '../components/seo'
 
 const PolitykaPrywatnosci = () => (
