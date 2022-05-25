@@ -1,16 +1,16 @@
-import React, {useState, useContext} from "react";
-import styled from "styled-components";
-import {Container} from "react-bootstrap";
-import {useScrollPosition} from "@n8tb1t/use-scroll-position";
-import {Link} from "gatsby";
+import React, { useState, useContext } from 'react';
+import styled from 'styled-components';
+import { Container } from 'react-bootstrap';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import { Link } from 'gatsby';
 
-import GlobalContext from "../../context/GlobalContext";
-import Offcanvas from "../Offcanvas";
-import {Button} from "../Core";
-import NestedMenu from "../NestedMenu";
-import {device} from "../../utils";
-import Logo from "../Logo";
-import {menuItems} from "./menuItems";
+import GlobalContext from '../../context/GlobalContext';
+import Offcanvas from '../Offcanvas';
+import { Button } from '../Core';
+import NestedMenu from '../NestedMenu';
+import { device } from '../../utils';
+import Logo from '../Logo';
+import { menuItems } from './menuItems';
 
 const SiteHeader = styled.header`
   padding: 10px 0 10px 0;
@@ -31,17 +31,17 @@ const SiteHeader = styled.header`
       transform: translateY(0%);
       box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
       z-index: 9999;
-      background: ${({dark, theme}) =>
-              dark ? theme.colors.dark : theme.colors.light};
+      background: ${({ dark, theme }) =>
+        dark ? theme.colors.dark : theme.colors.light};
     }
   }
 `;
 
 const ToggleButton = styled.button`
-  color: ${({dark, theme}) =>
-          dark ? theme.colors.lightShade : theme.colors.darkShade} !important;
-  border-color: ${({dark, theme}) =>
-          dark ? theme.colors.lightShade : theme.colors.darkShade} !important;
+  color: ${({ dark, theme }) =>
+    dark ? theme.colors.lightShade : theme.colors.darkShade} !important;
+  border-color: ${({ dark, theme }) =>
+    dark ? theme.colors.lightShade : theme.colors.darkShade} !important;
 `;
 
 const Menu = styled.ul`
@@ -57,8 +57,8 @@ const Menu = styled.ul`
   > li {
     > .nav-link {
       @media ${device.lg} {
-        color: ${({dark, theme}) =>
-                dark ? theme.colors.light : theme.colors.darkShade} !important;
+        color: ${({ dark, theme }) =>
+          dark ? theme.colors.light : theme.colors.darkShade} !important;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -69,7 +69,7 @@ const Menu = styled.ul`
       }
 
       &:hover {
-        color: ${({theme}) => theme.colors.primary} !important;
+        color: ${({ theme }) => theme.colors.primary} !important;
       }
     }
   }
@@ -113,11 +113,11 @@ const MenuDropdown = styled.ul`
     border: 1px solid #eae9f2;
     background-color: #ffffff;
     display: block;
-    border-top: ${({theme}) => `3px solid ${theme.colors.secondary}`};
+    border-top: ${({ theme }) => `3px solid ${theme.colors.secondary}`};
   }
 
   > .drop-menu-item {
-    color: ${({theme}) => theme.colors.dark};
+    color: ${({ theme }) => theme.colors.dark};
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.5px;
@@ -127,7 +127,7 @@ const MenuDropdown = styled.ul`
     padding-bottom: 10px;
 
     a {
-      color: ${({theme}) => theme.colors.dark};
+      color: ${({ theme }) => theme.colors.dark};
       transition: all 0.3s ease-out;
       position: relative;
       display: flex;
@@ -151,7 +151,7 @@ const MenuDropdown = styled.ul`
 
     &:hover {
       > a {
-        color: ${({theme}) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
         text-decoration: none;
 
         &::after {
@@ -175,7 +175,7 @@ const MenuDropdown = styled.ul`
       }
 
       > .menu-dropdown {
-        border-top-color: ${({theme}) => theme.colors.primary};
+        border-top-color: ${({ theme }) => theme.colors.primary};
         @media ${device.lg} {
           top: 10px;
           left: 0%;
@@ -201,213 +201,215 @@ const MenuDropdown = styled.ul`
   }
 `;
 
-const Header = ({isDark = false}) => {
-    const gContext = useContext(GlobalContext);
-    const [showScrolling, setShowScrolling] = useState(false);
-    const [showReveal, setShowReveal] = useState(false);
+const Header = ({ isDark = false }) => {
+  const gContext = useContext(GlobalContext);
+  const [showScrolling, setShowScrolling] = useState(false);
+  const [showReveal, setShowReveal] = useState(false);
 
-    useScrollPosition(({prevPos, currPos}) => {
-        if (currPos.y < 0) {
-            setShowScrolling(true);
-        } else {
-            setShowScrolling(false);
-        }
-        if (currPos.y < -300) {
-            setShowReveal(true);
-        } else {
-            setShowReveal(false);
-        }
-    });
+  useScrollPosition(({ prevPos, currPos }) => {
+    if (currPos.y < 0) {
+      setShowScrolling(true);
+    } else {
+      setShowScrolling(false);
+    }
+    if (currPos.y < -300) {
+      setShowReveal(true);
+    } else {
+      setShowReveal(false);
+    }
+  });
 
-    return (
-        <>
-            <SiteHeader
-                className={`sticky-header ${showScrolling ? "scrolling" : ""} ${
-                    showReveal ? "reveal-header" : ""
-                }`}
-                dark={isDark ? 1 : 0}
-            >
-                <Container fluid>
-                    <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
-                        {/* <!-- Brand Logo--> */}
-                        <div className="brand-logo">
-                            <Logo/>
-                        </div>
-                        <div className="collapse navbar-collapse">
-                            <div className="navbar-nav ms-lg-auto me-3">
-                                <Menu
-                                    className="navbar-nav d-none d-lg-flex"
-                                    dark={isDark ? 1 : 0}
+  return (
+    <>
+      <SiteHeader
+        className={`sticky-header ${showScrolling ? 'scrolling' : ''} ${
+          showReveal ? 'reveal-header' : ''
+        }`}
+        dark={isDark ? 1 : 0}
+      >
+        <Container fluid>
+          <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
+            {/* <!-- Brand Logo--> */}
+            <div className="brand-logo">
+              <Logo />
+            </div>
+            <div className="collapse navbar-collapse">
+              <div className="navbar-nav ms-lg-auto me-3">
+                <Menu
+                  className="navbar-nav d-none d-lg-flex"
+                  dark={isDark ? 1 : 0}
+                >
+                  {menuItems.map(
+                    (
+                      { label, isExternal = false, name, items, ...rest },
+                      index
+                    ) => {
+                      const hasSubItems = Array.isArray(items);
+
+                      return (
+                        <React.Fragment key={name + index}>
+                          {hasSubItems ? (
+                            <li className="nav-item dropdown" {...rest}>
+                              <a
+                                className="nav-link dropdown-toggle"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-expanded="false"
+                                href="/#"
+                                onClick={(e) => e.preventDefault()}
+                              >
+                                {label}
+                              </a>
+                              <MenuDropdown
+                                className="menu-dropdown dropdown-right"
+                                dark={isDark ? 1 : 0}
+                              >
+                                {items.map((subItem, indexSub) => {
+                                  const hasInnerSubItems = Array.isArray(
+                                    subItem.items
+                                  );
+
+                                  return (
+                                    <React.Fragment
+                                      key={subItem.name + indexSub}
+                                    >
+                                      {hasInnerSubItems ? (
+                                        <li className="drop-menu-item dropdown">
+                                          <a
+                                            className="dropdown-toggle"
+                                            role="button"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false"
+                                            href="/#"
+                                            onClick={(e) => e.preventDefault()}
+                                          >
+                                            {subItem.label}
+                                          </a>
+                                          <MenuDropdown
+                                            className="menu-dropdown dropdown-right"
+                                            dark={isDark ? 1 : 0}
+                                          >
+                                            {subItem.items.map(
+                                              (itemInner, indexInnerMost) => (
+                                                <li
+                                                  className="drop-menu-item"
+                                                  key={
+                                                    itemInner.name +
+                                                    indexInnerMost
+                                                  }
+                                                >
+                                                  {itemInner.isExternal ? (
+                                                    <a
+                                                      href={`${itemInner.name}`}
+                                                      target="_blank"
+                                                      rel="noopener noreferrer"
+                                                    >
+                                                      {itemInner.label}
+                                                    </a>
+                                                  ) : (
+                                                    <Link
+                                                      to={`/${itemInner.name}`}
+                                                    >
+                                                      {itemInner.label}
+                                                    </Link>
+                                                  )}
+                                                </li>
+                                              )
+                                            )}
+                                          </MenuDropdown>
+                                        </li>
+                                      ) : (
+                                        <li className="drop-menu-item">
+                                          {subItem.isExternal ? (
+                                            <a
+                                              href={`${subItem.name}`}
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                            >
+                                              {subItem.label}
+                                            </a>
+                                          ) : (
+                                            <Link to={`/${subItem.name}`}>
+                                              {subItem.label}
+                                            </Link>
+                                          )}
+                                        </li>
+                                      )}
+                                    </React.Fragment>
+                                  );
+                                })}
+                              </MenuDropdown>
+                            </li>
+                          ) : (
+                            <li className="nav-item" {...rest}>
+                              {isExternal ? (
+                                <a
+                                  className="nav-link"
+                                  href={`${name}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                 >
-                                    {menuItems.map(
-                                        (
-                                            {label, isExternal = false, name, items, ...rest},
-                                            index
-                                        ) => {
-                                            const hasSubItems = Array.isArray(items);
-                                            return (
-                                                <React.Fragment key={name + index}>
-                                                    {hasSubItems ? (
-                                                        <li className="nav-item dropdown" {...rest}>
-                                                            <a
-                                                                className="nav-link dropdown-toggle"
-                                                                role="button"
-                                                                data-toggle="dropdown"
-                                                                aria-expanded="false"
-                                                                href="/#"
-                                                                onClick={(e) => e.preventDefault()}
-                                                            >
-                                                                {label}
-                                                            </a>
-                                                            <MenuDropdown
-                                                                className="menu-dropdown dropdown-right"
-                                                                dark={isDark ? 1 : 0}
-                                                            >
-                                                                {items.map((subItem, indexSub) => {
-                                                                    const hasInnerSubItems = Array.isArray(
-                                                                        subItem.items
-                                                                    );
-                                                                    return (
-                                                                        <React.Fragment
-                                                                            key={subItem.name + indexSub}
-                                                                        >
-                                                                            {hasInnerSubItems ? (
-                                                                                <li className="drop-menu-item dropdown">
-                                                                                    <a
-                                                                                        className="dropdown-toggle"
-                                                                                        role="button"
-                                                                                        data-toggle="dropdown"
-                                                                                        aria-expanded="false"
-                                                                                        href="/#"
-                                                                                        onClick={(e) => e.preventDefault()}
-                                                                                    >
-                                                                                        {subItem.label}
-                                                                                    </a>
-                                                                                    <MenuDropdown
-                                                                                        className="menu-dropdown dropdown-right"
-                                                                                        dark={isDark ? 1 : 0}
-                                                                                    >
-                                                                                        {subItem.items.map(
-                                                                                            (itemInner, indexInnerMost) => (
-                                                                                                <li
-                                                                                                    className="drop-menu-item"
-                                                                                                    key={
-                                                                                                        itemInner.name +
-                                                                                                        indexInnerMost
-                                                                                                    }
-                                                                                                >
-                                                                                                    {itemInner.isExternal ? (
-                                                                                                        <a
-                                                                                                            href={`${itemInner.name}`}
-                                                                                                            target="_blank"
-                                                                                                            rel="noopener noreferrer"
-                                                                                                        >
-                                                                                                            {itemInner.label}
-                                                                                                        </a>
-                                                                                                    ) : (
-                                                                                                        <Link
-                                                                                                            to={`/${itemInner.name}`}
-                                                                                                        >
-                                                                                                            {itemInner.label}
-                                                                                                        </Link>
-                                                                                                    )}
-                                                                                                </li>
-                                                                                            )
-                                                                                        )}
-                                                                                    </MenuDropdown>
-                                                                                </li>
-                                                                            ) : (
-                                                                                <li className="drop-menu-item">
-                                                                                    {subItem.isExternal ? (
-                                                                                        <a
-                                                                                            href={`${subItem.name}`}
-                                                                                            target="_blank"
-                                                                                            rel="noopener noreferrer"
-                                                                                        >
-                                                                                            {subItem.label}
-                                                                                        </a>
-                                                                                    ) : (
-                                                                                        <Link to={`/${subItem.name}`}>
-                                                                                            {subItem.label}
-                                                                                        </Link>
-                                                                                    )}
-                                                                                </li>
-                                                                            )}
-                                                                        </React.Fragment>
-                                                                    );
-                                                                })}
-                                                            </MenuDropdown>
-                                                        </li>
-                                                    ) : (
-                                                        <li className="nav-item" {...rest}>
-                                                            {isExternal ? (
-                                                                <a
-                                                                    className="nav-link"
-                                                                    href={`${name}`}
-                                                                    target="_blank"
-                                                                    rel="noopener noreferrer"
-                                                                >
-                                                                    {label}
-                                                                </a>
-                                                            ) : (
-                                                                <Link
-                                                                    className="nav-link"
-                                                                    to={`/${name}`}
-                                                                    role="button"
-                                                                    aria-expanded="false"
-                                                                >
-                                                                    {label}
-                                                                </Link>
-                                                            )}
-                                                        </li>
-                                                    )}
-                                                </React.Fragment>
-                                            );
-                                        }
-                                    )}
-                                </Menu>
-                            </div>
-                        </div>
-                        <div className="header-btns ms-auto ms-lg-0 d-none d-md-block">
-                            <Link to={'/pobierz'}>
-                                <Button
-                                    size="sm"
-                                    css={`
-                                      font-size: 16px !important;
-                                      min-width: 141px !important;
-                                      height: 45px !important;
-                                    `}
+                                  {label}
+                                </a>
+                              ) : (
+                                <Link
+                                  className="nav-link"
+                                  to={`/${name}`}
+                                  role="button"
+                                  aria-expanded="false"
                                 >
-                                    Pobierz
-                                </Button>
-                            </Link>
-                        </div>
-                        <ToggleButton
-                            className={`navbar-toggler btn-close-off-canvas ms-3 ${
-                                gContext.visibleOffCanvas ? "collapsed" : ""
-                            }`}
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#mobile-menu"
-                            aria-controls="mobile-menu"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                            onClick={gContext.toggleOffCanvas}
-                            dark={isDark ? 1 : 0}
-                        >
-                            <i className="icon icon-menu-34 icon-burger d-block"></i>
-                        </ToggleButton>
-                    </nav>
-                </Container>
-            </SiteHeader>
-            <Offcanvas
-                show={gContext.visibleOffCanvas}
-                onHideOffcanvas={gContext.toggleOffCanvas}
+                                  {label}
+                                </Link>
+                              )}
+                            </li>
+                          )}
+                        </React.Fragment>
+                      );
+                    }
+                  )}
+                </Menu>
+              </div>
+            </div>
+            <div className="header-btns ms-auto ms-lg-0 d-none d-md-block">
+              <Link to={'/pobierz'}>
+                <Button
+                  size="sm"
+                  css={`
+                    font-size: 16px !important;
+                    min-width: 141px !important;
+                    height: 45px !important;
+                  `}
+                >
+                  Pobierz
+                </Button>
+              </Link>
+            </div>
+            <ToggleButton
+              className={`navbar-toggler btn-close-off-canvas ms-3 ${
+                gContext.visibleOffCanvas ? 'collapsed' : ''
+              }`}
+              type="button"
+              data-toggle="collapse"
+              data-target="#mobile-menu"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onClick={gContext.toggleOffCanvas}
+              dark={isDark ? 1 : 0}
             >
-                <NestedMenu menuItems={menuItems}/>
-
-            </Offcanvas>
-        </>
-    );
+              <i className="icon icon-menu-34 icon-burger d-block"></i>
+            </ToggleButton>
+          </nav>
+        </Container>
+      </SiteHeader>
+      <Offcanvas
+        show={gContext.visibleOffCanvas}
+        onHideOffcanvas={gContext.toggleOffCanvas}
+      >
+        <NestedMenu menuItems={menuItems} />
+      </Offcanvas>
+    </>
+  );
 };
+
 export default Header;

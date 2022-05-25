@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import { ListGroup } from "react-bootstrap";
-import { Link } from "gatsby";
-import GlobalContext from "../../context/GlobalContext";
+import React, { useContext } from 'react';
+import styled from 'styled-components';
+import { ListGroup } from 'react-bootstrap';
+import { Link } from 'gatsby';
+import GlobalContext from '../../context/GlobalContext';
 
 const NestedMenuContainer = styled.div`
   a {
@@ -39,35 +39,35 @@ const NestedMenuContainer = styled.div`
 `;
 
 const defaultMenuItems = [
-  { name: "home", label: "Home" },
+  { name: 'home', label: 'Home' },
   {
-    name: "billing",
-    label: "Billing",
+    name: 'billing',
+    label: 'Billing',
     items: [
-      { name: "statements", label: "Statements" },
-      { name: "reports", label: "Reports" },
+      { name: 'statements', label: 'Statements' },
+      { name: 'reports', label: 'Reports' },
     ],
   },
   {
-    name: "settings",
-    label: "Settings",
+    name: 'settings',
+    label: 'Settings',
     items: [
-      { name: "profile", label: "Profile" },
-      { name: "insurance", label: "Insurance" },
+      { name: 'profile', label: 'Profile' },
+      { name: 'insurance', label: 'Insurance' },
       {
-        name: "notifications",
-        label: "Notifications",
+        name: 'notifications',
+        label: 'Notifications',
         items: [
-          { name: "email", label: "Email" },
+          { name: 'email', label: 'Email' },
           {
-            name: "desktop",
-            label: "Desktop",
+            name: 'desktop',
+            label: 'Desktop',
             items: [
-              { name: "schedule", label: "Schedule" },
-              { name: "frequency", label: "Frequency" },
+              { name: 'schedule', label: 'Schedule' },
+              { name: 'frequency', label: 'Frequency' },
             ],
           },
-          { name: "sms", label: "SMS" },
+          { name: 'sms', label: 'SMS' },
         ],
       },
     ],
@@ -86,62 +86,60 @@ const MenuItem = ({
   const gContext = useContext(GlobalContext);
 
   return (
-        <ListGroup.Item
-          {...rest}
-          css={`
-            padding-left: ${depth * depthStep}px !important;
-          `}
+    <ListGroup.Item
+      {...rest}
+      css={`
+        padding-left: ${depth * depthStep}px !important;
+      `}
+    >
+      {isExternal ? (
+        <a
+          href={`${name}`}
+          onClick={() => {
+            if (gContext.visibleOffCanvas) {
+              gContext.toggleOffCanvas();
+            }
+          }}
         >
-          {isExternal ? (
-            <a
-              href={`${name}`}
-              onClick={() => {
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas();
-                }
-              }}
-            >
-              {label}
-            </a>
-          ) : (
-            <Link
-              to={`/${name}`}
-              onClick={() => {
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas();
-                }
-              }}
-            >
-              {label}
-            </Link>
-          )}
-        </ListGroup.Item>
+          {label}
+        </a>
+      ) : (
+        <Link
+          to={`/${name}`}
+          onClick={() => {
+            if (gContext.visibleOffCanvas) {
+              gContext.toggleOffCanvas();
+            }
+          }}
+        >
+          {label}
+        </Link>
+      )}
+    </ListGroup.Item>
   );
 };
 
-const NestedMenu = ({ menuItems = defaultMenuItems }) => {
-  return (
-    <NestedMenuContainer>
-      <ListGroup variant="flush">
-        {menuItems.map((menuItem, index) => (
-          <MenuItem
-            key={`${menuItem.name}${index}`}
-            depthStep={20}
-            depth={0}
-            {...menuItem}
-          />
-        ))}
-
+const NestedMenu = ({ menuItems = defaultMenuItems }) => (
+  <NestedMenuContainer>
+    <ListGroup variant="flush">
+      {menuItems.map((menuItem, index) => (
         <MenuItem
-            key={`pobierz`}
-            depthStep={20}
-            depth={0}
-            label={'Pobierz teraz'}
-            name={'pobierz'}
+          key={`${menuItem.name}${index}`}
+          depthStep={20}
+          depth={0}
+          {...menuItem}
         />
-      </ListGroup>
-    </NestedMenuContainer>
-  );
-};
+      ))}
+
+      <MenuItem
+        key={'pobierz'}
+        depthStep={20}
+        depth={0}
+        label={'Pobierz teraz'}
+        name={'pobierz'}
+      />
+    </ListGroup>
+  </NestedMenuContainer>
+);
 
 export default NestedMenu;

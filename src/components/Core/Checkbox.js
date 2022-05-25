@@ -1,6 +1,6 @@
-import React from "react";
-import { uniqueId } from "lodash";
-import styled from "styled-components";
+import React from 'react';
+import { uniqueId } from 'lodash';
+import styled from 'styled-components';
 import {
   space,
   border,
@@ -8,7 +8,7 @@ import {
   shadow,
   flexbox,
   layout,
-} from "styled-system";
+} from 'styled-system';
 
 const CheckStyled = styled.label`
   display: inline-flex;
@@ -53,11 +53,11 @@ const Text = styled.p`
 `;
 
 const Checkbox = ({
-  children = "Keep me signed in",
+  children = 'Keep me signed in',
   onClick = () => {},
   ...rest
 }) => {
-  const uID = uniqueId("check_");
+  const uID = uniqueId('check_');
 
   return (
     <CheckStyled {...rest} htmlFor={uID}>

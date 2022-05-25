@@ -1,14 +1,14 @@
 export const menuItems = [
   {
-    name: "",
-    label: "Czym jest Agilix",
+    name: '',
+    label: 'Czym jest Agilix',
   },
   {
-    name: "nasza-misja",
-    label: "Nasza misja",
+    name: 'nasza-misja',
+    label: 'Nasza misja',
   },
   {
-    name: "kontakt",
-    label: "Kontakt"
+    name: 'kontakt',
+    label: 'Kontakt',
   },
-];
+]

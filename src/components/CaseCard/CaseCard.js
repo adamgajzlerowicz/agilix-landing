@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import { Title, Box, Text } from "../Core";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import { Title, Box, Text } from '../Core';
 
 const Card = styled(Box)`
   border-radius: 10px 10px;

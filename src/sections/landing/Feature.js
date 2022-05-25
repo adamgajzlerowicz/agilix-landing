@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import styled from 'styled-components';
+import { rgba } from 'polished';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core';
 
-import imgL1FeatureOval from "../../assets/image/png/l1-feature-oval.png";
-import imgL1FeatureCurve from "../../assets/image/svg/l1-curve-feature.svg";
-import {Link} from "gatsby";
+import imgL1FeatureOval from '../../assets/image/png/l1-feature-oval.png';
+import imgL1FeatureCurve from '../../assets/image/svg/l1-curve-feature.svg';
+import { Link } from 'gatsby';
 
 const ShapeTopRight = styled(Box)`
   position: absolute;
@@ -26,7 +26,7 @@ const ShapeBottmRight = styled(Box)`
 `;
 
 const FeatureCard = ({
-  color = "primary",
+  color = 'primary',
   iconName,
   title,
   children,
@@ -82,13 +82,18 @@ const Feature = () => (
         <Row className="align-items-center">
           <Col lg="6" className="ps-lg-5 order-lg-2">
             <div className="feature-content section-title">
-              <Title color="light">Otwórz się na nowe aktywności ze swoim pupilem!</Title>
+              <Title color="light">
+                Otwórz się na nowe aktywności ze swoim pupilem!
+              </Title>
               <Text color="light" opacity={0.7} mb={4}>
-                  Jeżeli szukasz inspiracji na nowy rodzaj zajęć, chcesz poćwiczyc u kogoś innego lub po prostu
-                  dużo podróżujesz i chcesz ćwiczyc w innym mieście, dzięki tej aplikacji rozwiniesz swoje skrzydła.
+                Jeżeli szukasz inspiracji na nowy rodzaj zajęć, chcesz poćwiczyc
+                u kogoś innego lub po prostu dużo podróżujesz i chcesz ćwiczyc w
+                innym mieście, dzięki tej aplikacji rozwiniesz swoje skrzydła.
               </Text>
 
-              <Link to={'pobierz'}><Button variant="outline">Pobierz teraz</Button></Link>
+              <Link to={'pobierz'}>
+                <Button variant="outline">Pobierz teraz</Button>
+              </Link>
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
@@ -105,9 +110,9 @@ const Feature = () => (
 
               <Col md="6">
                 <FeatureCard
-                    color="ash"
-                    iconName="icon-chat-round"
-                    title="Zaproszenia do wydarzeń"
+                  color="ash"
+                  iconName="icon-chat-round"
+                  title="Zaproszenia do wydarzeń"
                 >
                   Otrzymuj bezpośrednie zaproszenia do wydarzeń i treningów.
                 </FeatureCard>
@@ -115,11 +120,12 @@ const Feature = () => (
 
               <Col md="6">
                 <FeatureCard
-                    color="warning"
-                    iconName="icon-trophy"
-                    title="Niczego nie przegap"
+                  color="warning"
+                  iconName="icon-trophy"
+                  title="Niczego nie przegap"
                 >
-                  W przeddzień zajęć otrzymasz przypomnienie o zbliżającym się zdarzeniu bezpośrednio na swój telefon.
+                  W przeddzień zajęć otrzymasz przypomnienie o zbliżającym się
+                  zdarzeniu bezpośrednio na swój telefon.
                 </FeatureCard>
               </Col>
 
@@ -129,7 +135,8 @@ const Feature = () => (
                   iconName="icon-camera-flash"
                   title="Eksploruj nowe możliwości"
                 >
-                  W aplikacji możesz znaleźć nowe kluby w swoim lub odległym mieście i przyłączyć sie do nich.
+                  W aplikacji możesz znaleźć nowe kluby w swoim lub odległym
+                  mieście i przyłączyć sie do nich.
                 </FeatureCard>
               </Col>
             </Row>

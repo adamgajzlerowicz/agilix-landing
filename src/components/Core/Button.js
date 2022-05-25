@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import {
   color,
   background,
@@ -9,7 +9,7 @@ import {
   shadow,
   flexbox,
   layout,
-} from "styled-system";
+} from 'styled-system';
 
 const ButtonSolid = styled.button`
   padding: 0.85rem 1.75rem;
@@ -83,15 +83,15 @@ const ButtonOutline = styled(ButtonSolid)`
 `;
 
 const Button = ({
-  variant = "solid",
-  color = "light",
-  bg = "primary",
+  variant = 'solid',
+  color = 'light',
+  bg = 'primary',
   ...rest
-}) => {
-  return variant === "solid" ? (
+}) =>
+  variant === 'solid' ? (
     <ButtonSolid
       color={color}
-      border={`1px solid`}
+      border={'1px solid'}
       borderColor={bg}
       bg={bg}
       {...rest}
@@ -100,11 +100,10 @@ const Button = ({
     <ButtonOutline
       color={color}
       bg={bg}
-      border={`1px solid`}
+      border={'1px solid'}
       borderColor={color}
       {...rest}
     />
   );
-};
 
 export default Button;

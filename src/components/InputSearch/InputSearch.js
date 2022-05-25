@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Box } from "../Core";
+import { Box } from '../Core';
 
 const BoxInput = styled(Box)`
   display: flex;
@@ -33,20 +33,19 @@ const BoxInput = styled(Box)`
   }
 `;
 
-const InputSearch = (props) => {
-  return (
-    <>
-      <BoxInput {...props}>
-        <button>
-          <i className="fas fa-search"></i>
-        </button>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Type to search"
-        />
-      </BoxInput>
-    </>
-  );
-};
+const InputSearch = (props) => (
+  <>
+    <BoxInput {...props}>
+      <button>
+        <i className="fas fa-search"></i>
+      </button>
+      <input
+        type="text"
+        className="form-control"
+        placeholder="Type to search"
+      />
+    </BoxInput>
+  </>
+);
+
 export default InputSearch;

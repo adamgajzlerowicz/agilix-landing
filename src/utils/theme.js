@@ -1,17 +1,17 @@
-import { rgba } from "polished";
-import { breakpoints } from "./breakpoints";
+import { rgba } from 'polished'
+import { breakpoints } from './breakpoints'
 
 const defaultColors = {
-  primary: "#334D8A",
-  secondary: "#000000",
-  white: "#ffffff",
-  dark: "#19191b",
-  black: "#000000",
-  yellow: "#fedc5a",
-  ash: "#413e65",
-  green: "#77bf41",
-  info: "#0e567c",
-};
+  primary: '#334D8A',
+  secondary: '#000000',
+  white: '#ffffff',
+  dark: '#19191b',
+  black: '#000000',
+  yellow: '#fedc5a',
+  ash: '#413e65',
+  green: '#77bf41',
+  info: '#0e567c',
+}
 
 const colors = {
   primary: defaultColors.primary,
@@ -49,10 +49,10 @@ const colors = {
       info: defaultColors.info,
     },
   },
-};
+}
 
 const theme = {
-  initialColorModeName: "light",
+  initialColorModeName: 'light',
   colors: colors,
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   breakpoints: [
@@ -61,6 +61,6 @@ const theme = {
     `${breakpoints.lg}px`,
     `${breakpoints.xl}px`,
   ],
-};
+}
 
-export default theme;
+export default theme

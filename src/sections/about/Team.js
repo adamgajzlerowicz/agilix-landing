@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core';
 
-import imgU1 from "../../assets/image/jpeg/natalia.png";
-import imgU2 from "../../assets/image/jpeg/adam.jpeg";
-import agnieszka from "../../assets/image/jpeg/agnieszka.png";
+import imgU1 from '../../assets/image/jpeg/natalia.png';
+import imgU2 from '../../assets/image/jpeg/adam.jpeg';
+import agnieszka from '../../assets/image/jpeg/agnieszka.png';
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -51,24 +51,22 @@ const Team = () => (
           <Col lg="6" className="text-center pb-3">
             <div className="">
               <Title>Kim jesteśmy</Title>
-              <Text>
-                  Jesteśmy miłośnikami zwierząt z misją!
-              </Text>
+              <Text>Jesteśmy miłośnikami zwierząt z misją!</Text>
             </div>
           </Col>
         </Row>
         <Row className="align-items-center justify-content-center">
           <Col sm="12" md="4">
             <TeamCard userImg={imgU2} title="Adam">
-                Trener Agility, programista
+              Trener Agility, programista
             </TeamCard>
           </Col>
-          <Col sm="12"  md="4" >
+          <Col sm="12" md="4">
             <TeamCard userImg={imgU1} title="Natalia">
               Trenerka Agility, specjalista PR
             </TeamCard>
           </Col>
-          <Col sm="12" md="4" >
+          <Col sm="12" md="4">
             <TeamCard userImg={agnieszka} title="Agnieszka">
               Zawodnik agility i trener papużek, ilustrator i specjalista UX
             </TeamCard>

@@ -1,13 +1,13 @@
-import React from "react";
-import { Link } from "gatsby";
-import { Container } from "react-bootstrap";
-import styled from "styled-components";
-import { rgba } from "polished";
-import Section from "../components/Section";
-import PageWrapper from "../components/PageWrapper";
+import React from 'react';
+import { Link } from 'gatsby';
+import { Container } from 'react-bootstrap';
+import styled from 'styled-components';
+import { rgba } from 'polished';
+import Section from '../components/Section';
+import PageWrapper from '../components/PageWrapper';
 
-import imgIcon from "../assets/image/png/heart-shape.png";
-import { Title, Text } from "../components/Core";
+import imgIcon from '../assets/image/png/heart-shape.png';
+import { Title, Text } from '../components/Core';
 
 const ContentIcon = styled.div`
   width: 118px;
@@ -47,37 +47,33 @@ const ButtonStyled = styled.button`
   }
 `;
 
-const NotFoundPage = () => {
-  return (
-    <>
-      <PageWrapper footerDark>
-        <Section>
-          <div className="pt-5"></div>
-          <Container>
-            <div className="text-center">
-              <ContentIcon>
-                <img src={imgIcon} alt="" className="img-fluid" />
-              </ContentIcon>
-              <div>
-                <Title variant="hero">Błąd 404</Title>
-                <Text>
-                  Strona której szukasz
-                  <br className="d-none d-md-block" /> nie istnieje
-                </Text>
-              </div>
-              <div className="mt-5">
-                <Link to="/">
-                  <ButtonStyled>
-                    Powrót
-                  </ButtonStyled>
-                </Link>
-              </div>
+const NotFoundPage = () => (
+  <>
+    <PageWrapper footerDark>
+      <Section>
+        <div className="pt-5"></div>
+        <Container>
+          <div className="text-center">
+            <ContentIcon>
+              <img src={imgIcon} alt="" className="img-fluid" />
+            </ContentIcon>
+            <div>
+              <Title variant="hero">Błąd 404</Title>
+              <Text>
+                Strona której szukasz
+                <br className="d-none d-md-block" /> nie istnieje
+              </Text>
             </div>
-          </Container>
-        </Section>
-      </PageWrapper>
-    </>
-  );
-};
+            <div className="mt-5">
+              <Link to="/">
+                <ButtonStyled>Powrót</ButtonStyled>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </PageWrapper>
+  </>
+);
 
 export default NotFoundPage;

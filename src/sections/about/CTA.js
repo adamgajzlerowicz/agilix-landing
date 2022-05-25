@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core';
 
-import imgOval from "../../assets/image/png/l1-cta-oval.png";
-import svgCurve from "../../assets/image/svg/l1-curve-cta.svg";
+import imgOval from '../../assets/image/png/l1-cta-oval.png';
+import svgCurve from '../../assets/image/svg/l1-curve-cta.svg';
 
 const LeftCard = styled(Box)`
   position: absolute;

@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useContext } from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core';
 
-import GlobalContext from "../../context/GlobalContext";
-import { device } from "../../utils";
+import GlobalContext from '../../context/GlobalContext';
+import { device } from '../../utils';
 
-import imgVideo from "../../assets/image/jpeg/video-image-2.jpg";
+import imgVideo from '../../assets/image/jpeg/video-image-2.jpg';
 
 const IconButton = styled(Box)`
   cursor: pointer;

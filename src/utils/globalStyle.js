@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const globalStyle = createGlobalStyle`
   body {
@@ -43,6 +43,6 @@ const globalStyle = createGlobalStyle`
     input[type="number"] {
       -moz-appearance: textfield; /* Firefox */
     }
-`;
+`
 
-export default globalStyle;
+export default globalStyle

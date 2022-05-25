@@ -4,37 +4,37 @@ import React, {
   useLayoutEffect,
   useContext,
   useRef,
-} from "react";
+} from 'react';
 
-import styled, { ThemeProvider } from "styled-components";
-import { Helmet } from "react-helmet";
-import AOS from "aos";
+import styled, { ThemeProvider } from 'styled-components';
+import { Helmet } from 'react-helmet';
+import AOS from 'aos';
 
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from '../Header';
+import Footer from '../Footer';
 
-import ModalVideo from "../ModalVideo";
+import ModalVideo from '../ModalVideo';
 
-import GlobalContext from "../../context/GlobalContext";
+import GlobalContext from '../../context/GlobalContext';
 
-import GlobalStyle from "../../utils/globalStyle";
+import GlobalStyle from '../../utils/globalStyle';
 
-import imgFavicon from "../../assets/agilix-new.svg";
+import imgFavicon from '../../assets/agilix-new.svg';
 
-import "../../assets/fonts/icon-font/fonts/avasta.ttf";
-import "../../assets/fonts/icon-font/css/style.css";
+import '../../assets/fonts/icon-font/fonts/avasta.ttf';
+import '../../assets/fonts/icon-font/css/style.css';
 
-import "./bootstrap-custom.scss";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import "../../../node_modules/aos/dist/aos.css";
+import './bootstrap-custom.scss';
+import '../../../node_modules/slick-carousel/slick/slick.css';
+import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+import '../../../node_modules/aos/dist/aos.css';
 
-import "../../assets/fonts/icon-font/css/style.css";
-import "../../assets/fonts/fontawesome-5/css/all.css";
+import '../../assets/fonts/icon-font/css/style.css';
+import '../../assets/fonts/fontawesome-5/css/all.css';
 
-import { get, merge } from "lodash";
+import { get, merge } from 'lodash';
 
-import { theme as baseTheme } from "../../utils";
+import { theme as baseTheme } from '../../utils';
 
 const Loader = styled.div`
   position: fixed;
@@ -54,7 +54,7 @@ const Loader = styled.div`
 `;
 
 // options for different color modes
-const modes = { light: "light", dark: "dark" };
+const modes = { light: 'light', dark: 'dark' };
 
 // merge the color mode with the base theme
 // to create a new theme object
@@ -78,8 +78,8 @@ const Layout = ({ children, pageContext }) => {
 
   useEffect(() => {
     window.addEventListener(
-      "popstate",
-      function(event) {
+      'popstate',
+      function (event) {
         // The popstate event is fired each time when the current history entry changes.
 
         gContext.closeOffCanvas();
@@ -87,15 +87,14 @@ const Layout = ({ children, pageContext }) => {
       false
     );
     window.addEventListener(
-      "pushState",
-      function(event) {
+      'pushState',
+      function (event) {
         // The pushstate event is fired each time when the current history entry changes.
         gContext.closeOffCanvas();
       },
       false
     );
   }, [gContext]);
-
 
   return (
     <>
@@ -105,8 +104,11 @@ const Layout = ({ children, pageContext }) => {
         }
       >
         <GlobalStyle />
-        <Helmet titleTemplate="%s | Agilix" >
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"></script>
+        <Helmet titleTemplate="%s | Agilix">
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"
+          ></script>
           <script>{`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -117,9 +119,9 @@ const Layout = ({ children, pageContext }) => {
           <title>Agilix</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
-        <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
+        <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
           <div className="load-circle">
-            <span className="one"/>
+            <span className="one" />
           </div>
         </Loader>
         <div className="site-wrapper overflow-hidden" ref={eleRef}>

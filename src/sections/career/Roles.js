@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Link } from 'gatsby';
+import { rgba } from 'polished';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Section, Text, Badge } from "../../components/Core";
-import styled from "styled-components";
+import { Title, Section, Text, Badge } from '../../components/Core';
+import styled from 'styled-components';
 
 const Card = styled(Link)`
   min-height: 100%;
@@ -43,7 +43,7 @@ const BadgeStyled = styled(Badge)`
 `;
 
 const RolesCard = ({
-  color = "primary",
+  color = 'primary',
   title,
   location,
   type,

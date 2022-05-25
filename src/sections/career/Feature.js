@@ -1,9 +1,9 @@
-import React from "react";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { rgba } from 'polished';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Section, Box, Text } from "../../components/Core";
-import styled, { keyframes } from "styled-components";
+import { Section, Box, Text } from '../../components/Core';
+import styled, { keyframes } from 'styled-components';
 
 const animRippleOut = keyframes`
     100% {
@@ -41,8 +41,8 @@ const OuterCircle = styled(Box)`
   }
 `;
 
-const FeatureCard = ({ color = "primary", title, children, ...rest }) => (
-  <Box width={"100%"} bg="light" {...rest}>
+const FeatureCard = ({ color = 'primary', title, children, ...rest }) => (
+  <Box width={'100%'} bg="light" {...rest}>
     <div className="d-flex justify-content-between align-items-start">
       <Box
         size={69}

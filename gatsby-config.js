@@ -1,25 +1,25 @@
 module.exports = {
-  pathPrefix: "/",
+  pathPrefix: '/',
   siteMetadata: {
-    title: `Agilix`,
+    title: 'Agilix',
     description: 'Aplikacja dla Ciebie i Twojego najlepszego przyjaciela',
     author: 'Adam Gajzlerowicz',
     url: 'https://agilix.dog',
-    image: '/image.png'
+    image: '/image.png',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-htaccess',
       options: {
         https: true,
         host: 'agilix.dog',
       },
-    }
+    },
   ],
 };

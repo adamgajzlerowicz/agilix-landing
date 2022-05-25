@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { device } from "../../utils";
+import React from 'react';
+import styled from 'styled-components';
+import { device } from '../../utils';
 
 const DivStyled = styled.div`
   padding: 50px 0;
@@ -22,12 +22,11 @@ const DivStyledInside = styled(DivStyled)`
   }
 `;
 
-const Section = ({ children, inside, ...rest }) => {
-  return inside ? (
+const Section = ({ children, inside, ...rest }) =>
+  inside ? (
     <DivStyledInside {...rest}> {children}</DivStyledInside>
   ) : (
     <DivStyled {...rest}> {children}</DivStyled>
   );
-};
 
 export default Section;

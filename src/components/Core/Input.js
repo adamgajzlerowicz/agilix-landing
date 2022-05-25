@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import {
   color,
   space,
@@ -7,7 +7,7 @@ import {
   shadow,
   layout,
   border,
-} from "styled-system";
+} from 'styled-system';
 
 const InputSolid = styled.input`
   font-size: 18px;
@@ -82,14 +82,14 @@ const InputAnimation = styled.div`
 `;
 
 const Input = ({
-  variant = "solid",
-  type = "text",
-  focusColor = "secondary",
+  variant = 'solid',
+  type = 'text',
+  focusColor = 'secondary',
   placeholder,
   css,
   ...rest
-}) => {
-  return variant === "animation" ? (
+}) =>
+  variant === 'animation' ? (
     <InputAnimation css={css} {...rest}>
       <input width="100%" type={type} color="text" bg="light" />
       <label>{placeholder}</label>
@@ -106,6 +106,5 @@ const Input = ({
       {...rest}
     />
   );
-};
 
 export default Input;
