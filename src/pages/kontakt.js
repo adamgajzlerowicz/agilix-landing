@@ -2,13 +2,12 @@ import React from 'react'
 import Cta from '../sections/landing/Cta'
 
 import PageWrapper from '../components/PageWrapper'
-import { Helmet } from 'react-helmet'
+import { Seo } from '../components/seo'
 
 const Kontakt = () => (
   <PageWrapper footerDark>
-    <Helmet>
-      <title>Kontakt</title>
-    </Helmet>
+    <Seo title="Kontakt" />
+
     <div style={{ marginTop: 150 }}>
       <Cta />
     </div>

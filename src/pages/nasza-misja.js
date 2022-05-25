@@ -4,13 +4,11 @@ import PageWrapper from '../components/PageWrapper'
 import Content from '../sections/about/Content'
 import Cta from '../sections/landing/Cta'
 import Team from '../sections/about/Team'
-import { Helmet } from 'react-helmet'
+import { Seo } from '../components/seo'
 
 const About = () => (
   <PageWrapper>
-    <Helmet>
-      <title>Nasza misja</title>
-    </Helmet>
+    <Seo title="Nasza misja" />
     <Content />
     <Team />
     <Cta />

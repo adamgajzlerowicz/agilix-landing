@@ -4,12 +4,12 @@ import { Container, Row, Col } from 'react-bootstrap'
 import PageWrapper from '../components/PageWrapper'
 import { Section, Title } from '../components/Core'
 import { Helmet } from 'react-helmet'
+import { Seo } from '../components/seo'
 
 const PolitykaPrywatnosci = () => (
   <PageWrapper footerDark>
-    <Helmet>
-      <title>Polityka prywatności</title>
-    </Helmet>
+    <Seo title="Polityka prywatności" />
+
     <Section>
       <div className="pt-5"></div>
       <Container>

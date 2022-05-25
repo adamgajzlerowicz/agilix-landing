@@ -4,13 +4,11 @@ import Feature from '../sections/landing/Feature'
 import Content from '../sections/landing/Content'
 import Cta from '../sections/landing/Cta'
 import PageWrapper from '../components/PageWrapper'
-import { Helmet } from 'react-helmet'
+import { Seo } from '../components/seo'
 
 const Index = () => (
   <PageWrapper footerDark>
-    <Helmet>
-      <title>Otwórz się na nowe aktywności</title>
-    </Helmet>
+    <Seo title="Otwórz się na nowe aktywności" />
     <Hero />
     <Feature />
     <Content />

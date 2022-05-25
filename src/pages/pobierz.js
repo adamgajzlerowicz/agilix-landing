@@ -7,7 +7,7 @@ import PageWrapper from '../components/PageWrapper'
 import { Title, Text, Box } from '../components/Core'
 import itunes from '../assets/image/svg/itunes.svg'
 import play from '../assets/image/png/google-play.png'
-import { Helmet } from 'react-helmet'
+import { Seo } from '../components/seo'
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -17,9 +17,8 @@ const ButtonWrapper = styled.div`
 
 const GetIt = () => (
   <PageWrapper footerDark>
-    <Helmet>
-      <title>Pobierz</title>
-    </Helmet>
+    <Seo title="Pobierz" />
+
     <Section py={[5, null, null, '190px']} pb={50}>
       <div className="text-center">
         <Title mt={100}>Trenuj razem z nami</Title>
