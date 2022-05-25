@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -8,13 +7,13 @@ export const Seo = ({ title }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
-  const { title: defaultTitle, titleTemplate, description, siteUrl, image } = site.siteMetadata
+  const { title: defaultTitle, titleTemplate, description, url, image } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
     description: description,
-    image: `${siteUrl}${image}`,
-    url: `${siteUrl}${pathname}`,
+    image: `${url}${image}`,
+    url: `${url}${pathname}`,
   }
 
   return (
