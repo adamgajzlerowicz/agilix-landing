@@ -3,6 +3,7 @@ module.exports = {
   siteMetadata: {
     title: 'Agilix',
     description: 'Aplikacja dla Ciebie i Twojego najlepszego przyjaciela',
+    titleTemplate: '%s | Agilix',
     author: 'Adam Gajzlerowicz',
     url: 'https://agilix.dog',
     image: '/image.png',
@@ -22,4 +23,4 @@ module.exports = {
       },
     },
   ],
-};
+}
