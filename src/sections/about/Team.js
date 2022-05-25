@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgU1 from '../../assets/image/jpeg/natalia.png'
-import imgU2 from '../../assets/image/jpeg/adam.jpeg'
-import agnieszka from '../../assets/image/jpeg/agnieszka.png'
+import imgU1 from '../../assets/natalia.png'
+import imgU2 from '../../assets/adam.jpeg'
+import agnieszka from '../../assets/agnieszka.png'
 
 const CardImage = styled.div`
   max-width: 160px;

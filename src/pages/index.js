@@ -5,15 +5,35 @@ import Content from '../sections/landing/Content'
 import Cta from '../sections/landing/Cta'
 import PageWrapper from '../components/PageWrapper'
 import { Seo } from '../components/seo'
+import { graphql } from 'gatsby'
 
-const Index = () => (
+const Index = ({ data }) => (
   <PageWrapper footerDark>
     <Seo title="Otwórz się na nowe aktywności" />
-    <Hero />
+    <Hero image={data.shoot1.childImageSharp.fixed.src} />
     <Feature />
-    <Content />
+    <Content image={data.shoot2.childImageSharp.fixed.src} />
     <Cta />
   </PageWrapper>
 )
 
 export default Index
+
+export const query = graphql`
+  query {
+    shoot1: file(relativePath: { eq: "shoot1.png" }) {
+      childImageSharp {
+        fixed(width: 451) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    shoot2: file(relativePath: { eq: "shoot1.png" }) {
+      childImageSharp {
+        fixed(width: 451) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

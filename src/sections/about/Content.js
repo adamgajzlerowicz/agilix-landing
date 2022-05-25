@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 import { Box, Section, Text, Title } from '../../components/Core'
 
-import Mongo from '../../assets/image/mongo.jpg'
+import Mongo from '../../assets/mongo.jpg'
 
 const ContentImg = styled(Box)`
   box-shadow: ${({ theme }) => `0 42px 54px ${theme.colors.shadow}`};

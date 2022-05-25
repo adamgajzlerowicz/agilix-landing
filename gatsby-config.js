@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
@@ -9,6 +11,13 @@ module.exports = {
     image: '/image.png',
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: path.join(__dirname, 'src', 'assets'),
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',

@@ -6,7 +6,7 @@ import { rgba } from 'polished'
 import Section from '../components/Section'
 import PageWrapper from '../components/PageWrapper'
 
-import imgIcon from '../assets/image/png/heart-shape.png'
+import imgIcon from '../assets/heart-shape.png'
 import { Title, Text } from '../components/Core'
 
 const ContentIcon = styled.div`

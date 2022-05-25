@@ -6,7 +6,6 @@ import { Title, Button, Section, Box, Text } from '../../components/Core'
 
 import { device } from '../../utils'
 import svgHeroShape from '../../assets/image/svg/hero-shape-svg.svg'
-import imgL1HeroPhone from '../../assets/image/png/shoot1.png'
 import { Link } from 'gatsby'
 
 const ShapeTopLeft = styled.div`
@@ -57,7 +56,7 @@ const ImgRight = styled.img`
   }
 `
 
-const Hero = () => (
+const Hero = ({ image }) => (
   <Section className="position-relative">
     <div className="pt-5"></div>
     <ShapeTopLeft>
@@ -73,7 +72,7 @@ const Hero = () => (
               data-aos-duration="750"
               data-aos-once="true"
               data-aos-delay="500">
-              <ImgRight src={imgL1HeroPhone} alt="" />
+              <ImgRight src={image} alt="" />
             </div>
 
             <TopCard

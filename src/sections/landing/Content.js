@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 
 import { Title, Button, Section, Box, Text } from '../../components/Core'
 import { device } from '../../utils'
-import Shoot from '../../assets/image/png/shoot2.png'
 
 const ShapeCard = styled(Box)`
   width: 305px;
@@ -23,7 +22,7 @@ const ShapeCard = styled(Box)`
   }
 `
 
-const Content = () => (
+const Content = ({ image }) => (
   <>
     <Section>
       <Container>
@@ -35,7 +34,7 @@ const Content = () => (
                 data-aos="fade-down"
                 data-aos-duration="750"
                 data-aos-once="true">
-                <img src={Shoot} alt="" className="img-fluid" />
+                <img src={image} className="img-fluid" />
               </div>
 
               <ShapeCard

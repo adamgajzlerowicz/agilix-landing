@@ -6,7 +6,7 @@ import PageWrapper from '../components/PageWrapper'
 
 import { Title, Text, Box } from '../components/Core'
 import itunes from '../assets/image/svg/itunes.svg'
-import play from '../assets/image/png/google-play.png'
+import play from '../assets/google-play.png'
 import { Seo } from '../components/seo'
 
 const ButtonWrapper = styled.div`

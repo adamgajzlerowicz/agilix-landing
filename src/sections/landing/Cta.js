@@ -5,7 +5,7 @@ import { Formik } from 'formik'
 
 import { Title, Button, Section, Box, Text, Input } from '../../components/Core'
 
-import imgOval from '../../assets/image/png/l1-cta-oval.png'
+import imgOval from '../../assets/l1-cta-oval.png'
 import svgCurve from '../../assets/image/svg/l1-curve-cta.svg'
 import { GraphQLClient, gql } from 'graphql-request'
 import { Loading } from '../../components/Loading'

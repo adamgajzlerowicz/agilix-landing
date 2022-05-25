@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import { Title, Button, Section, Box, Text } from '../../components/Core'
 
-import imgOval from '../../assets/image/png/l1-cta-oval.png'
+import imgOval from '../../assets/l1-cta-oval.png'
 import svgCurve from '../../assets/image/svg/l1-curve-cta.svg'
 
 const LeftCard = styled(Box)`
