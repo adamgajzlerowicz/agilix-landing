@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
-import { ListGroup, Collapse } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 import { Link } from "gatsby";
 import GlobalContext from "../../context/GlobalContext";
 
@@ -83,9 +83,6 @@ const MenuItem = ({
   depth = 0,
   ...rest
 }) => {
-  const [open, setOpen] = useState(false);
-  const hasSubItems = Array.isArray(items);
-
   const gContext = useContext(GlobalContext);
 
   return (

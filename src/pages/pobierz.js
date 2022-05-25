@@ -7,6 +7,7 @@ import PageWrapper from "../components/PageWrapper";
 import {Title, Text, Box } from "../components/Core";
 import itunes from '../assets/image/svg/itunes.svg'
 import play from '../assets/image/png/google-play.png'
+import {Helmet} from "react-helmet";
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -16,8 +17,10 @@ const ButtonWrapper = styled.div`
 
 const GetIt = () => {
     return (
-        <>
             <PageWrapper footerDark>
+                <Helmet>
+                    <title>Pobierz</title>
+                </Helmet>
                 <Section py={[5, null, null, "190px"]} pb={50}>
                     <div className="text-center">
                         <Title mt={100}>
@@ -57,7 +60,6 @@ const GetIt = () => {
                 </Section>
 
             </PageWrapper>
-        </>
     );
 };
 

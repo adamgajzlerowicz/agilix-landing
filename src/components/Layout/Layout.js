@@ -34,7 +34,6 @@ import "../../assets/fonts/fontawesome-5/css/all.css";
 
 import { get, merge } from "lodash";
 
-// the full theme object
 import { theme as baseTheme } from "../../utils";
 
 const Loader = styled.div`
@@ -97,31 +96,6 @@ const Layout = ({ children, pageContext }) => {
     );
   }, [gContext]);
 
-  if (pageContext.layout === "bare") {
-    return (
-      <ThemeProvider
-        theme={
-          gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)
-        }
-      >
-        <GlobalStyle />
-        <Helmet>
-          <title>Agilix</title>
-          <link rel="icon" type="image/png" href={imgFavicon} />
-        </Helmet>
-        <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
-          <div className="load-circle">
-            <span className="one"></span>
-          </div>
-        </Loader>
-        <div className="site-wrapper overflow-hidden" ref={eleRef}>
-          {children}
-        </div>
-
-        <ModalVideo />
-      </ThemeProvider>
-    );
-  }
 
   return (
     <>
@@ -131,7 +105,7 @@ const Layout = ({ children, pageContext }) => {
         }
       >
         <GlobalStyle />
-        <Helmet>
+        <Helmet titleTemplate="%s | Agilix" >
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"></script>
           <script>{`
             window.dataLayer = window.dataLayer || [];

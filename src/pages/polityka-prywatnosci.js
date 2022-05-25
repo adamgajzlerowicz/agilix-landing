@@ -3,11 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import PageWrapper from "../components/PageWrapper";
 import { Section, Title } from "../components/Core";
+import {Helmet} from "react-helmet";
 
 const PolitykaPrywatnosci = () => {
   return (
-    <>
       <PageWrapper footerDark>
+        <Helmet>
+          <title>Polityka prywatności</title>
+        </Helmet>
         <Section>
           <div className="pt-5"></div>
           <Container>
@@ -289,7 +292,6 @@ const PolitykaPrywatnosci = () => {
           </Container>
         </Section>
       </PageWrapper>
-    </>
   );
 };
 export default PolitykaPrywatnosci;
