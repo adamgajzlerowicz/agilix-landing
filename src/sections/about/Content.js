@@ -4,16 +4,13 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 import { Box, Section, Text, Title } from '../../components/Core'
 
-import Mongo from '../../assets/mongo.jpg'
-
 const ContentImg = styled(Box)`
   box-shadow: ${({ theme }) => `0 42px 54px ${theme.colors.shadow}`};
   border-radius: 10px;
   overflow: hidden;
-  //max-height: 515px;
 `
 
-const Content = () => (
+const Content = ({ image }) => (
   <>
     <Section>
       <Container>
@@ -44,7 +41,7 @@ const Content = () => (
 
           <Col lg="6">
             <ContentImg>
-              <img src={Mongo} alt="mongo" className="img-fluid" />
+              <img src={image} alt="mongo" className="img-fluid" />
             </ContentImg>
           </Col>
         </Row>
