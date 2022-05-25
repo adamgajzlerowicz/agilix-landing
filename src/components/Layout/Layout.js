@@ -132,13 +132,13 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y59MQBN1QS"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"></script>
           <script>{`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-Y59MQBN1QS');
+            gtag('config', 'G-0003FLN5B7');
           `}</script>
           <title>Agilix</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
