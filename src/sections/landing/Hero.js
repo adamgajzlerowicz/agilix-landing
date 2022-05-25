@@ -145,7 +145,9 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero">
+                    <article>
                       Aplikacja dla Ciebie i Twojego najlepszego przyjaciela
+                    </article>
                   </Title>
                   <Text mb={4}>
                       Zapisz się na zajęcia z posłuszeństwa, znajdź trenera Agility, Frisbee czy Flyball, zapisz się na psie przedszkole, lub przyjdź na seminarium!

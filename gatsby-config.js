@@ -2,9 +2,10 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `Agilix`,
-    description: 'Baza dla wszystkich miłośników aktywnego spędzania czasu z psami',
-    author: `Adam Gajzlerowicz`,
-    siteUrl: `https://agilix.dog`
+    description: 'Aplikacja dla Ciebie i Twojego najlepszego przyjaciela',
+    author: 'Adam Gajzlerowicz',
+    url: 'https://agilix.dog',
+    image: '/image.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
