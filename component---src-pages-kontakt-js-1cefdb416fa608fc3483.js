@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkagilix=self.webpackChunkagilix||[]).push([[628],{7395:function(e,t,l){l.r(t);var n=l(7294),a=l(7629),r=l(9956),u=l(5414);t.default=function(){return n.createElement(r.Z,{footerDark:!0},n.createElement(u.q,null,n.createElement("title",null,"Kontakt")),n.createElement("div",{style:{marginTop:150}},n.createElement(a.Z,null)))}}}]);
+//# sourceMappingURL=component---src-pages-kontakt-js-1cefdb416fa608fc3483.js.map
