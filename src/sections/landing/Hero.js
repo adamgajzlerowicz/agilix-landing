@@ -66,12 +66,7 @@ const Hero = ({ image }) => (
       <Row className="justify-content-center align-items-center">
         <Col lg="5" md="8" sm="9" className="order-lg-2">
           <div className="text-center text-lg-right position-relative">
-            <div
-              className="img-main"
-              data-aos="fade-down"
-              data-aos-duration="750"
-              data-aos-once="true"
-              data-aos-delay="500">
+            <div className="img-main">
               <ImgRight src={image} alt="" />
             </div>
 
@@ -83,7 +78,7 @@ const Hero = ({ image }) => (
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
-              data-aos-delay="1000">
+              data-aos-delay="1200">
               <Box
                 width="30px"
                 minWidth="30px"
@@ -131,7 +126,7 @@ const Hero = ({ image }) => (
         <Col lg="7" className="order-lg-1">
           <div
             data-aos="fade-right"
-            data-aos-duration="750"
+            data-aos-duration="50"
             data-aos-once="true"
             data-aos-delay="500">
             <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
