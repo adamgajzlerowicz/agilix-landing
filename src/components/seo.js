@@ -12,7 +12,7 @@ export const Seo = ({ title }) => {
   const seo = {
     title: title || defaultTitle,
     description: description,
-    image: logo.childImageSharp.fixed.src,
+    image: `${url}${logo.childImageSharp.fixed.src}`,
     url: `${url}${pathname}`,
   }
 
