@@ -92,6 +92,27 @@ const Layout = ({ children }) => {
 
             gtag('config', 'G-0003FLN5B7');
           `}</script>
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+
+          {/*<link*/}
+          {/*  rel="preload"*/}
+          {/*  as="style"*/}
+          {/*  href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"*/}
+          {/*/>*/}
+
+          {/*<link*/}
+          {/*  rel="stylesheet"*/}
+          {/*  href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"*/}
+          {/*  media="print"*/}
+          {/*  onLoad="this.media='all'"*/}
+          {/*/>*/}
+
+          {/*<link*/}
+          {/*  rel="stylesheet"*/}
+          {/*  href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"*/}
+          {/*/>*/}
+
           <title>Agilix</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>

@@ -1,4 +1,3 @@
-// Override default variables before the import
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 $min-contrast-ratio: 2.5;
@@ -12,7 +11,7 @@ $black: $text;
 $body-color: $text;
 $headings-color: $text;
 $body-bg: $bg;
-$font-family-base: 'Titillium Web', Arial, sans-serif;
+$font-family-base: 'Titillium Web', serif;
 $headings-font-family: $font-family-base;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
