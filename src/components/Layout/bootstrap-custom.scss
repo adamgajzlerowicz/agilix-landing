@@ -12,7 +12,7 @@ $black: $text;
 $body-color: $text;
 $headings-color: $text;
 $body-bg: $bg;
-$font-family-base: 'Titillium Web', sans-serif;
+$font-family-base: 'Titillium Web', Tahoma, sans-serif;
 $headings-font-family: $font-family-base;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";

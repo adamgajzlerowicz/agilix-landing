@@ -23,7 +23,7 @@ export const query = graphql`
   query {
     shoot1: file(relativePath: { eq: "shoot1.png" }) {
       childImageSharp {
-        fixed(width: 451) {
+        fixed(width: 752, pngQuality: 10) {
           ...GatsbyImageSharpFixed
         }
       }

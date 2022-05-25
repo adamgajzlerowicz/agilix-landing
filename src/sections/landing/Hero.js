@@ -9,6 +9,7 @@ import svgHeroShape from '../../assets/image/svg/hero-shape-svg.svg'
 import { Link } from 'gatsby'
 
 const ShapeTopLeft = styled.div`
+  z-index: -1;
   position: absolute;
   left: 0;
   top: 0;
@@ -58,16 +59,15 @@ const ImgRight = styled.img`
 
 const Hero = ({ image }) => (
   <Section className="position-relative">
-    <div className="pt-5"></div>
     <ShapeTopLeft>
       <img src={svgHeroShape} alt="" className="img-fluid" />
     </ShapeTopLeft>
     <Container>
       <Row className="justify-content-center align-items-center">
-        <Col lg="5" md="8" sm="9" className="order-lg-2">
+        <Col lg="5" md="8" sm="9" className="order-lg-2 pt-5">
           <div className="text-center text-lg-right position-relative">
             <div className="img-main">
-              <ImgRight src={image} alt="" />
+              <ImgRight src={image} alt="Screenshot terminarza aplikacji" />
             </div>
 
             <TopCard
@@ -124,11 +124,7 @@ const Hero = ({ image }) => (
           </div>
         </Col>
         <Col lg="7" className="order-lg-1">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="50"
-            data-aos-once="true"
-            data-aos-delay="500">
+          <div>
             <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
               <Title variant="hero">
                 <article>Aplikacja dla Ciebie i Twojego najlepszego przyjaciela</article>

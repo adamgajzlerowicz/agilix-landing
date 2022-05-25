@@ -7,8 +7,6 @@ import AOS from 'aos'
 import Header from '../Header'
 import Footer from '../Footer'
 
-import ModalVideo from '../ModalVideo'
-
 import GlobalContext from '../../context/GlobalContext'
 
 import GlobalStyle from '../../utils/globalStyle'
@@ -40,7 +38,7 @@ const Loader = styled.div`
   z-index: 9999999999;
   opacity: 1;
   visibility: visible;
-  transition: all 1s ease-out 0.5s;
+  transition: all 0.2s ease-out 0.1s;
   &.inActive {
     opacity: 0;
     visibility: hidden;
@@ -50,32 +48,24 @@ const Loader = styled.div`
 // options for different color modes
 const modes = { light: 'light', dark: 'dark' }
 
-// merge the color mode with the base theme
-// to create a new theme object
 const getTheme = mode =>
   merge({}, baseTheme, {
     colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
   })
 
-const Layout = ({ children, pageContext }) => {
+const Layout = ({ children }) => {
   const gContext = useContext(GlobalContext)
-
-  const [visibleLoader, setVisibleLoader] = useState(true)
 
   useLayoutEffect(() => {
     AOS.init()
-    setVisibleLoader(false)
   }, [])
 
-  // Navbar style based on scroll
   const eleRef = useRef()
 
   useEffect(() => {
     window.addEventListener(
       'popstate',
       function (event) {
-        // The popstate event is fired each time when the current history entry changes.
-
         gContext.closeOffCanvas()
       },
       false,
@@ -83,7 +73,6 @@ const Layout = ({ children, pageContext }) => {
     window.addEventListener(
       'pushState',
       function (event) {
-        // The pushstate event is fired each time when the current history entry changes.
         gContext.closeOffCanvas()
       },
       false,
@@ -92,7 +81,7 @@ const Layout = ({ children, pageContext }) => {
 
   return (
     <>
-      <ThemeProvider theme={gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)}>
+      <ThemeProvider theme={getTheme(modes.light)}>
         <GlobalStyle />
         <Helmet titleTemplate="%s | Agilix">
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"></script>
@@ -106,7 +95,7 @@ const Layout = ({ children, pageContext }) => {
           <title>Agilix</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
-        <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
+        <Loader id="loading" className={'inActive'}>
           <div className="load-circle">
             <span className="one" />
           </div>
@@ -118,8 +107,6 @@ const Layout = ({ children, pageContext }) => {
 
           <Footer isDark={gContext.footerDark} />
         </div>
-
-        <ModalVideo />
       </ThemeProvider>
     </>
   )
