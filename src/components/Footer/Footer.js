@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Box } from '../Core';
-import { Link } from 'gatsby';
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
+import { Box } from '../Core'
+import { Link } from 'gatsby'
 
 const UlStyled = styled.ul`
   margin: 0;
@@ -18,13 +18,13 @@ const UlStyled = styled.ul`
       }
     }
   }
-`;
+`
 
 const WhiteLogo = styled.div`
   background-color: white;
   border-radius: 20px;
   width: 70px;
-`;
+`
 
 const CopyRightArea = styled.div`
   border-top: ${({ dark, theme }) =>
@@ -32,8 +32,7 @@ const CopyRightArea = styled.div`
 
   padding: 15px 0;
   p {
-    color: ${({ dark, theme }) =>
-      dark ? theme.colors.lightShade : theme.colors.darkShade};
+    color: ${({ dark, theme }) => (dark ? theme.colors.lightShade : theme.colors.darkShade)};
     font-size: 13px;
     font-weight: 300;
     letter-spacing: -0.41px;
@@ -46,8 +45,7 @@ const CopyRightArea = styled.div`
     padding: 0;
     display: inline-flex;
     a {
-      color: ${({ dark, theme }) =>
-        dark ? theme.colors.light : theme.colors.dark} !important;
+      color: ${({ dark, theme }) => (dark ? theme.colors.light : theme.colors.dark)} !important;
       font-size: 16px;
       transition: 0.4s;
       padding: 0 3px;
@@ -61,7 +59,7 @@ const CopyRightArea = styled.div`
       }
     }
   }
-`;
+`
 
 const Footer = ({ isDark = true }) => (
   <>
@@ -70,8 +68,7 @@ const Footer = ({ isDark = true }) => (
         <Box
           css={`
             padding: 80px 0 60px;
-          `}
-        >
+          `}>
           <Row className="justify-content-center">
             <Col lg="2" md="4">
               <WhiteLogo></WhiteLogo>
@@ -97,14 +94,10 @@ const Footer = ({ isDark = true }) => (
                         <Link to="/nasza-misja">Nasza misja</Link>
                       </li>
                       <li>
-                        <Link to="/polityka-prywatnosci">
-                          Polityka prywatności
-                        </Link>
+                        <Link to="/polityka-prywatnosci">Polityka prywatności</Link>
                       </li>
                       <li>
-                        <Link to="https://app.agilix.dog/invite">
-                          Aplikacja
-                        </Link>
+                        <Link to="https://app.agilix.dog/invite">Aplikacja</Link>
                       </li>
                     </UlStyled>
                   </div>
@@ -121,11 +114,7 @@ const Footer = ({ isDark = true }) => (
             <Col sm="6" className="text-sm-right text-center">
               <ul className="social-icons">
                 <li>
-                  <a
-                    href="https://www.facebook.com/agilix"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://www.facebook.com/agilix" target="_blank" rel="noreferrer">
                     <i className="icon icon-logo-facebook"></i>
                   </a>
                 </li>
@@ -136,6 +125,6 @@ const Footer = ({ isDark = true }) => (
       </Container>
     </Box>
   </>
-);
+)
 
-export default Footer;
+export default Footer

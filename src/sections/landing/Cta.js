@@ -1,54 +1,40 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Formik } from 'formik';
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
+import { Formik } from 'formik'
 
-import {
-  Title,
-  Button,
-  Section,
-  Box,
-  Text,
-  Input,
-} from '../../components/Core';
+import { Title, Button, Section, Box, Text, Input } from '../../components/Core'
 
-import imgOval from '../../assets/image/png/l1-cta-oval.png';
-import svgCurve from '../../assets/image/svg/l1-curve-cta.svg';
-import { GraphQLClient, gql } from 'graphql-request';
-import { Loading } from '../../components/Loading';
+import imgOval from '../../assets/image/png/l1-cta-oval.png'
+import svgCurve from '../../assets/image/svg/l1-curve-cta.svg'
+import { GraphQLClient, gql } from 'graphql-request'
+import { Loading } from '../../components/Loading'
 
 const LeftCard = styled(Box)`
   position: absolute;
   top: 0;
   left: 0px;
-`;
+`
 
 const RightCard = styled(Box)`
   position: absolute;
   top: 0;
   right: -275px;
-`;
+`
 
-const graphQLClient = new GraphQLClient(
-  'https://agilix.hackerman-consulting.com/graphql',
-  {}
-);
+const graphQLClient = new GraphQLClient('https://agilix.hackerman-consulting.com/graphql', {})
 
 const mutation = gql`
   mutation sendContactEmail($content: String!, $sender: String!) {
     sendContactEmail(content: $content, sender: $sender)
   }
-`;
+`
 
 function Cta() {
   return (
     <>
       <Section bg="dark" className="position-relative">
-        <LeftCard
-          data-aos="fade-right"
-          data-aos-duration="750"
-          data-aos-once="true"
-        >
+        <LeftCard data-aos="fade-right" data-aos-duration="750" data-aos-once="true">
           <img src={imgOval} alt="" className="img-fluid" />
         </LeftCard>
         <RightCard>
@@ -62,42 +48,37 @@ function Cta() {
                   content: '',
                   sender: '',
                 }}
-                validate={(values) => {
-                  const errors = {};
+                validate={values => {
+                  const errors = {}
 
                   if (!values.sender) {
-                    errors.sender = 'Pole jest wymagane';
-                  } else if (
-                    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(
-                      values.sender
-                    )
-                  ) {
-                    errors.sender = 'Wpisz poprawny adres email';
+                    errors.sender = 'Pole jest wymagane'
+                  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.sender)) {
+                    errors.sender = 'Wpisz poprawny adres email'
                   }
 
                   if (!values.content) {
-                    errors.content = 'Pole jest wymagane';
+                    errors.content = 'Pole jest wymagane'
                   }
 
-                  return errors;
+                  return errors
                 }}
                 onSubmit={(values, { setSubmitting, setStatus }) => {
                   graphQLClient
                     .request(mutation, values)
-                    .then((result) => {
+                    .then(result => {
                       if (result.sendContactEmail) {
-                        setStatus('success');
+                        setStatus('success')
                       } else {
-                        setStatus('failed');
-                        console.log('wystapil blad');
+                        setStatus('failed')
+                        console.log('wystapil blad')
                       }
                     })
-                    .catch((error) => {
-                      setStatus('failed');
+                    .catch(error => {
+                      setStatus('failed')
                     })
-                    .finally(() => setSubmitting(false));
-                }}
-              >
+                    .finally(() => setSubmitting(false))
+                }}>
                 {({
                   values,
                   errors,
@@ -118,8 +99,8 @@ function Cta() {
                       <Box mb={5} className="text-center">
                         <Title color="light">Napisz do nas</Title>
                         <Text color="light" opacity={0.7}>
-                          Masz sugestie? Chcesz nawiazać wspłpracę? Brakuje
-                          funkcjonalności? Zapraszamy do kontaktu!
+                          Masz sugestie? Chcesz nawiazać wspłpracę? Brakuje funkcjonalności?
+                          Zapraszamy do kontaktu!
                         </Text>
                       </Box>
                       <Box mb={3}>
@@ -164,17 +145,12 @@ function Cta() {
                           width="100%"
                           type="submit"
                           borderRadius={10}
-                          disabled={isSubmitting}
-                        >
+                          disabled={isSubmitting}>
                           Wyślij wiadomość
                         </Button>
                       )}
                       {status === 'failed' && (
-                        <Text
-                          variant="small"
-                          color="warning"
-                          className="text-center"
-                        >
+                        <Text variant="small" color="warning" className="text-center">
                           Wysyłanie nie powiodło się
                         </Text>
                       )}
@@ -187,7 +163,7 @@ function Cta() {
         </Container>
       </Section>
     </>
-  );
+  )
 }
 
-export default Cta;
+export default Cta

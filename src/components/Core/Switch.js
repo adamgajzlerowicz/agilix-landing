@@ -1,13 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import {
-  space,
-  border,
-  typography,
-  shadow,
-  flexbox,
-  layout,
-} from 'styled-system';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { space, border, typography, shadow, flexbox, layout } from 'styled-system'
 
 const SwitchStyled = styled.div`
   display: inline-block;
@@ -16,8 +9,7 @@ const SwitchStyled = styled.div`
   height: 33px;
   border-radius: 17px;
   transition: all 0.3s ease-out;
-  background: ${({ active, theme, bg }) =>
-    active ? theme.colors[bg] : '#eae9f2'};
+  background: ${({ active, theme, bg }) => (active ? theme.colors[bg] : '#eae9f2')};
   position: relative;
   margin: 0 15px;
   white-space: nowrap;
@@ -27,7 +19,7 @@ const SwitchStyled = styled.div`
   ${shadow};
   ${flexbox};
   ${layout};
-`;
+`
 
 const Round = styled.span`
   width: 21px;
@@ -42,26 +34,21 @@ const Round = styled.span`
   transition: 0.4s;
   border-radius: 500px;
   pointer-events: none;
-`;
+`
 
 const Switch = ({ bg = 'secondary', onClick = () => {}, ...rest }) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false)
 
   const handleSwitch = () => {
-    setActive(!active);
-    onClick();
-  };
+    setActive(!active)
+    onClick()
+  }
 
   return (
-    <SwitchStyled
-      bg={bg}
-      {...rest}
-      onClick={handleSwitch}
-      active={active ? 1 : 0}
-    >
+    <SwitchStyled bg={bg} {...rest} onClick={handleSwitch} active={active ? 1 : 0}>
       <Round active={active ? 1 : 0} />
     </SwitchStyled>
-  );
-};
+  )
+}
 
-export default Switch;
+export default Switch

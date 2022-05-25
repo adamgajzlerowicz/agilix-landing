@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { rgba } from 'polished';
-import { Container, Row, Col } from 'react-bootstrap';
+import React from 'react'
+import { Link } from 'gatsby'
+import { rgba } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Text, Badge } from '../../components/Core';
-import styled from 'styled-components';
+import { Title, Section, Text, Badge } from '../../components/Core'
+import styled from 'styled-components'
 
 const Card = styled(Link)`
   min-height: 100%;
@@ -24,7 +24,7 @@ const Card = styled(Link)`
       color: #0056b3 !important;
     }
   }
-`;
+`
 
 const Location = styled.span`
   color: #8c97ac;
@@ -33,23 +33,16 @@ const Location = styled.span`
   margin-right: 5px;
   display: flex;
   align-items: center;
-`;
+`
 
 const BadgeStyled = styled(Badge)`
   background-color: ${({ theme, bg }) => rgba(theme.colors[bg], 0.15)};
   color: ${({ theme, bg }) => theme.colors[bg]};
   border: none;
   font-weight: 300;
-`;
+`
 
-const RolesCard = ({
-  color = 'primary',
-  title,
-  location,
-  type,
-  children,
-  ...rest
-}) => (
+const RolesCard = ({ color = 'primary', title, location, type, children, ...rest }) => (
   <Card className="card-job top-only" to="/#" {...rest}>
     <div className="d-flex justify-content-between align-items-center mb-4">
       <Location>
@@ -61,7 +54,7 @@ const RolesCard = ({
       {title}
     </Title>
   </Card>
-);
+)
 
 const Roles = () => (
   <>
@@ -72,8 +65,8 @@ const Roles = () => (
             <div>
               <Title>Open roles</Title>
               <Text>
-                These companies release their own versions of the operating
-                systems with minor changes, and yet always.
+                These companies release their own versions of the operating systems with minor
+                changes, and yet always.
               </Text>
             </div>
           </Col>
@@ -131,6 +124,6 @@ const Roles = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Roles;
+export default Roles

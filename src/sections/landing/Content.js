@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Container, Row, Col } from 'react-bootstrap';
-import Link from 'gatsby-link';
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
+import Link from 'gatsby-link'
 
-import { Title, Button, Section, Box, Text } from '../../components/Core';
-import { device } from '../../utils';
-import Shoot from '../../assets/image/png/shoot2.png';
+import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
+import Shoot from '../../assets/image/png/shoot2.png'
 
 const ShapeCard = styled(Box)`
   width: 305px;
@@ -21,7 +21,7 @@ const ShapeCard = styled(Box)`
   @media ${device.md} {
     left: 0%;
   }
-`;
+`
 
 const Content = () => (
   <>
@@ -34,8 +34,7 @@ const Content = () => (
                 className="ps-lg-4 text-center text-lg-right"
                 data-aos="fade-down"
                 data-aos-duration="750"
-                data-aos-once="true"
-              >
+                data-aos-once="true">
                 <img src={Shoot} alt="" className="img-fluid" />
               </div>
 
@@ -47,8 +46,7 @@ const Content = () => (
                 data-aos="fade-right"
                 data-aos-duration="750"
                 data-aos-once="true"
-                data-aos-delay="500"
-              >
+                data-aos-delay="500">
                 <Box
                   width="30px"
                   minWidth="30px"
@@ -59,18 +57,12 @@ const Content = () => (
                   borderRadius="50%"
                   className="d-flex align-items-center justify-content-center"
                   mr={3}
-                  mt={2}
-                >
+                  mt={2}>
                   <i className="fas fa-bell"></i>
                 </Box>
 
                 <Box pr="40px">
-                  <Text
-                    fontSize={1}
-                    lineHeight="24px"
-                    opacity={0.7}
-                    mb={0}
-                  ></Text>
+                  <Text fontSize={1} lineHeight="24px" opacity={0.7} mb={0}></Text>
                   <Title variant="card" fontWeight={300} mb={0}>
                     Zajęcia na dziś są dostępne
                   </Title>
@@ -79,17 +71,12 @@ const Content = () => (
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
-            <div
-              data-aos="fade-right"
-              data-aos-duration="750"
-              data-aos-once="true"
-            >
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-once="true">
               <Box>
                 <Title>Jesteś trenerem?</Title>
                 <Text mb={4}>
-                  Załóż swój klub, zarządzaj jego członkami, akceptuj prośby o
-                  dołączenie, dodawaj treningi indywidualne lub treningi
-                  dostępne dla każdego.
+                  Załóż swój klub, zarządzaj jego członkami, akceptuj prośby o dołączenie, dodawaj
+                  treningi indywidualne lub treningi dostępne dla każdego.
                 </Text>
                 <Link to={'pobierz'}>
                   <Button mt={3}>Pobierz teraz</Button>
@@ -101,6 +88,6 @@ const Content = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Content;
+export default Content

@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useContext } from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from '../../components/Core';
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import GlobalContext from '../../context/GlobalContext';
-import { device } from '../../utils';
+import GlobalContext from '../../context/GlobalContext'
+import { device } from '../../utils'
 
-import imgVideo from '../../assets/image/jpeg/video-image-2.jpg';
+import imgVideo from '../../assets/image/jpeg/video-image-2.jpg'
 
 const IconButton = styled(Box)`
   cursor: pointer;
@@ -32,15 +32,15 @@ const IconButton = styled(Box)`
     width: 124px;
     height: 124px;
   }
-`;
+`
 
 const Content = () => {
-  const gContext = useContext(GlobalContext);
+  const gContext = useContext(GlobalContext)
 
-  const openVideoModal = (e) => {
-    e.preventDefault();
-    gContext.toggleVideoModal();
-  };
+  const openVideoModal = e => {
+    e.preventDefault()
+    gContext.toggleVideoModal()
+  }
 
   return (
     <>
@@ -54,9 +54,8 @@ const Content = () => {
             </Col>
             <Col lg="6" className="ps-lg-5 d-flex align-items-end">
               <Text>
-                These companies release their own versions of the operating
-                systems with minor changes, and yet always with the same bottom
-                line.
+                These companies release their own versions of the operating systems with minor
+                changes, and yet always with the same bottom line.
               </Text>
             </Col>
           </Row>
@@ -69,7 +68,7 @@ const Content = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content

@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
-import { ListGroup } from 'react-bootstrap';
-import { Link } from 'gatsby';
-import GlobalContext from '../../context/GlobalContext';
+import React, { useContext } from 'react'
+import styled from 'styled-components'
+import { ListGroup } from 'react-bootstrap'
+import { Link } from 'gatsby'
+import GlobalContext from '../../context/GlobalContext'
 
 const NestedMenuContainer = styled.div`
   a {
@@ -36,7 +36,7 @@ const NestedMenuContainer = styled.div`
   /* .list-group-flush:last-child .list-group-item:last-child {
     border-bottom-width: 1px;
   } */
-`;
+`
 
 const defaultMenuItems = [
   { name: 'home', label: 'Home' },
@@ -72,7 +72,7 @@ const defaultMenuItems = [
       },
     ],
   },
-];
+]
 
 const MenuItem = ({
   label,
@@ -83,24 +83,22 @@ const MenuItem = ({
   depth = 0,
   ...rest
 }) => {
-  const gContext = useContext(GlobalContext);
+  const gContext = useContext(GlobalContext)
 
   return (
     <ListGroup.Item
       {...rest}
       css={`
         padding-left: ${depth * depthStep}px !important;
-      `}
-    >
+      `}>
       {isExternal ? (
         <a
           href={`${name}`}
           onClick={() => {
             if (gContext.visibleOffCanvas) {
-              gContext.toggleOffCanvas();
+              gContext.toggleOffCanvas()
             }
-          }}
-        >
+          }}>
           {label}
         </a>
       ) : (
@@ -108,38 +106,26 @@ const MenuItem = ({
           to={`/${name}`}
           onClick={() => {
             if (gContext.visibleOffCanvas) {
-              gContext.toggleOffCanvas();
+              gContext.toggleOffCanvas()
             }
-          }}
-        >
+          }}>
           {label}
         </Link>
       )}
     </ListGroup.Item>
-  );
-};
+  )
+}
 
 const NestedMenu = ({ menuItems = defaultMenuItems }) => (
   <NestedMenuContainer>
     <ListGroup variant="flush">
       {menuItems.map((menuItem, index) => (
-        <MenuItem
-          key={`${menuItem.name}${index}`}
-          depthStep={20}
-          depth={0}
-          {...menuItem}
-        />
+        <MenuItem key={`${menuItem.name}${index}`} depthStep={20} depth={0} {...menuItem} />
       ))}
 
-      <MenuItem
-        key={'pobierz'}
-        depthStep={20}
-        depth={0}
-        label={'Pobierz teraz'}
-        name={'pobierz'}
-      />
+      <MenuItem key={'pobierz'} depthStep={20} depth={0} label={'Pobierz teraz'} name={'pobierz'} />
     </ListGroup>
   </NestedMenuContainer>
-);
+)
 
-export default NestedMenu;
+export default NestedMenu

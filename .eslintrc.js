@@ -1,6 +1,12 @@
 module.exports = {
+  parser: '@babel/eslint-parser',
   parserOptions: {
     sourceType: 'module',
+    ecmaVersion: 2020,
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
   globals: {
     __PATH_PREFIX__: true,
@@ -8,6 +14,7 @@ module.exports = {
   plugins: ['prettier', 'react'],
   root: true,
   env: {
+    browser: true,
     node: true,
     jest: true,
     es6: true,

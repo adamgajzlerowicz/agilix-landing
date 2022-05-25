@@ -1,40 +1,34 @@
-import React, {
-  useState,
-  useEffect,
-  useLayoutEffect,
-  useContext,
-  useRef,
-} from 'react';
+import React, { useState, useEffect, useLayoutEffect, useContext, useRef } from 'react'
 
-import styled, { ThemeProvider } from 'styled-components';
-import { Helmet } from 'react-helmet';
-import AOS from 'aos';
+import styled, { ThemeProvider } from 'styled-components'
+import { Helmet } from 'react-helmet'
+import AOS from 'aos'
 
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from '../Header'
+import Footer from '../Footer'
 
-import ModalVideo from '../ModalVideo';
+import ModalVideo from '../ModalVideo'
 
-import GlobalContext from '../../context/GlobalContext';
+import GlobalContext from '../../context/GlobalContext'
 
-import GlobalStyle from '../../utils/globalStyle';
+import GlobalStyle from '../../utils/globalStyle'
 
-import imgFavicon from '../../assets/agilix-new.svg';
+import imgFavicon from '../../assets/agilix-new.svg'
 
-import '../../assets/fonts/icon-font/fonts/avasta.ttf';
-import '../../assets/fonts/icon-font/css/style.css';
+import '../../assets/fonts/icon-font/fonts/avasta.ttf'
+import '../../assets/fonts/icon-font/css/style.css'
 
-import './bootstrap-custom.scss';
-import '../../../node_modules/slick-carousel/slick/slick.css';
-import '../../../node_modules/slick-carousel/slick/slick-theme.css';
-import '../../../node_modules/aos/dist/aos.css';
+import './bootstrap-custom.scss'
+import '../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+import '../../../node_modules/aos/dist/aos.css'
 
-import '../../assets/fonts/icon-font/css/style.css';
-import '../../assets/fonts/fontawesome-5/css/all.css';
+import '../../assets/fonts/icon-font/css/style.css'
+import '../../assets/fonts/fontawesome-5/css/all.css'
 
-import { get, merge } from 'lodash';
+import { get, merge } from 'lodash'
 
-import { theme as baseTheme } from '../../utils';
+import { theme as baseTheme } from '../../utils'
 
 const Loader = styled.div`
   position: fixed;
@@ -51,30 +45,30 @@ const Loader = styled.div`
     opacity: 0;
     visibility: hidden;
   }
-`;
+`
 
 // options for different color modes
-const modes = { light: 'light', dark: 'dark' };
+const modes = { light: 'light', dark: 'dark' }
 
 // merge the color mode with the base theme
 // to create a new theme object
-const getTheme = (mode) =>
+const getTheme = mode =>
   merge({}, baseTheme, {
     colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
-  });
+  })
 
 const Layout = ({ children, pageContext }) => {
-  const gContext = useContext(GlobalContext);
+  const gContext = useContext(GlobalContext)
 
-  const [visibleLoader, setVisibleLoader] = useState(true);
+  const [visibleLoader, setVisibleLoader] = useState(true)
 
   useLayoutEffect(() => {
-    AOS.init();
-    setVisibleLoader(false);
-  }, []);
+    AOS.init()
+    setVisibleLoader(false)
+  }, [])
 
   // Navbar style based on scroll
-  const eleRef = useRef();
+  const eleRef = useRef()
 
   useEffect(() => {
     window.addEventListener(
@@ -82,33 +76,26 @@ const Layout = ({ children, pageContext }) => {
       function (event) {
         // The popstate event is fired each time when the current history entry changes.
 
-        gContext.closeOffCanvas();
+        gContext.closeOffCanvas()
       },
-      false
-    );
+      false,
+    )
     window.addEventListener(
       'pushState',
       function (event) {
         // The pushstate event is fired each time when the current history entry changes.
-        gContext.closeOffCanvas();
+        gContext.closeOffCanvas()
       },
-      false
-    );
-  }, [gContext]);
+      false,
+    )
+  }, [gContext])
 
   return (
     <>
-      <ThemeProvider
-        theme={
-          gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)
-        }
-      >
+      <ThemeProvider theme={gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)}>
         <GlobalStyle />
         <Helmet titleTemplate="%s | Agilix">
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"
-          ></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-0003FLN5B7"></script>
           <script>{`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -135,7 +122,7 @@ const Layout = ({ children, pageContext }) => {
         <ModalVideo />
       </ThemeProvider>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
