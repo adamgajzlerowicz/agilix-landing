@@ -58,7 +58,6 @@ const ImgRight = styled.img`
 `;
 
 const Hero = () => (
-  <>
     <Section className="position-relative">
       <div className="pt-5"></div>
       <ShapeTopLeft>
@@ -134,7 +133,7 @@ const Hero = () => (
                 </Text>
               </BottomCard>
             </div>
-          </Col>
+              </Col>
           <Col lg="7" className="order-lg-1">
             <div
               data-aos="fade-right"
@@ -164,7 +163,6 @@ const Hero = () => (
         </Row>
       </Container>
     </Section>
-  </>
 );
 
 export default Hero;

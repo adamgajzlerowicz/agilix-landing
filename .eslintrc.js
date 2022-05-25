@@ -1,11 +1,11 @@
 module.exports = {
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
   },
   globals: {
     __PATH_PREFIX__: true,
   },
-  plugins: ["prettier", "react"],
+  plugins: ['prettier', 'react'],
   root: true,
   env: {
     node: true,
@@ -31,4 +31,4 @@ module.exports = {
     'no-undef': 2,
     'prefer-const': 2,
   },
-};
+}
