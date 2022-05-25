@@ -7,7 +7,7 @@ export const Seo = ({ title }) => {
   const { pathname } = useLocation()
   const { site, logo } = useStaticQuery(query)
 
-  const { title: defaultTitle, titleTemplate, description, url, image } = site.siteMetadata
+  const { title: defaultTitle, titleTemplate, description, url, facebookID } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
@@ -29,6 +29,8 @@ export const Seo = ({ title }) => {
       {seo.title && <meta name="twitter:title" content={seo.title} />}
       {seo.description && <meta name="twitter:description" content={seo.description} />}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <meta property="fb:app_id" content={facebookID} />
+      <meta property="og:type" content="article" />
     </Helmet>
   )
 }
@@ -49,6 +51,7 @@ const query = graphql`
         description
         url
         image
+        facebookID
       }
     }
   }

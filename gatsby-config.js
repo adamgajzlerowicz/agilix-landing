@@ -9,6 +9,7 @@ module.exports = {
     author: 'Adam Gajzlerowicz',
     url: 'https://agilix.dog',
     image: '/image.png',
+    facebookID: '1679997035493879',
   },
   plugins: [
     {
