@@ -13,7 +13,7 @@ import { Loading } from '../../components/Loading'
 const LeftCard = styled(Box)`
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
 `
 
 const RightCard = styled(Box)`
@@ -30,6 +30,10 @@ const mutation = gql`
   }
 `
 
+const FormContainer = styled(Container)`
+  margin-top: 150px;
+`
+
 function Cta() {
   return (
     <>
@@ -40,7 +44,7 @@ function Cta() {
         <RightCard>
           <img src={svgCurve} alt="" className="img-fluid" />
         </RightCard>
-        <Container>
+        <FormContainer>
           <Row className="justify-content-center">
             <Col lg="7" xl="6">
               <Formik
@@ -160,7 +164,7 @@ function Cta() {
               </Formik>
             </Col>
           </Row>
-        </Container>
+        </FormContainer>
       </Section>
     </>
   )
