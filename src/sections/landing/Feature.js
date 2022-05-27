@@ -54,10 +54,8 @@ const Feature = () => (
     <ShapeTopRight data-aos="fade-left" data-aos-duration="750" data-aos-once="true">
       <img src={imgL1FeatureOval} alt="" className="img-fluid" />
     </ShapeTopRight>
-    <ShapeBottmRight>
-      <img src={imgL1FeatureCurve} alt="" className="img-fluid" />
-    </ShapeBottmRight>
-    <Container>
+
+    <Container style={{ position: 'relative' }}>
       <Row className="align-items-center">
         <Col lg="6" className="ps-lg-5 order-lg-2">
           <div className="feature-content section-title">
@@ -110,6 +108,9 @@ const Feature = () => (
         </Col>
       </Row>
     </Container>
+    <ShapeBottmRight>
+      <img src={imgL1FeatureCurve} alt="" className="img-fluid" />
+    </ShapeBottmRight>
   </Section>
 )
 
