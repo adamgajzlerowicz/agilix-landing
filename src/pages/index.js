@@ -9,7 +9,7 @@ import { graphql } from 'gatsby'
 
 const Index = ({ data }) => (
   <PageWrapper footerDark>
-    <Seo title="Otwórz się na nowe aktywności" />
+    <Seo title="Otwórz się na nowe aktywności ze swoim pieskiem" />
     <Hero image={data.shoot1.childImageSharp.fixed.src} />
     <Feature />
     <Content image={data.shoot2.childImageSharp.fixed.src} />
