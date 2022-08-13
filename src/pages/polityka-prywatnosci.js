@@ -511,7 +511,7 @@ const PolitykaPrywatnosci = () => (
             <h2>§14 Kontakt do Administratora</h2>
             <p>
               Z Administratorem można skontaktować się używając adresu poczty elektronicznej
-              nelf86@gmail.com.
+              gajzlerowicz@gmail.com
             </p>
             <h2>§15 Wymagania Serwisu</h2>
             <ul>
@@ -537,6 +537,7 @@ const PolitykaPrywatnosci = () => (
               Urządzenia lub stanowić zagrożenie bezpieczeństwa Twoich danych. Administrator nie
               ponosi odpowiedzialności za zawartość znajdującą się poza Serwisem.
             </p>
+
             <h2>§17 Zmiany w Polityce Prywatności</h2>
             <ul>
               <li>
@@ -566,6 +567,28 @@ const PolitykaPrywatnosci = () => (
               </li>
               <li>
                 <p>Wprowadzone zmiany wchodzą w życie z chwilą ich publikacji.</p>
+              </li>
+            </ul>
+
+            <h2>§18 Treści tworzone przez użytkowników</h2>
+            <ul>
+              <li>
+                <p>
+                  Treśći tworzone przez użytkowników, takie jak nazwa użytkownika, imię psa, nazwy klubów i wydarzeń czy treści na wiadomościach chat,
+                  nie mogą zawierać treści obrażliwych dla innych użytkowników. Nie mogą również zawierać wulgaryzmów, treści erotycznych i pornograficznych,
+                  treści obrażających inne religie czy orientacje seksualne. Nie zezwala się również na treści dotyczące używek alkocholowych, nikotynowych, narkotykowych czy hazardowych.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Gdy takie treści zostaną złgłoszone przez użytkowników, administrator aplikacji udzieli ostrzeżenia użytkowniki publikującemu takie treści.
+                  Jeżeli sytuacja powtórzy się, konto użytkownika może zostać zawieszone, zablokowane lub usunięte.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Treści można zgłaszać na adres email gajzlerowicz@gmail.com.
+                </p>
               </li>
             </ul>
           </Col>
