@@ -575,13 +575,13 @@ const PolitykaPrywatnosci = () => (
               <li>
                 <p>
                   Treśći tworzone przez użytkowników, takie jak nazwa użytkownika, imię psa, nazwy klubów i wydarzeń czy treści na wiadomościach chat,
-                  nie mogą zawierać treści obrażliwych dla innych użytkowników. Nie mogą również zawierać wulgaryzmów, treści erotycznych i pornograficznych,
-                  treści obrażających inne religie czy orientacje seksualne. Nie zezwala się również na treści dotyczące używek alkocholowych, nikotynowych, narkotykowych czy hazardowych.
+                  nie mogą zawierać treści obraźliwych dla innych użytkowników. Nie mogą również zawierać wulgaryzmów, treści erotycznych i pornograficznych,
+                  treści obrażających inne religie czy orientacje seksualne. Nie zezwala się również na treści dotyczące używek alkoholowych, nikotynowych, narkotykowych czy hazardowych.
                 </p>
               </li>
               <li>
                 <p>
-                  Gdy takie treści zostaną złgłoszone przez użytkowników, administrator aplikacji udzieli ostrzeżenia użytkowniki publikującemu takie treści.
+                  Gdy takie treści zostaną zgłoszone przez użytkowników, administrator aplikacji udzieli ostrzeżenia użytkownikowi publikującemu takie treści.
                   Jeżeli sytuacja powtórzy się, konto użytkownika może zostać zawieszone, zablokowane lub usunięte.
                 </p>
               </li>
