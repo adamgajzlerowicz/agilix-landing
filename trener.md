@@ -25,7 +25,7 @@ Z karty klubu można wybrać opcję udostępnij i wysłać ją takiej osobie. Ta
 
 Przykładowy link to [Focus i motywacja](https://app.agilix.dog/klub/13_focus-i-motywacja).
 
-### Gdzie są ustawienia klubu
+### Jak zmienić ustawienia klubu
 
 Po wybraniu swojego awataru w prawym górnym rogu, możemy przejsc na dole do "Ustawień klubu".
 
@@ -38,7 +38,7 @@ W sekcji ustawień można:
 * dodać galerię klubu
 * dodać regulamin klubu
 * zmienić tagi klubu do wyszukiwania
-* dodawać usuwać członków klubu
+* dodawać, edytować, usuwać członków klubu
 
 ### W moim klubie zajęcia prowadzi więcej osób
 
@@ -47,18 +47,18 @@ W sekcji ustawień klubu można dodać dodatkowych trenerów klubu. Będą oni w
 ### Czy mogę ustawić zajęcia, na które zaproszę tylko wybrane osoby
 
 Każdy trening może być widocznym dla wszystkich klubowiczów, lub może być ukryty. 
-W wypadku ukrytego treningu, możemy wysłać z widoku "uczestnicy" zaproszenia do wybranych osób.
+W wypadku ukrytego treningu możemy wysłać z widoku "uczestnicy" zaproszenia do wybranych osób.
 
 ### Czy mogę zaprosić na zajęcia osobę spoza klubu
 Z widoku uczestnicy, na górze z prawej strony możemy zaprosić na wydarzenie kogoś spoza klubu.
-Pojawi się tam wyszukiwarka na której możemy wybrać dowolną osobe posiadającą konto Agilix.
+Pojawi się tam wyszukiwarka, na której możemy wybrać dowolną osobe posiadającą konto Agilix.
 
 ### Jak zaprosić na wydarzenie osobę spoza Agilix
 Z widoku wydarzenia, możemy wybrac opcje "udostępnij" i wysłać skopiowanego linka do wybranej osoby, na przykład przez Facebook Messanger.
-Taka osoba po otwarciu linka zostanie pokierowana co zrobić aby założyć aplikację i zaakceptować uczestnictwo.
+Taka osoba po otwarciu linka zostanie pokierowana co zrobić, aby założyć aplikację i zaakceptować uczestnictwo.
 
-### Co jeżeli wyślę więcej zaproszeń niż jest miejsc
-W momencie osiągnięcia limitu miejsc, nie będzie można się więcej zapisać na dane wydarzenie.
+### Co, jeżeli wyślę więcej zaproszeń niż jest miejsc
+W momencie osiągnięcia limitu miejsc nie będzie można się więcej zapisać na dane wydarzenie.
 
 ### Jak działa chat
 Dowolny użytkownik może zainicjować chat bezpośrednio z klubem. 
@@ -86,7 +86,7 @@ Poziom ten decyduje o tym, które wydarzenia użytkownik zobaczy.
 Na przykład: użytkownik z umiejętnościa "jednej łapki", nie zobaczy wydarzenia z "trzema łapkami".
 
 ### Jakie rodzaje widoku Agendy są dostępne?
-Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu", można również zobaczyć:
+Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu" można również zobaczyć:
 * widok tygodnia
 * widok miesiąca
 
@@ -95,4 +95,15 @@ Każdy trener może również przyłączać się do klubów i uczestniczyć w ic
 
 ### Czy mogę być trenerem w wielu klubach jednocześnie
 Można założyć dowolną liczbę klubów. Można również być dodanym jako trener w wielu klubach. 
-Pojawi sie wtedy nowa opcja "aktualnie wybrany klub", pozwalająca na wybranie klubu.
+Pojawi się wtedy nowa opcja "aktualnie wybrany klub", pozwalająca na wybranie klubu.
+
+### Jak zobaczyć historię wizyt danego klubowicza
+Po wybraniu danego użytkownika, w górnym prawym rogu jest opcja "Historia zajęć", podsumowująca wszystkie zajęcia podzielone na miesiące.
+
+### Ktoś zajął miejsce, a nie pojawił się na zajęciach
+Z widoku uczestników wydarzenia można oznaczyć "brak obecności". 
+
+Oznacza to, że osoba będzie widniała na wydarzeniu, jednak będzie oznaczona jako nieobecna. Takie wydarzenie będzie też widoczne na historii wydarzeń.
+
+### Czy mogę zobaczyć statystyki mojego klubu
+Z widoku "Ustawienia klubu" po wybraniu "Statystyki klubu" zobaczmy, jak nasz klub radził sobie na przełomie ostatniego roku.
