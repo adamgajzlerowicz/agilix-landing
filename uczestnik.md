@@ -1,4 +1,17 @@
 ## Poradnik Agilix dla uczestnika
 
+### Czym jest Agilix
+Agilix jest aplikacją na telefon, służącą do do organizowania czasu z pieskami.
+
+### Jak to działa
+W wyszukiwarce można wybrać interesujące nas zajęcia i odnaleźć kluby które je prowadzą. 
+Następnie prosimy klub o dodanie do uczestników i możemy zapisywać się na zajęcia.
+
+### W jakim języku aplikacja jest dostępna
+Aplikacja jest dostępna po polsku i angielsku.
+
+### Skąd będe wiedzieć, że jestem już członkiem klubu
+Gdy klub nas przyjmie otrzymasz notyfikację.
 
 ### Jak się dowiedzieć o zwalniających się miejscach?
+Gdy zwolni sie miejsce na zajęciach na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
