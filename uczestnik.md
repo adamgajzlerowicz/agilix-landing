@@ -1,4 +1,4 @@
-## Poradnik Agilix dla uczestnika
+# Poradnik Agilix dla uczestnika
 
 ### Czym jest Agilix
 Agilix jest aplikacją na telefon, służącą do do organizowania czasu z pieskami.
