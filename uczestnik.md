@@ -4,7 +4,7 @@
 Agilix jest aplikacją na telefon, służącą do do organizowania czasu z pieskami.
 
 ### Jak to działa
-W wyszukiwarce można wybrać interesujące nas zajęcia i odnaleźć kluby które je prowadzą. 
+W wyszukiwarce można wybrać interesujące nas zajęcia i odnaleźć kluby, które je prowadzą. 
 Następnie prosimy klub o dodanie do uczestników i możemy zapisywać się na zajęcia.
 
 ### W jakim języku aplikacja jest dostępna
@@ -14,16 +14,21 @@ Aplikacja jest dostępna po polsku i angielsku.
 Gdy zostaniemy zaakceptowani jako członek klubu, na karcie klubu będą widoczne dostępne wydarzenia.
 
 ### Skąd będe wiedzieć, że jestem już członkiem klubu
-Gdy klub nas przyjmie otrzymasz notyfikację.
+Gdy klub nas przyjmie, otrzymasz notyfikację.
+
+### Jak mogę skontaktować się z klubem
+W zależności od tego, czy klub ma dodany numer telefonu lub email, opcje te będą dostępne.
+
+Opcja rozpoczęcia chatu z klubem będzie dostępna zawsze.
 
 ### Jak się dowiedzieć o zwalniających się miejscach
-Gdy zwolni sie miejsce na zajęciach na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
+Gdy zwolni sie miejsce na zajęciach, na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
 
 ### Czy moge na zajęcia umówić kilka piesków
-Jeżeli dodasz do aplikacji kilka piesów, będzie można wybrać, które z nich przyjdą na zajęcia
+Jeżeli dodasz do aplikacji kilka piesków, będzie można wybrać, które z nich przyjdą na zajęcia
 
 ### Notatki treningowe
-Można dodawać sobie samemu, lub otrzymać od trenerów notatki treningowe. Do notatek można załączać zdjęcia. Jest to przydatne na przykład w przypadku zadań domowych od trenerów lub przy otrzymywaniu wypisów po konsultacjach.
+Można dodawać sobie samemu lub otrzymać od trenerów notatki treningowe. Do notatek można załączać zdjęcia. Jest to przydatne na przykład w przypadku zadań domowych od trenerów lub przy otrzymywaniu wypisów po konsultacjach.
 
 Tworzą one chronologicznie informacje dotyczące naszego psiaka. 
 
@@ -34,7 +39,7 @@ Agilix ma wbudowany kalendarz wydarzeń z widokiem dnia, tygodnia i roku.
 
 Jeżeli nie jest to wystarczające, można wybrać konkretne wydarzenie i wybrać "dodaj do kalendarza". To pozwoli zapisać je na przykład w kalendarzu google lub apple.
 
-### Czy mogę zrezygonować z wydarzenia
-Możliwość rezygnacji z wydarzeń zależy od ustawień danego klubu.
+### Czy mogę zrezygnować z wydarzenia
+Możliwość rezygnacji z wydarzeń zależy od ustawień wybranego klubu.
 
-Jeżeli klub zezwala na rezygnację, taka opcja pojawi sie na agendzie przy wydarzeniu.
+Jeżeli klub zezwala na rezygnację, taka opcja pojawi się na agendzie przy wydarzeniu. Jezeli nie, w celu anulowania uczestnictwa należy kontaktować się z trenerem.
