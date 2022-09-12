@@ -1,4 +1,4 @@
-## Poradnik Agilix dla trenera
+# Poradnik Agilix dla trenera
 
 ### Czym jest Agilix
 Agilix jest aplikacją na telefon, służącą do organizowania zajęć, wizyt czy treningów kynologicznych.
