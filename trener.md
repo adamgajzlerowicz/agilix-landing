@@ -1,17 +1,22 @@
 ## Poradnik Agilix dla trenera
 
 ### Czym jest Agilix
-
 Agilix jest aplikacją na telefon, służącą do organizowania zajęć, wizyt czy treningów kynologicznych.
 
 ### Jak to działa
-
 Po założeniu klubu w Agilix, w zakładce "Agenda" trener dodaje wydarzenia na które można się zapisać.
 
 Wydarzenia są widoczne tylko dla osób które przyłączyły się do klubu.
 
-### Jak dodać osoby do klubu
+### W jakim języku aplikacja jest dostępna
+Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeba można dodać więcej jezyków..
 
+### Czy aplikacja jest skąplikowana
+Celem Agilix jest to aby była bardzo łatwa w obsłudze i jak najbardziej intuicujna zarówno dla trenera jak i dla uczstników.
+Widok uczesnika składa się z agendy i wyszukiwarki klubów.
+Widok trenera jest taki sam jak dla uczestnika, za wyjątkiem dodatkowej zakładki do organizacji zajęć.
+
+### Jak dodać osoby do klubu
 Po utworzeniu klubu pojawi się on w wyszukiwarce. Dowolna osoba na Agilix może wysłać prośbę o dodanie do klubu. Zostaniemy o tym poinformowani notyfikacją.
 
 ### Co jeżeli ktoś nie ma Agilix
@@ -55,10 +60,27 @@ Taka osoba po otwarciu linka zostanie pokierowana co zrobić aby założyć apli
 ### Co jeżeli wyślę więcej zaproszeń niż jest miejsc
 W momencie osiągnięcia limitu miejsc, nie będzie można się więcej zapisać na dane wydarzenie.
 
-### Jak działają notyfikacje
+### Jak działa chat
+Dowolny użytkownik może zainicjować chat bezpośrednio z klubem. 
+Również każde wydarzenie ma swój własny pokój chat. Jeżeli chcemy uzgodnić szczegóły spotkania, to po wybraniu zajeć i opcji chat, czat zostanie zainicjowany z wszystkimi uczestnikami wydarzenia.
+
+### Czas wydarzenia zmienił się. Jak powiadomić o tym uczestników
+Jeżeli czas wydarzenia ulegnie zmianie, po naciśnieciu na "Zapisz", wszyscy uczestnicy zostaną o tym poinformowani automatyczną notyfikacją.
 
 ### Jak powiadomić użytkowników o nowych wydarzeniach
-Każdego dnia około godziny 20
+Jeżeli w ciągu dnia zostaną dodane nowe wydarzenia na które można się zapisać, aplikacja po godzinie 20 automatycznie wyśle informację o tym do członków klubu.
 
+### Skąd mogę wiedzieć, że ktoś zapisał się na wydarzenie
+Po wybraniu awataru w górnym prawym rogu -> ponownie prawy górny róg -> Ustawienia, można zaznaczyć opcję "Powiadamiaj o rezerwacjach treningu przez klubowiczów".
 
+### Czy mogę utworzyć cykliczne wydarzenia
+Aktualnie można ustawić, aby dane wydarzenie zostało dodane co tydzień, do końca miesiąca. Opcja ta jest dostępna z widoku dodawania wydarzenia.
+
+### Jakie rodzaje widoku Agendy są dostępne?
+Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu", można również zobaczyć:
+* widok tygodnia
+* widok miesiąca
+
+### Czy jako trener mogę również uczestniczyć w wydarzeniach innych klubów
+Każdy trener może również przyłączać się do klubów i uczestniczyć w ich wydarzeniach. Z widoku agenda -> przycisk menu -> moje wydarzenia można zobaczyć liste wydarzeń na które się zapisalismy
 
