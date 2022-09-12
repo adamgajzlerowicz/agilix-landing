@@ -26,7 +26,12 @@ Tworzą one chronologicznie informacje dotyczące naszego psiaka.
 
 Dodawać i przeglądać notatki należy wejść w profil -> dany piesek.
 
-### Czy mogę połączyć Agilix z zewnętrznym kalendarzem?
+### Czy mogę połączyć Agilix z zewnętrznym kalendarzem
 Agilix ma wbudowany kalendarz wydarzeń z widokiem dnia, tygodnia i roku. 
 
 Jeżeli nie jest to wystarczające, można wybrać konkretne wydarzenie i wybrać "dodaj do kalendarza". To pozwoli zapisać je na przykład w kalendarzu google lub apple.
+
+### Czy mogę zrezygonować z wydarzenia
+Możliwość rezygnacji z wydarzeń zależy od ustawień danego klubu.
+
+Jeżeli klub zezwala na rezygnację, taka opcja pojawi sie na agendzie przy wydarzeniu.
