@@ -3,4 +3,4 @@
 
 [Dla trenera](/trener.md)
 
-[Dla uczestnika](/uczestnik.md)
+[//]: # ([Dla uczestnika]&#40;/uczestnik.md&#41;)
