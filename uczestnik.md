@@ -10,6 +10,9 @@ Następnie prosimy klub o dodanie do uczestników i możemy zapisywać się na z
 ### W jakim języku aplikacja jest dostępna
 Aplikacja jest dostępna po polsku i angielsku.
 
+### Gdzie są widoczne wydarzenia klubu
+Gdy zostaniemy zaakceptowani jako członek klubu, na karcie klubu będą widoczne dostępne wydarzenia.
+
 ### Skąd będe wiedzieć, że jestem już członkiem klubu
 Gdy klub nas przyjmie otrzymasz notyfikację.
 
