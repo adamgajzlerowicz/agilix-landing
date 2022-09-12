@@ -93,6 +93,7 @@ const MenuItem = ({
       `}>
       {isExternal ? (
         <a
+          target="_blank"
           href={`${name}`}
           onClick={() => {
             if (gContext.visibleOffCanvas) {
