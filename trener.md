@@ -76,6 +76,15 @@ Po wybraniu awataru w górnym prawym rogu -> ponownie prawy górny róg -> Ustaw
 ### Czy mogę utworzyć cykliczne wydarzenia
 Aktualnie można ustawić, aby dane wydarzenie zostało dodane co tydzień, do końca miesiąca. Opcja ta jest dostępna z widoku dodawania wydarzenia.
 
+### Czy użytkownicy mogą sami rezygnować z zajęć
+Można ustawić ile czasu przed zajęciami uczestnicy mogą rezygnować. Można też ustawić, że nie mogą rezygnować wcale.
+
+### Jak mogę skierować treningi tylko do wybranych użytkowniów
+Każdy użytkownik ma swój poziom umiejętności. Nie jest on widoczny dla użytkownika. 
+Poziom ten decyduje o tym, które wydarzenia użytkownik zobaczy. 
+
+Na przykład: użytkownik z umiejętnościa "jednej łapki", nie zobaczy wydarzenia z "trzema łapkami".
+
 ### Jakie rodzaje widoku Agendy są dostępne?
 Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu", można również zobaczyć:
 * widok tygodnia
@@ -84,3 +93,6 @@ Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu", mo�
 ### Czy jako trener mogę również uczestniczyć w wydarzeniach innych klubów
 Każdy trener może również przyłączać się do klubów i uczestniczyć w ich wydarzeniach. Z widoku agenda -> przycisk menu -> moje wydarzenia można zobaczyć liste wydarzeń na które się zapisalismy
 
+### Czy mogę być trenerem w wielu klubach jednocześnie
+Można założyć dowolną liczbę klubów. Można również być dodanym jako trener w wielu klubach. 
+Pojawi sie wtedy nowa opcja "aktualnie wybrany klub", pozwalająca na wybranie klubu.
