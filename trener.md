@@ -57,7 +57,7 @@ Z widoku uczestnicy, na górze z prawej strony możemy zaprosić na wydarzenie k
 Pojawi się tam wyszukiwarka, na której możemy wybrać dowolną osobe posiadającą konto Agilix.
 
 ### Jak zaprosić na wydarzenie osobę spoza Agilix
-Z widoku wydarzenia, możemy wybrac opcje "udostępnij" i wysłać skopiowanego linka do wybranej osoby, na przykład przez Facebook Messanger.
+Z widoku wydarzenia, możemy wybrac opcje "udostępnij" i wysłać skopiowanego linka do wybranej osoby, na przykład przez Facebook Messenger.
 Taka osoba po otwarciu linka zostanie pokierowana co zrobić, aby założyć aplikację i zaakceptować uczestnictwo.
 
 ### Co, jeżeli wyślę więcej zaproszeń niż jest miejsc
