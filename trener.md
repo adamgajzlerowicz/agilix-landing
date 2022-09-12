@@ -12,11 +12,11 @@ Wydarzenia są widoczne tylko dla osób, które przyłączyły się do klubu.
 Agilix to darmowa aplikacja. Sam uwielbiam spędzać czas ze swoimi psami i również jej używam. Zobacz [Nasza misja](https://agilix.dog/nasza-misja)
 
 ### W jakim języku aplikacja jest dostępna
-Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeba można dodać więcej jezyków..
+Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeba, można dodać więcej języków.
 
 ### Czy aplikacja jest skomplikowana
-Celem Agilix jest to, aby była bardzo łatwa w obsłudze i jak najbardziej intuicujna zarówno dla trenera jak i dla uczstników.
-Widok uczesnika składa się z agendy i wyszukiwarki klubów.
+Celem Agilix jest to, aby była bardzo łatwa w obsłudze i jak najbardziej intuicyjna zarówno dla trenera, jak i dla uczestników.
+Widok uczestnika składa się z agendy i wyszukiwarki klubów.
 Widok trenera jest taki sam jak dla uczestnika, z wyjątkiem dodatkowej zakładki do organizacji zajęć.
 
 ### Jak dodać osoby do klubu
@@ -30,7 +30,7 @@ Przykładowy link to [Focus i motywacja](https://app.agilix.dog/klub/13_focus-i-
 
 ### Jak zmienić ustawienia klubu
 
-Po wybraniu swojego awataru w prawym górnym rogu możemy przejsc na dole do "Ustawień klubu".
+Po wybraniu swojego awataru w prawym górnym rogu możemy przejść na dole do "Ustawień klubu".
 
 ### Jak mogę zmienić wygląd mojego klubu
 
@@ -49,15 +49,15 @@ W sekcji ustawień klubu można dodać dodatkowych trenerów klubu. Będą oni w
 
 ### Czy mogę ustawić zajęcia, na które zaproszę tylko wybrane osoby
 
-Każdy trening może być widocznym dla wszystkich klubowiczów, lub może być ukryty. 
+Każdy trening może być widocznym dla wszystkich klubowiczów lub może być ukryty. 
 W wypadku ukrytego treningu możemy wysłać z widoku "uczestnicy" zaproszenia do wybranych osób.
 
 ### Czy mogę zaprosić na zajęcia osobę spoza klubu
 Z widoku uczestnicy, na górze z prawej strony możemy zaprosić na wydarzenie kogoś spoza klubu.
-Pojawi się tam wyszukiwarka, na której możemy wybrać dowolną osobe posiadającą konto Agilix.
+Pojawi się tam wyszukiwarka, na której możemy wybrać dowolną osobę posiadającą konto Agilix.
 
 ### Jak zaprosić na wydarzenie osobę spoza Agilix
-Z widoku wydarzenia, możemy wybrac opcje "udostępnij" i wysłać skopiowanego linka do wybranej osoby, na przykład przez Facebook Messenger.
+Z widoku wydarzenia, możemy wybrać opcje "udostępnij" i wysłać skopiowanego linka do wybranej osoby, na przykład przez Facebook Messenger.
 Taka osoba po otwarciu linka zostanie pokierowana co zrobić, aby założyć aplikację i zaakceptować uczestnictwo.
 
 ### Co, jeżeli wyślę więcej zaproszeń niż jest miejsc
@@ -65,13 +65,13 @@ W momencie osiągnięcia limitu miejsc nie będzie można się więcej zapisać 
 
 ### Jak działa chat
 Dowolny użytkownik może zainicjować chat bezpośrednio z klubem. 
-Również każde wydarzenie ma swój własny pokój chat. Jeżeli chcemy uzgodnić szczegóły spotkania, to po wybraniu zajeć i opcji chat, czat zostanie zainicjowany z wszystkimi uczestnikami wydarzenia.
+Również każde wydarzenie ma swój własny pokój chat. Jeżeli chcemy uzgodnić szczegóły spotkania, to po wybraniu zajęć i opcji chat, czat zostanie zainicjowany z wszystkimi uczestnikami wydarzenia.
 
-### Czas wydarzenia zmienił się. Jak powiadomić o tym uczestników
-Jeżeli czas wydarzenia ulegnie zmianie, po naciśnieciu na "Zapisz", wszyscy uczestnicy zostaną o tym poinformowani automatyczną notyfikacją.
+### Czas wydarzenia uległ zmianie. Jak powiadomić o tym uczestników.
+Jeżeli czas wydarzenia ulegnie zmianie, po naciśnięciu na "Zapisz", wszyscy uczestnicy zostaną o tym poinformowani automatyczną notyfikacją.
 
 ### Jak powiadomić użytkowników o nowych wydarzeniach
-Jeżeli w ciągu dnia zostaną dodane nowe wydarzenia na które można się zapisać, aplikacja po godzinie 20 automatycznie wyśle informację o tym do członków klubu.
+Jeżeli w ciągu dnia zostaną dodane nowe wydarzenia, na które można się zapisać, aplikacja po godzinie 20 automatycznie wyśle informację o tym do członków klubu.
 
 ### Skąd mogę wiedzieć, że ktoś zapisał się na wydarzenie
 Po wybraniu awataru w górnym prawym rogu -> ponownie prawy górny róg -> Ustawienia, można zaznaczyć opcję "Powiadamiaj o rezerwacjach treningu przez klubowiczów".
@@ -82,7 +82,7 @@ Aktualnie można ustawić, aby dane wydarzenie zostało dodane co tydzień, do k
 ### Czy użytkownicy mogą sami rezygnować z zajęć
 Można ustawić, ile czasu przed zajęciami uczestnicy mogą rezygnować. Można też ustawić, że nie mogą rezygnować wcale.
 
-### Jak mogę skierować treningi tylko do wybranych użytkowniów
+### Jak mogę skierować treningi tylko do wybranych użytkowników
 Każdy użytkownik ma swój poziom umiejętności. Nie jest on widoczny dla użytkownika. 
 Poziom ten decyduje o tym, które wydarzenia użytkownik zobaczy. 
 
@@ -94,7 +94,7 @@ Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu" moż
 * widok miesiąca
 
 ### Czy jako trener mogę również uczestniczyć w wydarzeniach innych klubów
-Każdy trener może również przyłączać się do klubów i uczestniczyć w ich wydarzeniach. Z widoku agenda -> przycisk menu -> moje wydarzenia można zobaczyć liste wydarzeń na które się zapisalismy
+Każdy trener może również przyłączać się do klubów i uczestniczyć w ich wydarzeniach. Z widoku agenda -> przycisk menu -> moje wydarzenia można zobaczyć listę wydarzeń, na które się zapisaliśmy.
 
 ### Czy mogę być trenerem w wielu klubach jednocześnie
 Można założyć dowolną liczbę klubów. Można również być dodanym jako trener w wielu klubach. 
