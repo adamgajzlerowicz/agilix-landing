@@ -86,6 +86,14 @@ const Footer = ({ isDark = true }) => (
                           Aktualności
                         </a>
                       </li>
+                      <li>
+                        <a
+                          href="https://github.com/adamgajzlerowicz/agilix-landing/blob/master/README.md"
+                          target="_blank"
+                          rel="noreferrer">
+                          Poradnik użytkownika
+                        </a>
+                      </li>
                     </UlStyled>
                   </div>
                 </Col>
