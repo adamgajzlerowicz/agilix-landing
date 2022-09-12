@@ -13,5 +13,15 @@ Aplikacja jest dostępna po polsku i angielsku.
 ### Skąd będe wiedzieć, że jestem już członkiem klubu
 Gdy klub nas przyjmie otrzymasz notyfikację.
 
-### Jak się dowiedzieć o zwalniających się miejscach?
+### Jak się dowiedzieć o zwalniających się miejscach
 Gdy zwolni sie miejsce na zajęciach na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
+
+### Czy moge na zajęcia umówić kilka piesków
+Jeżeli dodasz do aplikacji kilka piesów, będzie można wybrać, które z nich przyjdą na zajęcia
+
+### Notatki treningowe
+Można dodawać sobie samemu, lub otrzymać od trenerów notatki treningowe. Do notatek można załączać zdjęcia. Jest to przydatne na przykład w przypadku zadań domowych od trenerów lub przy otrzymywaniu wypisów po konsultacjach.
+
+Tworzą one chronologicznie informacje dotyczące naszego psiaka. 
+
+Dodawać i przeglądać notatki należy wejść w profil -> dany piesek.
