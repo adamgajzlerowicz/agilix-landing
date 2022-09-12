@@ -80,13 +80,13 @@ Po wybraniu awataru w górnym prawym rogu -> ponownie prawy górny róg -> Ustaw
 Aktualnie można ustawić, aby dane wydarzenie zostało dodane co tydzień, do końca miesiąca. Opcja ta jest dostępna z widoku dodawania wydarzenia.
 
 ### Czy użytkownicy mogą sami rezygnować z zajęć
-Można ustawić ile czasu przed zajęciami uczestnicy mogą rezygnować. Można też ustawić, że nie mogą rezygnować wcale.
+Można ustawić, ile czasu przed zajęciami uczestnicy mogą rezygnować. Można też ustawić, że nie mogą rezygnować wcale.
 
 ### Jak mogę skierować treningi tylko do wybranych użytkowniów
 Każdy użytkownik ma swój poziom umiejętności. Nie jest on widoczny dla użytkownika. 
 Poziom ten decyduje o tym, które wydarzenia użytkownik zobaczy. 
 
-Na przykład: użytkownik z umiejętnościa "jednej łapki", nie zobaczy wydarzenia z "trzema łapkami".
+Na przykład: użytkownik z umiejętnością "jednej łapki", nie zobaczy wydarzenia z "trzema łapkami".
 
 ### Jakie rodzaje widoku Agendy są dostępne?
 Po otwarciu aplikacji wybrany jest widok dnia. Po wybraniu przycisku "menu" można również zobaczyć:
@@ -110,3 +110,6 @@ Oznacza to, że osoba będzie widniała na wydarzeniu, jednak będzie oznaczona 
 
 ### Czy mogę zobaczyć statystyki mojego klubu
 Z widoku "Ustawienia klubu" po wybraniu "Statystyki klubu" zobaczmy, jak nasz klub radził sobie na przełomie ostatniego roku.
+
+### Jak mogę pomóc aplikacji
+Największą pomoc udzielisz dzieląc się aplikacją ze znajomymi :)
