@@ -4,30 +4,30 @@
 Agilix jest aplikacją na telefon, służącą do organizowania zajęć, wizyt czy treningów kynologicznych.
 
 ### Jak to działa
-Po założeniu klubu w Agilix, w zakładce "Agenda" trener dodaje wydarzenia na które można się zapisać.
+Po założeniu klubu w Agilix, w zakładce "Agenda" trener dodaje wydarzenia, na które można się zapisać.
 
-Wydarzenia są widoczne tylko dla osób które przyłączyły się do klubu.
+Wydarzenia są widoczne tylko dla osób, które przyłączyły się do klubu.
 
 ### W jakim języku aplikacja jest dostępna
 Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeba można dodać więcej jezyków..
 
 ### Czy aplikacja jest skomplikowana
-Celem Agilix jest to aby była bardzo łatwa w obsłudze i jak najbardziej intuicujna zarówno dla trenera jak i dla uczstników.
+Celem Agilix jest to, aby była bardzo łatwa w obsłudze i jak najbardziej intuicujna zarówno dla trenera jak i dla uczstników.
 Widok uczesnika składa się z agendy i wyszukiwarki klubów.
 Widok trenera jest taki sam jak dla uczestnika, za wyjątkiem dodatkowej zakładki do organizacji zajęć.
 
 ### Jak dodać osoby do klubu
 Po utworzeniu klubu pojawi się on w wyszukiwarce. Dowolna osoba na Agilix może wysłać prośbę o dodanie do klubu. Zostaniemy o tym poinformowani notyfikacją.
 
-### Co jeżeli ktoś nie ma Agilix
+### Co, jeżeli ktoś nie ma Agilix
 
-Z karty klubu można wybrać opcję udostępnij i wysłać ją takiej osobie. Tam, znajdzie instrukcje jak zapisać sie do klubu. 
+Z karty klubu można wybrać opcję "udostępnij" i wysłać ją takiej osobie. Tam, znajdzie instrukcje jak zapisać sie do klubu. 
 
 Przykładowy link to [Focus i motywacja](https://app.agilix.dog/klub/13_focus-i-motywacja).
 
 ### Jak zmienić ustawienia klubu
 
-Po wybraniu swojego awataru w prawym górnym rogu, możemy przejsc na dole do "Ustawień klubu".
+Po wybraniu swojego awataru w prawym górnym rogu możemy przejsc na dole do "Ustawień klubu".
 
 ### Jak mogę zmienić wygląd mojego klubu
 
@@ -42,7 +42,7 @@ W sekcji ustawień można:
 
 ### W moim klubie zajęcia prowadzi więcej osób
 
-W sekcji ustawień klubu można dodać dodatkowych trenerów klubu. Będą oni widnieli na karcie klubu i będą mieć takie same uprawnienia jak założyciel, poza jednym - nie mogą odebrać założycielowi uprawnień administratora.
+W sekcji ustawień klubu można dodać dodatkowych trenerów klubu. Będą oni widnieli na karcie klubu i będą mieć takie same uprawnienia jak założyciel, poza jednym-nie mogą odebrać założycielowi uprawnień administratora.
 
 ### Czy mogę ustawić zajęcia, na które zaproszę tylko wybrane osoby
 
