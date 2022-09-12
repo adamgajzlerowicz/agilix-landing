@@ -22,7 +22,7 @@ W zależności od tego, czy klub ma dodany numer telefonu lub email, opcje te b�
 Opcja rozpoczęcia chatu z klubem będzie dostępna zawsze.
 
 ### Jak się dowiedzieć o zwalniających się miejscach
-Gdy zwolni się miejsce na zajęciach, na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
+Gdy zwolni się miejsce na zajęciach, na których już miejsc wolnych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
 
 ### Czy moge na zajęcia umówić kilka piesków
 Jeżeli dodasz do aplikacji kilka piesków, będzie można wybrać, które z nich przyjdą na zajęcia
