@@ -8,6 +8,9 @@ Po założeniu klubu w Agilix, w zakładce "Agenda" trener dodaje wydarzenia, na
 
 Wydarzenia są widoczne tylko dla osób, które przyłączyły się do klubu.
 
+### Ile kosztuje Agilix
+Agilix to darmowa aplikacja. Sam uwielbiam spędzać czas ze swoimi psami i również jej używam. Zobacz [Nasza misja](https://agilix.dog/nasza-misja)
+
 ### W jakim języku aplikacja jest dostępna
 Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeba można dodać więcej jezyków..
 

@@ -22,7 +22,7 @@ W zależności od tego, czy klub ma dodany numer telefonu lub email, opcje te b�
 Opcja rozpoczęcia chatu z klubem będzie dostępna zawsze.
 
 ### Jak się dowiedzieć o zwalniających się miejscach
-Gdy zwolni sie miejsce na zajęciach, na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
+Gdy zwolni się miejsce na zajęciach, na których już miejsc wonlych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
 
 ### Czy moge na zajęcia umówić kilka piesków
 Jeżeli dodasz do aplikacji kilka piesków, będzie można wybrać, które z nich przyjdą na zajęcia
@@ -42,4 +42,13 @@ Jeżeli nie jest to wystarczające, można wybrać konkretne wydarzenie i wybra�
 ### Czy mogę zrezygnować z wydarzenia
 Możliwość rezygnacji z wydarzeń zależy od ustawień wybranego klubu.
 
-Jeżeli klub zezwala na rezygnację, taka opcja pojawi się na agendzie przy wydarzeniu. Jezeli nie, w celu anulowania uczestnictwa należy kontaktować się z trenerem.
+Jeżeli klub zezwala na rezygnację, taka opcja pojawi się na agendzie przy wydarzeniu. Jeżeli nie, w celu anulowania uczestnictwa należy kontaktować się z trenerem.
+
+### Gdzie mogę zobaczyć swoje statystyki
+Po wybraniu profilu użytkownika (prawy górny róg) na dole dostępne są statystyki uczestnictw na zajęciach.
+
+### Czy ja również mogę założyć własny klub
+Oczywiście! Każdy może założyć swój własny klub i organizować zajęcia przez Agilix.
+
+### Ile kosztuje Agilix
+Agilix to darmowa aplikacja. Sam uwielbiam spędzać czas ze swoimi psami i również jej używam. Zobacz [Nasza misja](https://agilix.dog/nasza-misja)
