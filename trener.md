@@ -14,14 +14,14 @@ Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeb
 ### Czy aplikacja jest skomplikowana
 Celem Agilix jest to, aby była bardzo łatwa w obsłudze i jak najbardziej intuicujna zarówno dla trenera jak i dla uczstników.
 Widok uczesnika składa się z agendy i wyszukiwarki klubów.
-Widok trenera jest taki sam jak dla uczestnika, za wyjątkiem dodatkowej zakładki do organizacji zajęć.
+Widok trenera jest taki sam jak dla uczestnika, z wyjątkiem dodatkowej zakładki do organizacji zajęć.
 
 ### Jak dodać osoby do klubu
 Po utworzeniu klubu pojawi się on w wyszukiwarce. Dowolna osoba na Agilix może wysłać prośbę o dodanie do klubu. Zostaniemy o tym poinformowani notyfikacją.
 
 ### Co, jeżeli ktoś nie ma Agilix
 
-Z karty klubu można wybrać opcję "udostępnij" i wysłać ją takiej osobie. Tam, znajdzie instrukcje jak zapisać sie do klubu. 
+Z karty klubu można wybrać opcję "udostępnij" i wysłać ją takiej osobie. Tam, znajdzie instrukcje jak zapisać się do klubu. 
 
 Przykładowy link to [Focus i motywacja](https://app.agilix.dog/klub/13_focus-i-motywacja).
 
