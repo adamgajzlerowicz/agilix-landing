@@ -11,7 +11,7 @@ Wydarzenia są widoczne tylko dla osób które przyłączyły się do klubu.
 ### W jakim języku aplikacja jest dostępna
 Aplikacja jest dostępna po polsku i angielsku. Jeżeli pojawi się taka potrzeba można dodać więcej jezyków..
 
-### Czy aplikacja jest skąplikowana
+### Czy aplikacja jest skomplikowana
 Celem Agilix jest to aby była bardzo łatwa w obsłudze i jak najbardziej intuicujna zarówno dla trenera jak i dla uczstników.
 Widok uczesnika składa się z agendy i wyszukiwarki klubów.
 Widok trenera jest taki sam jak dla uczestnika, za wyjątkiem dodatkowej zakładki do organizacji zajęć.
