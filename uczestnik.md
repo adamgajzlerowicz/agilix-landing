@@ -10,9 +10,6 @@ Następnie prosimy klub o dodanie do uczestników i możemy zapisywać się na z
 ### W jakim języku aplikacja jest dostępna
 Aplikacja jest dostępna po polsku i angielsku.
 
-### Gdzie są widoczne wydarzenia klubu
-Gdy zostaniemy zaakceptowani jako członek klubu, na karcie klubu będą widoczne dostępne wydarzenia.
-
 ### Skąd będę wiedzieć, że jestem już członkiem klubu
 Gdy klub nas przyjmie, otrzymasz notyfikację.
 
@@ -21,11 +18,17 @@ W zależności od tego, czy klub ma dodany numer telefonu lub email, opcje te b�
 
 Opcja rozpoczęcia chatu z klubem będzie dostępna zawsze.
 
+### Gdzie są widoczne wydarzenia klubu
+Gdy zostaniemy zaakceptowani jako członek klubu, na karcie klubu będą widoczne dostępne wydarzenia.
+
 ### Jak się dowiedzieć o zwalniających się miejscach
 Gdy zwolni się miejsce na zajęciach, na których już miejsc wolnych nie było, otrzymasz powiadomienie informujące o tym. Takie powiadomienia można wyłączyć z widoku klubu
 
 ### Czy mogę na zajęcia umówić kilka piesków
 Jeżeli dodasz do aplikacji kilka piesków, będzie można wybrać, które z nich przyjdą na zajęcia
+
+### Czy mogę umówić kilka zajęć tego samego dnia
+Jeżeli będzie próba umówienia kilku zajęć tego samego dnia, aplikacja poinformuje o tym fakcie w trakcie rezerwacji, niemniej nadal pozwoli na dokonanie wybranej rezerwacji.
 
 ### Notatki treningowe
 Można dodawać sobie samemu lub otrzymać od trenerów notatki treningowe. Do notatek można załączać zdjęcia. Jest to przydatne na przykład w przypadku zadań domowych od trenerów lub przy otrzymywaniu wypisów po konsultacjach.
