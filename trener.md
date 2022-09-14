@@ -73,7 +73,7 @@ Jeżeli czas wydarzenia ulegnie zmianie, po naciśnięciu na "Zapisz", wszyscy u
 ### Jak powiadomić użytkowników o nowych wydarzeniach
 Jeżeli w ciągu dnia zostaną dodane nowe wydarzenia, na które można się zapisać, aplikacja po godzinie 20 automatycznie wyśle informację o tym do członków klubu.
 
-### Skąd mogę wiedzieć, że ktoś zapisał się na wydarzenie
+### Skąd będę wiedzieć, że ktoś zapisał się na wydarzenie
 Po wybraniu awataru w górnym prawym rogu -> ponownie prawy górny róg -> Ustawienia, można zaznaczyć opcję "Powiadamiaj o rezerwacjach treningu przez klubowiczów".
 
 ### Czy mogę utworzyć cykliczne wydarzenia
@@ -112,4 +112,4 @@ Oznacza to, że osoba będzie widniała na wydarzeniu, jednak będzie oznaczona 
 Z widoku "Ustawienia klubu" po wybraniu "Statystyki klubu" zobaczmy, jak nasz klub radził sobie na przełomie ostatniego roku.
 
 ### Jak mogę pomóc aplikacji
-Największą pomoc udzielisz dzieląc się aplikacją ze znajomymi :)
+Największą pomoc udzielisz dzieląc się aplikacją ze znajomymi ❤️

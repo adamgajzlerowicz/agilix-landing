@@ -87,12 +87,10 @@ const Footer = ({ isDark = true }) => (
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="https://github.com/adamgajzlerowicz/agilix-landing/blob/master/README.md"
-                          target="_blank"
-                          rel="noreferrer">
-                          Poradnik użytkownika
-                        </a>
+                        <Link to="/poradnik-uczestnika">Poradnik uczestnika</Link>
+                      </li>
+                      <li>
+                        <Link to="/poradnik-trenera">Poradnik trenera</Link>
                       </li>
                     </UlStyled>
                   </div>

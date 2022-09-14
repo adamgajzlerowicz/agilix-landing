@@ -1,19 +1,18 @@
 export const menuItems = [
   {
-    name: '',
-    label: 'Czym jest Agilix',
+    name: 'poradnik-uczestnika',
+    label: 'O aplikacji',
   },
   {
     name: 'nasza-misja',
     label: 'Nasza misja',
   },
   {
-    name: 'kontakt',
-    label: 'Kontakt',
+    name: 'poradnik-trenera',
+    label: 'Poradnik Trenera',
   },
   {
-    name: 'https://github.com/adamgajzlerowicz/agilix-landing/blob/master/README.md',
-    label: 'Poradnik użytkownika',
-    isExternal: true,
+    name: 'kontakt',
+    label: 'Kontakt',
   },
 ]
