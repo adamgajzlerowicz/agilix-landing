@@ -37,7 +37,7 @@ const Poradnik = ({
               <Title variant="hero">{title}</Title>
             </Col>
             <Col lg="12" className="ps-lg-5">
-              {data && (
+              {data ? (
                 <ReactMarkdown
                   components={{
                     h1: () => null,
@@ -52,7 +52,7 @@ const Poradnik = ({
                   }}
                   children={data}
                 />
-              )}
+              ) : null}
             </Col>
           </Row>
         </Container>
