@@ -5,7 +5,6 @@ import Cta from '../sections/landing/Cta'
 import { Seo } from './seo'
 import { Col, Container, Row } from 'react-bootstrap'
 import ReactMarkdown from 'react-markdown'
-import superagent from 'superagent'
 import { Section, Text, Title } from './Core'
 
 const Poradnik = ({
@@ -16,9 +15,10 @@ const Poradnik = ({
 
   React.useEffect(() => {
     const doGet = async () => {
-      const response = await superagent.get(url)
+      const response = await fetch(url)
+      const text = await response.text()
 
-      setData(response.text)
+      setData(text)
     }
 
     doGet()
