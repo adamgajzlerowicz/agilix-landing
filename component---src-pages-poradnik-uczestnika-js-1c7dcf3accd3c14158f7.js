@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkagilix=self.webpackChunkagilix||[]).push([[98],{2687:function(e,t,a){a.r(t);var i=a(7294),n=a(9827);t.default=function(){return i.createElement(n.Z,{title:"Poradnik Uczestnika",url:"https://raw.githubusercontent.com/adamgajzlerowicz/agilix-landing/master/uczestnik.md"})}}}]);
+//# sourceMappingURL=component---src-pages-poradnik-uczestnika-js-1c7dcf3accd3c14158f7.js.map
