@@ -619,6 +619,12 @@ const PolitykaPrywatnosci = () => (
               <li>
                 <p>Odłączenie następuje poprzez wybranie "rozłącz" z ustawień profilu.</p>
               </li>
+              <li>
+                <p>
+                  Dane kalendarza są poufnymi i nie będą sprzedawane ani udostępniane podmiotom
+                  trzecim
+                </p>
+              </li>
             </ul>
           </Col>
         </Row>
