@@ -574,21 +574,50 @@ const PolitykaPrywatnosci = () => (
             <ul>
               <li>
                 <p>
-                  Treśći tworzone przez użytkowników, takie jak nazwa użytkownika, imię psa, nazwy klubów i wydarzeń czy treści na wiadomościach chat,
-                  nie mogą zawierać treści obraźliwych dla innych użytkowników. Nie mogą również zawierać wulgaryzmów, treści erotycznych i pornograficznych,
-                  treści obrażających inne religie czy orientacje seksualne. Nie zezwala się również na treści dotyczące używek alkoholowych, nikotynowych, narkotykowych czy hazardowych.
+                  Treści tworzone przez użytkowników, takie jak nazwa użytkownika, imię psa, nazwy
+                  klubów i wydarzeń czy treści na wiadomościach chat, nie mogą zawierać treści
+                  obraźliwych dla innych użytkowników. Nie mogą również zawierać wulgaryzmów, treści
+                  erotycznych i pornograficznych, treści obrażających inne religie czy orientacje
+                  seksualne. Nie zezwala się również na treści dotyczące używek alkoholowych,
+                  nikotynowych, narkotykowych czy hazardowych.
                 </p>
               </li>
               <li>
                 <p>
-                  Gdy takie treści zostaną zgłoszone przez użytkowników, administrator aplikacji udzieli ostrzeżenia użytkownikowi publikującemu takie treści.
-                  Jeżeli sytuacja powtórzy się, konto użytkownika może zostać zawieszone, zablokowane lub usunięte.
+                  Gdy takie treści zostaną zgłoszone przez użytkowników, administrator aplikacji
+                  udzieli ostrzeżenia użytkownikowi publikującemu takie treści. Jeżeli sytuacja
+                  powtórzy się, konto użytkownika może zostać zawieszone, zablokowane lub usunięte.
+                </p>
+              </li>
+              <li>
+                <p>Treści można zgłaszać na adres email gajzlerowicz@gmail.com.</p>
+              </li>
+            </ul>
+            <h2>§19 Udostępnianie kalendarza</h2>
+            <ul>
+              <li>
+                <p>
+                  Użytkownik z dostępem administracyjnym aplikacji ma możliwość dobrowolnie połączyć
+                  swój kalendarz Google z kalendarzem aplikacji.
                 </p>
               </li>
               <li>
                 <p>
-                  Treści można zgłaszać na adres email gajzlerowicz@gmail.com.
+                  Kalendarz ten będzie automatycznie aktualizowany gdy nastąpi zmiana w wydarzeniu,
+                  taka jak: nowy uczestnik, zmiana czasu lub nazwy wydarzenia.
                 </p>
+              </li>
+              <li>
+                <p>
+                  Jedyny kalendarz podlegający zmianom, to kalendarz utworzony przez aplikację.
+                  Kalendarz ten ma nazwę "Agilix"
+                </p>
+              </li>
+              <li>
+                <p>Połączony kalendarz może zostać odłączony w dowolnym momencie.</p>
+              </li>
+              <li>
+                <p>Odłączenie następuje poprzez wybranie "rozłącz" z ustawień profilu.</p>
               </li>
             </ul>
           </Col>
