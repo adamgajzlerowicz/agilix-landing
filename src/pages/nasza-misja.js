@@ -20,7 +20,7 @@ export default About
 
 export const query = graphql`
   query {
-    mongo: file(relativePath: { eq: "mongo.jpg" }) {
+    mongo: file(relativePath: { eq: "mongo.png" }) {
       childImageSharp {
         fixed(width: 700) {
           ...GatsbyImageSharpFixed
