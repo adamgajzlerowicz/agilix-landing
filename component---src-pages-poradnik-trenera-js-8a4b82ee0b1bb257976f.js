@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkagilix=self.webpackChunkagilix||[]).push([[913],{422:function(e,t,a){a.r(t);var r=a(7294),n=a(9827);t.default=function(){return r.createElement(n.Z,{title:"Poradnik Trenera",url:"https://raw.githubusercontent.com/adamgajzlerowicz/agilix-landing/master/trener.md"})}}}]);
-//# sourceMappingURL=component---src-pages-poradnik-trenera-js-8a4b82ee0b1bb257976f.js.map
