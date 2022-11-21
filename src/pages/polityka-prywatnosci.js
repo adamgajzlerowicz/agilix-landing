@@ -626,6 +626,37 @@ const PolitykaPrywatnosci = () => (
                 </p>
               </li>
             </ul>
+
+            <h2>§20 Publiczne dane</h2>
+            <ul>
+              <li>
+                <p>
+                  Wszystkie dane swoje, lub swojego pieska użytkownik podaje dobrowolnie. Nie
+                  zostaną one sprzedane podmiotom trzecim, niemniej dane będą w pełni dostępne dla
+                  innych użytkowników serwisu. Jest to konieczne przy uczestnictwie w treningach
+                  organizowanych przez aplikację w celu identyfikacji użytkownika. Jest to również
+                  konieczne do identyfikacji uczestników w organizowanych zawodach. Tyczy się to
+                  również wysłanych do aplikacji zdjęć.
+                </p>
+              </li>
+            </ul>
+
+            <h2>§21 Dane w przeglądarce</h2>
+            <ul>
+              <li>
+                <p>
+                  Agilix używa technologii Local Storage Object (LSO), zbliżonej zasadą działania do
+                  plików cookies, mającej jednak nieco inne właściwości. Local Storage Object to
+                  wydzielona część pamięci przeglądarki, służąca do przechowywania danych
+                  zapisywanych przez serwisy. Dostęp do niej może uzyskać tylko strona internetowa
+                  działająca w tej samej witrynie, z której dane zostały zapisane, jednak inaczej
+                  niż w przypadku cookies, nie są one wysyłane przez przeglądarkę przy każdym
+                  odwołaniu do serwera. Dane w Local Storage Object są długotrwale przechowywane
+                  przez przeglądarkę i nie są usuwane po zamknięciu przeglądarki ani nie mają
+                  określonego czasu ważności.
+                </p>
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
