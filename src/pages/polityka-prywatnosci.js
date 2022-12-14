@@ -235,7 +235,7 @@ const PolitykaPrywatnosci = () => (
                 </p>
               </li>
             </ul>
-            <h2>§5 Cele do których wykorzystywane są pliki Cookie</h2>
+            <h2>§5 Cele do których wykorzystywane są dane Local storage</h2>
             <ul id="cele">
               <li>Usprawnienie i ułatwienie dostępu do Serwisu</li>
               <li>Personalizacja Serwisu dla Użytkowników</li>
@@ -287,7 +287,7 @@ const PolitykaPrywatnosci = () => (
             <h2>§7 Pliki Cookies Serwisów zewnętrznych</h2>
             <ul id="zewnetrzne">
               <li>
-                <strong>Cokies usług zewnętrznych nie są przechowywane</strong>
+                <strong>Cookies usług zewnętrznych nie są przechowywane</strong>
               </li>
             </ul>
             <p>
@@ -324,7 +324,7 @@ const PolitykaPrywatnosci = () => (
             </p>
 
             <p>
-              Część danych (bez danych identyfikujących) może być przechowywana w plikach cookies.
+              Część danych (bez danych identyfikujących) może być przechowywana w local storage.
             </p>
             <h2>§9 Dostęp do danych osobowych przez podmioty trzecie</h2>
             <p>
@@ -654,6 +654,17 @@ const PolitykaPrywatnosci = () => (
                   odwołaniu do serwera. Dane w Local Storage Object są długotrwale przechowywane
                   przez przeglądarkę i nie są usuwane po zamknięciu przeglądarki ani nie mają
                   określonego czasu ważności.
+                </p>
+              </li>
+            </ul>
+
+            <h2>§22 Kontaktowanie się poprzez aplikację</h2>
+            <ul>
+              <li>
+                <p>
+                  Do prawidłowego funkcjonowania aplikacji niezbędne jest, aby użytkownik okazjonalnie otrzymywał
+                  wiadomości dotyczących wydarzeń odbywających się w aplikacji. Wszystkie wiadomości są wysyłane poprzez
+                  aplikację, a autorzy wiadomości nie mają dostępu do danych użytkowników.
                 </p>
               </li>
             </ul>
