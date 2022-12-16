@@ -4,6 +4,11 @@ export const menuItems = [
     label: 'O aplikacji',
   },
   {
+    name: 'https://zawody.agilix.dog',
+    label: 'Zawody agility',
+    isExternal: true,
+  },
+  {
     name: 'nasza-misja',
     label: 'Nasza misja',
   },
