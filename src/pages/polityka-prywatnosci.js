@@ -523,6 +523,14 @@ const PolitykaPrywatnosci = () => (
               </li>
               <li>
                 <p>
+                  Aplikacja może okazjonalnie wysyłać wiadomości email do Użytkowników. Głównie w
+                  celu resetu hasła, lub przesyłania informacji dotyczących informacji
+                  kynologicznych. Użytkownik może w każdej chwili zrezygnować z otrzymywania
+                  wiadomości email, poprzez zmianę ustawień w swoim koncie.
+                </p>
+              </li>
+              <li>
+                <p>
                   Administrator nie ponosi żadnej odpowiedzialności za nieprawidłowo działające
                   funkcje Serwisu w przypadku gdy Użytkownik ograniczy w jakikolwiek sposób
                   możliwość zapisywania i odczytu plików Cookie.
@@ -662,9 +670,10 @@ const PolitykaPrywatnosci = () => (
             <ul>
               <li>
                 <p>
-                  Do prawidłowego funkcjonowania aplikacji niezbędne jest, aby użytkownik okazjonalnie otrzymywał
-                  wiadomości dotyczących wydarzeń odbywających się w aplikacji. Wszystkie wiadomości są wysyłane poprzez
-                  aplikację, a autorzy wiadomości nie mają dostępu do danych użytkowników.
+                  Do prawidłowego funkcjonowania aplikacji niezbędne jest, aby użytkownik
+                  okazjonalnie otrzymywał wiadomości dotyczących wydarzeń odbywających się w
+                  aplikacji. Wszystkie wiadomości są wysyłane poprzez aplikację, a autorzy
+                  wiadomości nie mają dostępu do danych użytkowników.
                 </p>
               </li>
             </ul>
