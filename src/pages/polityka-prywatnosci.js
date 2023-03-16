@@ -523,10 +523,12 @@ const PolitykaPrywatnosci = () => (
               </li>
               <li>
                 <p>
-                  Aplikacja może okazjonalnie wysyłać wiadomości email do Użytkowników. Głównie w
-                  celu resetu hasła, lub przesyłania informacji dotyczących informacji
-                  kynologicznych. Użytkownik może w każdej chwili zrezygnować z otrzymywania
-                  wiadomości email, poprzez zmianę ustawień w swoim koncie.
+                  Aplikacja może okazjonalnie wysyłać wiadomości email do Użytkowników. Wiadomości
+                  będą dotyczyły głównie informacji takich jak reset hasła, informacji dotyczących
+                  informacji kynologicznych, aktualności, wydarzeń i innych informacji łączącymi się
+                  pośrednio lub bezpośrednio z tematyką psów. Użytkownik może w każdej chwili
+                  zrezygnować z selektywnego lub pełnego otrzymywania wiadomości email, poprzez
+                  zmianę ustawień w swoim koncie. Aplikacja nie wysyła reklam.
                 </p>
               </li>
               <li>
