@@ -28,9 +28,15 @@ Z karty klubu można wybrać opcję "udostępnij" i wysłać ją takiej osobie. 
 
 Przykładowy link to [Focus i motywacja](https://app.agilix.dog/klub/13_focus-i-motywacja).
 
-### Jak zmienić ustawienia klubu
+### Jak zmienić ustawienia mojego klubu
 
 Po wybraniu swojego awataru w prawym górnym rogu możemy przejść na dole do "Ustawień klubu".
+
+### Jak poprosić klubowiczów o akceptację regulaminu
+
+W ustawieniach klubu, w zakładce "Regulamin klubu i zgody uczestników", można dodać regulamin klubu.
+Każda osoba, która dołączy do klubu, będzie musiała zaakceptować ten regulamin przed rezerwacją zajęć.
+Administrator klubu może sprawdzić, kiedy dany klubowicz wyraził zgodę na wiadomość z regulaminu i zawsze wycofać taką zgodę i poprosić o ponowną akceptację.
 
 ### Jak mogę zmienić wygląd mojego klubu
 
