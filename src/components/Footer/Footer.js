@@ -82,11 +82,6 @@ const Footer = ({ isDark = true }) => (
                         <Link to="/pobierz">Pobierz aplikację</Link>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/agilix" target="_blank" rel="noreferrer">
-                          Aktualności
-                        </a>
-                      </li>
-                      <li>
                         <Link to="/poradnik-uczestnika">Poradnik uczestnika</Link>
                       </li>
                       <li>
