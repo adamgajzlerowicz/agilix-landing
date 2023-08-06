@@ -10,11 +10,5 @@ exports.onCreatePage = ({ page, actions }) => {
 }
 
 exports.createPages = async function ({ actions }) {
-  Object.values(slugs).forEach(slug => {
-    actions.createPage({
-      path: '/aktualnosci/' + slug + '/',
-      component: require.resolve('./src/pages/aktualnosci.js'),
-      context: { slug: slug },
-    })
-  })
+  return {}
 }
