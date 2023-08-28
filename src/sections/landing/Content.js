@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled  from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby-link'
 
 import { Title, Button, Section, Box, Text } from '../../components/Core'
 import { device } from '../../utils'
