@@ -105,7 +105,9 @@ const MenuDropdown = styled.ul`
     padding: 15px 0px;
     z-index: 99;
     opacity: 0;
-    transition: opacity 0.4s, top 0.4s;
+    transition:
+      opacity 0.4s,
+      top 0.4s;
     pointer-events: none;
     left: -90%;
     border-radius: 0 0 10px 10px;
@@ -205,7 +207,7 @@ const Header = ({ isDark = false }) => {
   const [showScrolling, setShowScrolling] = useState(false)
   const [showReveal, setShowReveal] = useState(false)
 
-  useScrollPosition(({ prevPos, currPos }) => {
+  useScrollPosition(({ currPos }) => {
     if (currPos.y < 0) {
       setShowScrolling(true)
     } else {
@@ -227,11 +229,10 @@ const Header = ({ isDark = false }) => {
         dark={isDark ? 1 : 0}>
         <Container fluid>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
-            {/* <!-- Brand Logo--> */}
-            <div className="brand-logo">
+            <div className="brand-logo flex-1">
               <Logo />
             </div>
-            <div className="collapse navbar-collapse">
+            <div className="flex flex-row">
               <div className="navbar-nav ms-lg-auto me-3">
                 <Menu className="navbar-nav d-none d-lg-flex" dark={isDark ? 1 : 0}>
                   {menuItems.map(({ label, isExternal = false, name, items, ...rest }, index) => {
