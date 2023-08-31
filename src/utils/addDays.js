@@ -1,6 +1,6 @@
 export const addDays = days => {
-  const date = new Date(Date.now())
+  const date = new Date(Date.now());
 
-  date.setDate(date.getDate() + days)
-  return date
-}
+  date.setDate(date.getDate() + days);
+  return date;
+};

@@ -1,15 +1,15 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Section } from '../../components/Core'
-import PostCard from '../../components/PostCard'
+import { Section } from '../../components/Core';
+import PostCard from '../../components/PostCard';
 
-import imgCase1 from '../../assets/image/jpeg/case-card-img.jpg'
-import imgCase2 from '../../assets/image/jpeg/case-card-img-2.jpg'
-import imgCase3 from '../../assets/image/jpeg/case-card-img-3.jpg'
-import imgBrand1 from '../../assets/image/jpeg/case-card-brand-img.jpg'
-import imgBrand2 from '../../assets/image/jpeg/case-card-brand-img-2.jpg'
-import imgBrand3 from '../../assets/image/jpeg/case-card-brand-img-3.jpg'
+import imgCase1 from '../../assets/image/jpeg/case-card-img.jpg';
+import imgCase2 from '../../assets/image/jpeg/case-card-img-2.jpg';
+import imgCase3 from '../../assets/image/jpeg/case-card-img-3.jpg';
+import imgBrand1 from '../../assets/image/jpeg/case-card-brand-img.jpg';
+import imgBrand2 from '../../assets/image/jpeg/case-card-brand-img-2.jpg';
+import imgBrand3 from '../../assets/image/jpeg/case-card-brand-img-3.jpg';
 
 const CaseList = () => (
   <>
@@ -39,6 +39,6 @@ const CaseList = () => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default CaseList
+export default CaseList;

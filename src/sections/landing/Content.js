@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
-import { Link } from 'gatsby-link'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'gatsby-link';
 
-import { Title, Button, Section, Box, Text } from '../../components/Core'
-import { device } from '../../utils'
+import { Title, Button, Section, Box, Text } from '../../components/Core';
+import { device } from '../../utils';
 
 const ShapeCard = styled(Box)`
   width: 305px;
@@ -20,7 +20,7 @@ const ShapeCard = styled(Box)`
   @media ${device.md} {
     left: 0%;
   }
-`
+`;
 
 const Content = ({ image }) => (
   <>
@@ -87,6 +87,6 @@ const Content = ({ image }) => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default Content
+export default Content;

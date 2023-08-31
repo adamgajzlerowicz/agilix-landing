@@ -1,19 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
-import Section from '../components/Section'
-import PageWrapper from '../components/PageWrapper'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
+import Section from '../components/Section';
+import PageWrapper from '../components/PageWrapper';
 
-import { Title, Text, Box } from '../components/Core'
-import itunes from '../assets/image/svg/itunes.svg'
-import play from '../assets/google-play.png'
-import { Seo } from '../components/seo'
+import { Title, Text, Box } from '../components/Core';
+import itunes from '../assets/image/svg/itunes.svg';
+import play from '../assets/google-play.png';
+import { Seo } from '../components/seo';
 
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const GetIt = () => (
   <PageWrapper footerDark>
@@ -53,6 +53,6 @@ const GetIt = () => (
       </div>
     </Section>
   </PageWrapper>
-)
+);
 
-export default GetIt
+export default GetIt;

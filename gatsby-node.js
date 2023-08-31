@@ -1,14 +1,14 @@
-const { slugs } = require('./src/news-slugs')
+const { slugs } = require('./src/news-slugs');
 
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   if (page.path.match(/sign|reset|coming/)) {
-    page.context.layout = 'bare'
-    createPage(page)
+    page.context.layout = 'bare';
+    createPage(page);
   }
-}
+};
 
 exports.createPages = async function ({ actions }) {
-  return {}
-}
+  return {};
+};

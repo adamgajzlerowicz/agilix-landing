@@ -1,9 +1,9 @@
-import React from 'react'
-import CheckCircle from './circle'
+import React from 'react';
+import CheckCircle from './circle';
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export default function Line({ children }: Props) {
   return (
@@ -11,6 +11,5 @@ export default function Line({ children }: Props) {
       <CheckCircle fullClass="w-8 h-8 text-green-700 shrink-0" />
       {children}
     </div>
-  )
+  );
 }
-

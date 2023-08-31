@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
-import { Box } from '../Core'
-import { Link } from 'gatsby'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Box } from '../Core';
+import { Link } from 'gatsby';
 
 const UlStyled = styled.ul`
   margin: 0;
@@ -18,13 +18,13 @@ const UlStyled = styled.ul`
       }
     }
   }
-`
+`;
 
 const WhiteLogo = styled.div`
   background-color: white;
   border-radius: 20px;
   width: 70px;
-`
+`;
 
 const CopyRightArea = styled.div`
   border-top: ${({ dark, theme }) =>
@@ -59,7 +59,7 @@ const CopyRightArea = styled.div`
       }
     }
   }
-`
+`;
 
 const Footer = ({ isDark = true }) => (
   <>
@@ -128,6 +128,6 @@ const Footer = ({ isDark = true }) => (
       </Container>
     </Box>
   </>
-)
+);
 
-export default Footer
+export default Footer;

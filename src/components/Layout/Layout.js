@@ -1,32 +1,32 @@
-import React, { useState, useEffect, useLayoutEffect, useContext, useRef } from 'react'
+import React, { useState, useEffect, useLayoutEffect, useContext, useRef } from 'react';
 
-import styled, { ThemeProvider } from 'styled-components'
-import { Helmet } from 'react-helmet'
-import AOS from 'aos'
+import styled, { ThemeProvider } from 'styled-components';
+import { Helmet } from 'react-helmet';
+import AOS from 'aos';
 
-import Header from '../Header'
-import Footer from '../Footer'
+import Header from '../Header';
+import Footer from '../Footer';
 
-import GlobalContext from '../../context/GlobalContext'
+import GlobalContext from '../../context/GlobalContext';
 
-import GlobalStyle from '../../utils/globalStyle'
+import GlobalStyle from '../../utils/globalStyle';
 
-import imgFavicon from '../../assets/agilix-new.svg'
+import imgFavicon from '../../assets/agilix-new.svg';
 
-import '../../assets/fonts/icon-font/fonts/avasta.ttf'
-import '../../assets/fonts/icon-font/css/style.css'
+import '../../assets/fonts/icon-font/fonts/avasta.ttf';
+import '../../assets/fonts/icon-font/css/style.css';
 
-import './bootstrap-custom.scss'
-import '../../../node_modules/slick-carousel/slick/slick.css'
-import '../../../node_modules/slick-carousel/slick/slick-theme.css'
-import '../../../node_modules/aos/dist/aos.css'
+import './bootstrap-custom.scss';
+import '../../../node_modules/slick-carousel/slick/slick.css';
+import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+import '../../../node_modules/aos/dist/aos.css';
 
-import '../../assets/fonts/icon-font/css/style.css'
-import '../../assets/fonts/fontawesome-5/css/all.css'
+import '../../assets/fonts/icon-font/css/style.css';
+import '../../assets/fonts/fontawesome-5/css/all.css';
 
-import { get, merge } from 'lodash'
+import { get, merge } from 'lodash';
 
-import { theme as baseTheme } from '../../utils'
+import { theme as baseTheme } from '../../utils';
 
 const Loader = styled.div`
   position: fixed;
@@ -43,41 +43,41 @@ const Loader = styled.div`
     opacity: 0;
     visibility: hidden;
   }
-`
+`;
 
 // options for different color modes
-const modes = { light: 'light', dark: 'dark' }
+const modes = { light: 'light', dark: 'dark' };
 
 const getTheme = mode =>
   merge({}, baseTheme, {
     colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
-  })
+  });
 
 const Layout = ({ children }) => {
-  const gContext = useContext(GlobalContext)
+  const gContext = useContext(GlobalContext);
 
   useLayoutEffect(() => {
-    AOS.init()
-  }, [])
+    AOS.init();
+  }, []);
 
-  const eleRef = useRef()
+  const eleRef = useRef();
 
   useEffect(() => {
     window.addEventListener(
       'popstate',
       function (event) {
-        gContext.closeOffCanvas()
+        gContext.closeOffCanvas();
       },
       false,
-    )
+    );
     window.addEventListener(
       'pushState',
       function (event) {
-        gContext.closeOffCanvas()
+        gContext.closeOffCanvas();
       },
       false,
-    )
-  }, [gContext])
+    );
+  }, [gContext]);
 
   return (
     <>
@@ -130,7 +130,7 @@ const Layout = ({ children }) => {
         </div>
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

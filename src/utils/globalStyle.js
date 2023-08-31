@@ -1,10 +1,10 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const globalStyle = createGlobalStyle`
   body {
-    background-color: ${({ theme }) => theme.colors.bg} !important;
+    background-color: ${({ theme }) => theme.colors.bg};
 
-    color: ${({ theme }) => theme.colors.text} !important;
+    color: ${({ theme }) => theme.colors.text};
   }
 
   p, .p{
@@ -24,12 +24,12 @@ const globalStyle = createGlobalStyle`
 
 
   a {
-    color: ${({ theme }) => theme.colors.text} !important;
+    color: ${({ theme }) => theme.colors.text};
     transition: all 0.3s ease-out;
     &:hover, &:active, &:focus{
-      color: ${({ theme }) => theme.colors.secondary} !important;
-      text-decoration: none!important;
-      outline: none !important;
+      color: ${({ theme }) => theme.colors.secondary};
+      text-decoration: none;
+      outline: none;
     }
   }
 
@@ -43,6 +43,6 @@ const globalStyle = createGlobalStyle`
     input[type="number"] {
       -moz-appearance: textfield; /* Firefox */
     }
-`
+`;
 
-export default globalStyle
+export default globalStyle;

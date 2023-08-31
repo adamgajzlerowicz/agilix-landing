@@ -1,9 +1,9 @@
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children: React.ReactNode
-  title: string
-}
+  children: React.ReactNode;
+  title: string;
+};
 
 export default function WithBox({ children, title }: Props) {
   return (
@@ -16,10 +16,7 @@ export default function WithBox({ children, title }: Props) {
 
       {children}
 
-      <div className="mt-14 flex justify-center">
-      Pobierz aplikacje
-      </div>
+      <div className="mt-14 flex justify-center">Pobierz aplikacje</div>
     </div>
-  )
+  );
 }
-

@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Section, Box, Text } from '../../components/Core'
+import { Title, Section, Box, Text } from '../../components/Core';
 
-import imgU1 from '../../assets/natalia.png'
-import imgU2 from '../../assets/adam.jpeg'
-import agnieszka from '../../assets/agnieszka.png'
+import imgU1 from '../../assets/natalia.png';
+import imgU2 from '../../assets/adam.jpeg';
+import agnieszka from '../../assets/agnieszka.png';
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -18,7 +18,7 @@ const CardImage = styled.div`
   display: inline-flex;
   align-items: center;
   margin-bottom: 29px;
-`
+`;
 
 const TeamCard = ({ userImg, title, children, ...rest }) => (
   <Box className="text-center" pt="15px" px="30px" borderRadius={10} mb={4} {...rest}>
@@ -34,7 +34,7 @@ const TeamCard = ({ userImg, title, children, ...rest }) => (
       </Text>
     </div>
   </Box>
-)
+);
 
 const Team = () => (
   <>
@@ -68,6 +68,6 @@ const Team = () => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default Team
+export default Team;

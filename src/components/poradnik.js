@@ -1,28 +1,28 @@
-import React from 'react'
+import React from 'react';
 
-import PageWrapper from './PageWrapper'
-import Cta from '../sections/landing/Cta'
-import { Seo } from './seo'
-import { Col, Container, Row } from 'react-bootstrap'
-import ReactMarkdown from 'react-markdown'
-import { Section, Text, Title } from './Core'
+import PageWrapper from './PageWrapper';
+import Cta from '../sections/landing/Cta';
+import { Seo } from './seo';
+import { Col, Container, Row } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown';
+import { Section, Text, Title } from './Core';
 
 const Poradnik = ({
   url = 'https://raw.githubusercontent.com/adamgajzlerowicz/agilix-landing/master/trener.md',
   title,
 }) => {
-  const [data, setData] = React.useState(null)
+  const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
     const doGet = async () => {
-      const response = await fetch(url)
-      const text = await response.text()
+      const response = await fetch(url);
+      const text = await response.text();
 
-      setData(text)
-    }
+      setData(text);
+    };
 
-    doGet()
-  }, [url])
+    doGet();
+  }, [url]);
 
   return (
     <PageWrapper>
@@ -59,7 +59,7 @@ const Poradnik = ({
       </Section>
       <Cta />
     </PageWrapper>
-  )
-}
+  );
+};
 
-export default Poradnik
+export default Poradnik;

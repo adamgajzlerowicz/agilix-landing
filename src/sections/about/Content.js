@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Col, Container, Row } from 'react-bootstrap'
+import React from 'react';
+import styled from 'styled-components';
+import { Col, Container, Row } from 'react-bootstrap';
 
-import { Box, Section, Text, Title } from '../../components/Core'
+import { Box, Section, Text, Title } from '../../components/Core';
 
 const ContentImg = styled(Box)`
   box-shadow: ${({ theme }) => `0 42px 54px ${theme.colors.shadow}`};
   border-radius: 10px;
   overflow: hidden;
-`
+`;
 
 const Content = ({ image }) => (
   <>
@@ -48,6 +48,6 @@ const Content = ({ image }) => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default Content
+export default Content;

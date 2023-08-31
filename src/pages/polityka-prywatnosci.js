@@ -1,9 +1,9 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import PageWrapper from '../components/PageWrapper'
-import { Section, Title } from '../components/Core'
-import { Seo } from '../components/seo'
+import PageWrapper from '../components/PageWrapper';
+import { Section, Title } from '../components/Core';
+import { Seo } from '../components/seo';
 
 const PolitykaPrywatnosci = () => (
   <PageWrapper footerDark>
@@ -684,6 +684,6 @@ const PolitykaPrywatnosci = () => (
       </Container>
     </Section>
   </PageWrapper>
-)
+);
 
-export default PolitykaPrywatnosci
+export default PolitykaPrywatnosci;

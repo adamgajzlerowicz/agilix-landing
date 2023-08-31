@@ -1,11 +1,11 @@
-import React from 'react'
-import Hero from '../sections/landing/Hero'
-import Feature from '../sections/landing/Feature'
-import Content from '../sections/landing/Content'
-import Cta from '../sections/landing/Cta'
-import PageWrapper from '../components/PageWrapper'
-import { Seo } from '../components/seo'
-import { graphql } from 'gatsby'
+import React from 'react';
+import Hero from '../sections/landing/Hero';
+import Feature from '../sections/landing/Feature';
+import Content from '../sections/landing/Content';
+import Cta from '../sections/landing/Cta';
+import PageWrapper from '../components/PageWrapper';
+import { Seo } from '../components/seo';
+import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
   <PageWrapper footerDark>
@@ -15,9 +15,9 @@ const Index = ({ data }) => (
     <Content image={data.shoot2.childImageSharp.fixed.src} />
     <Cta />
   </PageWrapper>
-)
+);
 
-export default Index
+export default Index;
 
 export const query = graphql`
   query {
@@ -36,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

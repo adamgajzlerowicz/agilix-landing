@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import PageWrapper from '../components/PageWrapper'
-import Content from '../sections/about/Content'
-import Cta from '../sections/landing/Cta'
-import Team from '../sections/about/Team'
-import { Seo } from '../components/seo'
-import { graphql } from 'gatsby'
+import PageWrapper from '../components/PageWrapper';
+import Content from '../sections/about/Content';
+import Cta from '../sections/landing/Cta';
+import Team from '../sections/about/Team';
+import { Seo } from '../components/seo';
+import { graphql } from 'gatsby';
 
 const About = ({ data }) => (
   <PageWrapper>
@@ -14,9 +14,9 @@ const About = ({ data }) => (
     <Team />
     <Cta />
   </PageWrapper>
-)
+);
 
-export default About
+export default About;
 
 export const query = graphql`
   query {
@@ -28,4 +28,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -1,38 +1,38 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
-import { Formik } from 'formik'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Formik } from 'formik';
 
-import { Title, Button, Section, Box, Text, Input } from '../../components/Core'
+import { Title, Button, Section, Box, Text, Input } from '../../components/Core';
 
-import imgOval from '../../assets/l1-cta-oval.png'
-import svgCurve from '../../assets/image/svg/l1-curve-cta.svg'
-import { GraphQLClient, gql } from 'graphql-request'
-import { Loading } from '../../components/Loading'
+import imgOval from '../../assets/l1-cta-oval.png';
+import svgCurve from '../../assets/image/svg/l1-curve-cta.svg';
+import { GraphQLClient, gql } from 'graphql-request';
+import { Loading } from '../../components/Loading';
 
 const LeftCard = styled(Box)`
   position: absolute;
   top: 0;
   left: 0;
-`
+`;
 
 const RightCard = styled(Box)`
   position: absolute;
   top: 0;
   right: -275px;
-`
+`;
 
-const graphQLClient = new GraphQLClient('https://agilix.hackerman-consulting.com/graphql', {})
+const graphQLClient = new GraphQLClient('https://agilix.hackerman-consulting.com/graphql', {});
 
 const mutation = gql`
   mutation sendContactEmail($content: String!, $sender: String!) {
     sendContactEmail(content: $content, sender: $sender)
   }
-`
+`;
 
 const FormContainer = styled(Container)`
   margin-top: 150px;
-`
+`;
 
 function Cta() {
   return (
@@ -53,35 +53,35 @@ function Cta() {
                   sender: '',
                 }}
                 validate={values => {
-                  const errors = {}
+                  const errors = {};
 
                   if (!values.sender) {
-                    errors.sender = 'Pole jest wymagane'
+                    errors.sender = 'Pole jest wymagane';
                   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.sender)) {
-                    errors.sender = 'Wpisz poprawny adres email'
+                    errors.sender = 'Wpisz poprawny adres email';
                   }
 
                   if (!values.content) {
-                    errors.content = 'Pole jest wymagane'
+                    errors.content = 'Pole jest wymagane';
                   }
 
-                  return errors
+                  return errors;
                 }}
                 onSubmit={(values, { setSubmitting, setStatus }) => {
                   graphQLClient
                     .request(mutation, values)
                     .then(result => {
                       if (result.sendContactEmail) {
-                        setStatus('success')
+                        setStatus('success');
                       } else {
-                        setStatus('failed')
-                        console.log('wystapil blad')
+                        setStatus('failed');
+                        console.log('wystapil blad', result);
                       }
                     })
-                    .catch(error => {
-                      setStatus('failed')
+                    .catch(() => {
+                      setStatus('failed');
                     })
-                    .finally(() => setSubmitting(false))
+                    .finally(() => setSubmitting(false));
                 }}>
                 {({
                   values,
@@ -167,7 +167,7 @@ function Cta() {
         </FormContainer>
       </Section>
     </>
-  )
+  );
 }
 
-export default Cta
+export default Cta;

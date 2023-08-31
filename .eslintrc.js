@@ -1,5 +1,6 @@
 module.exports = {
-  parser: '@babel/eslint-parser',
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
@@ -11,7 +12,7 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true,
   },
-  plugins: ['prettier', 'react'],
+  plugins: ['prettier', 'react', '@typescript-eslint'],
   root: true,
   env: {
     browser: true,
@@ -21,6 +22,7 @@ module.exports = {
   },
 
   rules: {
+    semi: 1,
     curly: ['warn', 'all'],
     'no-multi-spaces': ['warn', { ignoreEOLComments: false }],
     'prettier/prettier': ['error'],
@@ -38,4 +40,4 @@ module.exports = {
     'no-undef': 2,
     'prefer-const': 2,
   },
-}
+};

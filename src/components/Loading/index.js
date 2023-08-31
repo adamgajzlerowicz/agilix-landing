@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export const Loading = () => (
   <div className="lds-spinner">
@@ -15,4 +15,4 @@ export const Loading = () => (
     <div></div>
     <div></div>
   </div>
-)
+);

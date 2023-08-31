@@ -20,4 +20,4 @@ export const menuItems = [
     name: 'kontakt',
     label: 'Kontakt',
   },
-]
+];

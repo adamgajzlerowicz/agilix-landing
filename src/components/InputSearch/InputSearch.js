@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { Box } from '../Core'
+import { Box } from '../Core';
 
 const BoxInput = styled(Box)`
   display: flex;
@@ -19,7 +19,7 @@ const BoxInput = styled(Box)`
     }
   }
   input {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.5px;
@@ -31,7 +31,7 @@ const BoxInput = styled(Box)`
       background: transparent;
     }
   }
-`
+`;
 
 const InputSearch = props => (
   <>
@@ -42,6 +42,6 @@ const InputSearch = props => (
       <input type="text" className="form-control" placeholder="Type to search" />
     </BoxInput>
   </>
-)
+);
 
-export default InputSearch
+export default InputSearch;

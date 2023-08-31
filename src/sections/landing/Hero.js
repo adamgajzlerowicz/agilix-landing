@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { Title, Button, Section, Box, Text } from '../../components/Core';
 
-import { device } from '../../utils'
-import svgHeroShape from '../../assets/image/svg/hero-shape-svg.svg'
-import { Link } from 'gatsby'
+import { device } from '../../utils';
+import svgHeroShape from '../../assets/image/svg/hero-shape-svg.svg';
+import { Link } from 'gatsby';
 
 const ShapeTopLeft = styled.div`
   z-index: -1;
@@ -14,7 +14,7 @@ const ShapeTopLeft = styled.div`
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-`
+`;
 
 const TopCard = styled(Box)`
   width: 305px;
@@ -28,7 +28,7 @@ const TopCard = styled(Box)`
   @media ${device.lg} {
     left: 65%;
   }
-`
+`;
 
 const BottomCard = styled(Box)`
   width: 305px;
@@ -45,7 +45,7 @@ const BottomCard = styled(Box)`
   @media ${device.xl} {
     right: -33%;
   }
-`
+`;
 
 const ImgRight = styled.img`
   max-width: 50%;
@@ -55,7 +55,7 @@ const ImgRight = styled.img`
   @media ${device.lg} {
     max-width: 100%;
   }
-`
+`;
 
 const Hero = ({ image }) => (
   <Section className="position-relative">
@@ -144,6 +144,6 @@ const Hero = ({ image }) => (
       </Row>
     </Container>
   </Section>
-)
+);
 
-export default Hero
+export default Hero;

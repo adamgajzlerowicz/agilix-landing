@@ -1,19 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rgba } from 'polished'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import styled from 'styled-components';
+import { rgba } from 'polished';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { Title, Button, Section, Box, Text } from '../../components/Core';
 
-import imgL1FeatureOval from '../../assets/l1-feature-oval.png'
-import imgL1FeatureCurve from '../../assets/image/svg/l1-curve-feature.svg'
-import { Link } from 'gatsby'
+import imgL1FeatureOval from '../../assets/l1-feature-oval.png';
+import imgL1FeatureCurve from '../../assets/image/svg/l1-curve-feature.svg';
+import { Link } from 'gatsby';
 
 const ShapeTopRight = styled(Box)`
   position: absolute;
   top: 0;
   right: 0px;
-`
+`;
 
 const ShapeBottmRight = styled(Box)`
   position: absolute;
@@ -23,7 +23,7 @@ const ShapeBottmRight = styled(Box)`
   img {
     min-width: 100%;
   }
-`
+`;
 
 const FeatureCard = ({ color = 'primary', iconName, title, children, ...rest }) => (
   <Box bg="light" py="25px" px="30px" borderRadius={10} mb={4} {...rest}>
@@ -47,7 +47,7 @@ const FeatureCard = ({ color = 'primary', iconName, title, children, ...rest }) 
       </Text>
     </div>
   </Box>
-)
+);
 
 const Feature = () => (
   <Section bg="secondary" className="position-relative">
@@ -112,6 +112,6 @@ const Feature = () => (
       <img src={imgL1FeatureCurve} alt="" className="img-fluid" />
     </ShapeBottmRight>
   </Section>
-)
+);
 
-export default Feature
+export default Feature;

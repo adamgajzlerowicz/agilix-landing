@@ -1,23 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { Title, Button, Section, Box, Text } from '../../components/Core';
 
-import imgOval from '../../assets/l1-cta-oval.png'
-import svgCurve from '../../assets/image/svg/l1-curve-cta.svg'
+import imgOval from '../../assets/l1-cta-oval.png';
+import svgCurve from '../../assets/image/svg/l1-curve-cta.svg';
 
 const LeftCard = styled(Box)`
   position: absolute;
   top: 0;
   left: 0px;
-`
+`;
 
 const RightCard = styled(Box)`
   position: absolute;
   top: 0;
   right: -275px;
-`
+`;
 
 const CTA = () => (
   <>
@@ -47,6 +47,6 @@ const CTA = () => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default CTA
+export default CTA;

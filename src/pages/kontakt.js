@@ -1,8 +1,8 @@
-import React from 'react'
-import Cta from '../sections/landing/Cta'
+import React from 'react';
+import Cta from '../sections/landing/Cta';
 
-import PageWrapper from '../components/PageWrapper'
-import { Seo } from '../components/seo'
+import PageWrapper from '../components/PageWrapper';
+import { Seo } from '../components/seo';
 
 const Kontakt = () => (
   <PageWrapper footerDark>
@@ -12,6 +12,6 @@ const Kontakt = () => (
       <Cta />
     </div>
   </PageWrapper>
-)
+);
 
-export default Kontakt
+export default Kontakt;

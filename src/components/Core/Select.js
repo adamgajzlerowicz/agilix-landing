@@ -1,13 +1,13 @@
-import React from 'react'
-import { withTheme } from 'styled-components'
+import React from 'react';
+import { withTheme } from 'styled-components';
 
-import Select from 'react-select'
+import Select from 'react-select';
 
 const defaultOptions = [
   { value: 'chocolate', label: 'Chocolate' },
   { value: 'strawberry', label: 'Strawberry' },
   { value: 'vanilla', label: 'Vanilla' },
-]
+];
 
 const getCustomStyles = theme => ({
   option: (provided, state) => ({
@@ -26,7 +26,7 @@ const getCustomStyles = theme => ({
     outline: 'none',
     boxShadow: 'none',
   }),
-})
+});
 
 const SelectStyled = ({ theme, name = 'item', options = defaultOptions, ...rest }) => (
   <Select
@@ -36,6 +36,6 @@ const SelectStyled = ({ theme, name = 'item', options = defaultOptions, ...rest 
     options={options}
     {...rest}
   />
-)
+);
 
-export default withTheme(SelectStyled)
+export default withTheme(SelectStyled);

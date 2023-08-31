@@ -1,13 +1,13 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Section } from '../../components/Core'
-import CaseCard from '../../components/CaseCard'
+import { Section } from '../../components/Core';
+import CaseCard from '../../components/CaseCard';
 
-import imgCase1 from '../../assets/image/png/case-media-img-1.png'
-import imgCase2 from '../../assets/image/png/case-media-img-2.png'
-import imgBrand1 from '../../assets/image/jpeg/case-card-brand-img.jpg'
-import imgBrand2 from '../../assets/image/jpeg/case-card-brand-img-2.jpg'
+import imgCase1 from '../../assets/image/png/case-media-img-1.png';
+import imgCase2 from '../../assets/image/png/case-media-img-2.png';
+import imgBrand1 from '../../assets/image/jpeg/case-card-brand-img.jpg';
+import imgBrand2 from '../../assets/image/jpeg/case-card-brand-img-2.jpg';
 
 const CaseList2 = () => (
   <>
@@ -31,6 +31,6 @@ const CaseList2 = () => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default CaseList2
+export default CaseList2;

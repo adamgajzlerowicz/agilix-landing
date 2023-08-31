@@ -1,5 +1,5 @@
-const slugs = {}
+const slugs = {};
 
 module.exports = {
   slugs,
-}
+};

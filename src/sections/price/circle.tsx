@@ -1,12 +1,12 @@
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  className?: string
-  fullClass?: string
-}
+  className?: string;
+  fullClass?: string;
+};
 
 export default function CheckCircle({ className, fullClass }: Props) {
-  const c = fullClass ?? `h-6 w-6 ${className}` ?? ''
+  const c = fullClass ?? `h-6 w-6 ${className}` ?? '';
 
   return (
     <svg
@@ -21,6 +21,5 @@ export default function CheckCircle({ className, fullClass }: Props) {
         clipRule="evenodd"
       />
     </svg>
-  )
+  );
 }
-

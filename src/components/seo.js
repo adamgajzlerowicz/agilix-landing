@@ -1,20 +1,20 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { useLocation } from '@reach/router'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useLocation } from '@reach/router';
+import { useStaticQuery, graphql } from 'gatsby';
 
 export const Seo = ({ title }) => {
-  const { pathname } = useLocation()
-  const { site, logo } = useStaticQuery(query)
+  const { pathname } = useLocation();
+  const { site, logo } = useStaticQuery(query);
 
-  const { title: defaultTitle, titleTemplate, description, url, facebookID } = site.siteMetadata
+  const { title: defaultTitle, titleTemplate, description, url, facebookID } = site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
     description: description,
     image: `${url}${logo.childImageSharp.fixed.src}`,
     url: `${url}${pathname}`,
-  }
+  };
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
@@ -32,8 +32,8 @@ export const Seo = ({ title }) => {
       <meta property="fb:app_id" content={facebookID} />
       <meta property="og:type" content="article" />
     </Helmet>
-  )
-}
+  );
+};
 
 const query = graphql`
   query SEO {
@@ -55,4 +55,4 @@ const query = graphql`
       }
     }
   }
-`
+`;
