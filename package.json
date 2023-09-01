@@ -7,7 +7,8 @@
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings=0",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "compile": "tsc -p ./tsconfig.json --noEmit"
   },
   "description": "Agilix home page",
   "version": "1.0.0",
