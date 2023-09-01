@@ -10,6 +10,7 @@ import Line from '../sections/price/line';
 export default function () {
   return (
     <PageWrapper>
+      <h1 className="text-3xl font-bold underline text-red-900">Hello world!</h1>
       <Seo title="Cennik" />
       <Section>
         <div className="flex justify-center flex-col items-center" data-cy="pricing-page">
