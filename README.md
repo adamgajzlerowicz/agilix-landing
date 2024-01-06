@@ -1,1 +1,5 @@
-# Omega Gatsby
+# Poradnik użytkownika Agilix
+
+[Dla uczestnika](/uczestnik.md)
+
+[Dla trenera](/trener.md)
